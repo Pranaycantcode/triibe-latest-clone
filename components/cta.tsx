@@ -80,7 +80,7 @@ export default function CTASection() {
           <div className="bg-[#002c19] border border-white rounded-lg p-8 flex flex-col gap-6 justify-between w-full">
             <h3 className="font-semibold text-white text-2xl">Fund our work</h3>
             <p className="font-normal text-[#D1D5DC] text-base leading-relaxed">
-              Your donation helps next-gen founders take root today to advance
+              Your donation helps next-gen founders take root today to lead
               tomorrow.
             </p>
             <a
