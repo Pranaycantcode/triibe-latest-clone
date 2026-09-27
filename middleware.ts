@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
-  url.pathname = "/triibeindex";
-  return NextResponse.rewrite(url);
+  url.pathname = "/100";
+  return NextResponse.redirect(url, 308); // 308 permanent redirect
 }
 
 export const config = {
-  matcher: "/index",
+  matcher: ["/index", "/index/:path*"],
 };

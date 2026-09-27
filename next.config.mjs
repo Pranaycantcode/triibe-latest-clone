@@ -5,6 +5,19 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // 1. Reroute /index and /index/... to /100
+      {
+        source: "/index",
+        destination: "/100",
+        permanent: true,
+      },
+      {
+        source: "/index/:path*",
+        destination: "/100/:path*",
+        permanent: true,
+      },
+
+      // Existing redirects
       {
         source: "/about-us",
         destination: "/about",
@@ -23,16 +36,6 @@ const nextConfig = {
       {
         source: "/events",
         destination: "/talk",
-        permanent: true,
-      },
-      {
-        source: "/triibeindex",
-        destination: "/index",
-        permanent: true,
-      },
-      {
-        source: "/triibeindex/:path*",
-        destination: "/index/:path*",
         permanent: true,
       },
       {
@@ -55,19 +58,36 @@ const nextConfig = {
         destination: "/100",
         permanent: true,
       },
+      // Optional: if someone still accesses /triibeindex directly, send them to /100
+      {
+        source: "/triibeindex",
+        destination: "/100",
+        permanent: true,
+      },
+      {
+        source: "/triibeindex/:path*",
+        destination: "/100/:path*",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
-    return [
+    return [];
+  },
+  images: {
+    formats: ["image/avif", "image/webp"],
+    remotePatterns: [
       {
-        source: "/index",
-        destination: "/triibeindex",
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
       },
       {
-        source: "/index/:path*",
-        destination: "/triibeindex/:path*",
+        protocol: "https",
+        hostname: "images.lumacdn.com",
+        port: "",
+        pathname: "/**",
       },
-    ];
+    ],
   },
   images: {
     formats: ["image/avif", "image/webp"],
