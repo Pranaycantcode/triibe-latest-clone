@@ -49,19 +49,22 @@ export default function TriibeBranchPlaybookPage() {
             <h2 className="text-3xl font-bold border-b border-[#002c19]/10 pb-2">
               Phase 1: Taking root
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
-                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
+
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <div className="bg-[#002c19]/5 p-6 lg:p-7 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
+                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 select-none">
                   1
                 </span>
-                <h3 className="text-xl font-bold mb-3">
+                <h3 className="text-xl font-bold mb-3 pr-8">
                   Sign the volunteer agreement
                 </h3>
-                <p className="opacity-90 leading-relaxed flex-grow">
+                <p className="opacity-90 leading-relaxed flex-grow text-sm">
                   One form joins you to TRIIBE and unlocks the TRIIBE brand,
                   logo, and media.
                 </p>
-                <div className="mt-6">
+                <div className="mt-6 flex justify-center">
                   <a
                     href="https://app.signnow.com/webapp/document/f8a5bd2ee23d44afacafa861c3c3e1511a533dcb?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Df8a5bd2ee23d44afacafa861c3c3e1511a533dcb%2526access_token%253D5cfb561b51044489695bd11ab22d66b07b7b2b94e3e7c3ac8e80333b3ea48d4b&sign=1&source=link"
                     target="_blank"
@@ -73,18 +76,19 @@ export default function TriibeBranchPlaybookPage() {
                 </div>
               </div>
 
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
-                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
+              
+              <div className="bg-[#002c19]/5 p-6 lg:p-7 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
+                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 select-none">
                   2
                 </span>
-                <h3 className="text-xl font-bold mb-3">
+                <h3 className="text-xl font-bold mb-3 pr-8">
                   Host your first TRIIBE Talk
                 </h3>
-                <p className="opacity-90 leading-relaxed flex-grow">
+                <p className="opacity-90 leading-relaxed flex-grow text-sm">
                   An intergenerational talk, featuring next-gen voices in the
                   region. You can find the TRIIBE Talk guide here.
                 </p>
-                <div className="mt-6">
+                <div className="mt-6 flex justify-center">
                   <a
                     href="/talk/guide"
                     rel="noopener noreferrer"
@@ -95,12 +99,13 @@ export default function TriibeBranchPlaybookPage() {
                 </div>
               </div>
 
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
-                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
+              
+              <div className="bg-[#002c19]/5 p-6 lg:p-7 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
+                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 select-none">
                   3
                 </span>
-                <h3 className="text-xl font-bold mb-3">Form the boards</h3>
-                <div className="opacity-90 leading-relaxed flex-grow space-y-3">
+                <h3 className="text-xl font-bold mb-3 pr-8">Form the boards</h3>
+                <div className="opacity-90 leading-relaxed flex-grow space-y-3 text-sm">
                   <p>
                     A regional advisory board (over age 30) that serve as
                     ambassadors, connectors, and advisors.
@@ -109,28 +114,6 @@ export default function TriibeBranchPlaybookPage() {
                     A regional associate board (under age 30) that serve as a
                     pipeline to the regional voting board of directors.
                   </p>
-                </div>
-              </div>
-
-              <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10 shadow-sm relative overflow-hidden flex flex-col">
-                <span className="absolute top-4 right-4 text-5xl font-bold opacity-10">
-                  4
-                </span>
-                <h3 className="text-xl font-bold mb-3">
-                  Host the first cohort
-                </h3>
-                <p className="opacity-90 leading-relaxed flex-grow">
-                  Send invitations to apply and approve a cohort of 5 regional
-                  nonprofit founders in their early 20s to support.
-                </p>
-                <div className="mt-6">
-                  <Link
-                    href="/apply"
-                    target="_blank"
-                    className="inline-flex items-center justify-center h-[36px] px-6 rounded-sm font-semibold text-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-all duration-300 hover:scale-105"
-                  >
-                    Apply to the fellowship
-                  </Link>
                 </div>
               </div>
             </div>
@@ -143,7 +126,7 @@ export default function TriibeBranchPlaybookPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-2xl border-2 border-[#002c19]/20 shadow-sm relative overflow-hidden">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 text-[#002c19]">
-                  5
+                  4
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Pass the promotional review
@@ -156,7 +139,7 @@ export default function TriibeBranchPlaybookPage() {
 
               <div className="bg-white p-8 rounded-2xl border-2 border-[#002c19]/20 shadow-sm relative overflow-hidden">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 text-[#002c19]">
-                  6
+                  5
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Plan the regional summit
@@ -169,7 +152,7 @@ export default function TriibeBranchPlaybookPage() {
 
               <div className="bg-white p-8 rounded-2xl border-2 border-[#002c19]/20 shadow-sm relative overflow-hidden">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 text-[#002c19]">
-                  7
+                  6
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Receive TRIIBE funding
@@ -182,7 +165,7 @@ export default function TriibeBranchPlaybookPage() {
 
               <div className="bg-white p-8 rounded-2xl border-2 border-[#002c19]/20 shadow-sm relative overflow-hidden">
                 <span className="absolute top-4 right-4 text-5xl font-bold opacity-10 text-[#002c19]">
-                  8
+                  7
                 </span>
                 <h3 className="text-xl font-bold mb-3">
                   Sign the branch forms
@@ -201,10 +184,9 @@ export default function TriibeBranchPlaybookPage() {
                 Regional operations
               </h2>
               <p className="text-lg opacity-90 leading-relaxed">
-                A living branch runs on rhythm. Four things repeat, each feeding
-                the next: Talks fill the pipeline, the boards
-                open doors, and the Summit turns it into revenue that funds the
-                next year.
+                A living branch runs on rhythm. Three things repeat, each feeding
+                the next: Talks fill the pipeline, the boards open doors, and
+                the Summit turns it into revenue that funds the next year.
               </p>
             </div>
 
@@ -225,7 +207,7 @@ export default function TriibeBranchPlaybookPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-6 bg-gray-50 p-6 rounded-2xl border border-gray-200">
+              {/* <div className="flex flex-col md:flex-row gap-6 bg-gray-50 p-6 rounded-2xl border border-gray-200">
                 <div className="md:w-1/4">
                   <span className="inline-block bg-[#002c19] text-white px-3 py-1 text-sm font-bold rounded-full">
                     Quarterly
@@ -239,7 +221,7 @@ export default function TriibeBranchPlaybookPage() {
                     year, up to 15 fellows at full capacity.
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col md:flex-row gap-6 bg-gray-50 p-6 rounded-2xl border border-gray-200">
                 <div className="md:w-1/4">
@@ -266,7 +248,7 @@ export default function TriibeBranchPlaybookPage() {
                   <h4 className="text-xl font-bold">TRIIBE Talks</h4>
                   <p className="opacity-90">
                     Keep facilitating intergenerational talks, promoting TRIIBE
-                    and awarding prices to phil-entrepreneurs.
+                    and awarding prizes to phil-entrepreneurs.
                   </p>
                 </div>
               </div>
