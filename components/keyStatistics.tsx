@@ -84,12 +84,12 @@ const partneredWithLogos = [
     url: "https://www.learningplanetinstitute.org/en/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   }, //
-  {
+  /* {
     src: "/images/home/climatecafe.png",
     alt: "Partnered with organization 4",
     url: "https://www.climatecafe.eco/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
-  },
+  }, */
   {
     src: "/images/home/we.png",
     alt: "Partnered with organization 4",
@@ -108,12 +108,12 @@ const partneredWithLogos = [
     url: "https://www.kidsrights.org/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
   }, */
-  {
+  /* {
     src: "/images/home/billionDollar2.png",
     alt: "Partnered with organization 4",
     url: "https://www.thebilliondollarimpact.com/",
     className: "w-80 h-[150px] md:h-[150px] object-contain ",
-  },
+  }, */
   {
     src: "/images/home/onePercentBack.png",
     alt: "Partnered with organization 4",
@@ -168,12 +168,12 @@ const partneredWithLogos = [
     url: "https://www.rayzeapp.com/",
     className: "w-[130px] h-[84px]",
   },
-  {
+  /* {
     src: "/images/home/dothething.png",
     alt: "Supported by partner 4",
     url: "https://dothething.org/",
     className: "w-[130px] h-[84px]",
-  },
+  }, */
   {
     src: "/images/home/vice_city_district2.png",
     alt: "Partnered with organization 3",
