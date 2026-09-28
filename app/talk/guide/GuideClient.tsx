@@ -212,7 +212,7 @@ export default function TriibeTalkGuidePage() {
             <div className="grid gap-6">
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10 flex flex-col items-start gap-4">
                 <div>
-                  <h3 className="font-bold text-xl mb-2">4-8 weeks before:</h3>
+                  <h3 className="font-bold text-xl mb-2">8 weeks before:</h3>
                   <p className="opacity-90">
                     Select the date, topic, and initial speakers. The venue does
                     not need to be finalized before confirming speakers. Once
@@ -230,14 +230,14 @@ export default function TriibeTalkGuidePage() {
                 </Link>
               </div>
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10">
-                <h3 className="font-bold text-xl mb-2">3-4 weeks before:</h3>
+                <h3 className="font-bold text-xl mb-2">4 weeks before:</h3>
                 <p className="opacity-90">
                   Share the event with your community and networks. Aligned
                   organizations may cohost the event with approval from TRIIBE.
                 </p>
               </div>
               <div className="bg-[#002c19]/5 p-6 rounded-xl border border-[#002c19]/10">
-                <h3 className="font-bold text-xl mb-2">1-2 weeks before:</h3>
+                <h3 className="font-bold text-xl mb-2">2 weeks before:</h3>
                 <p className="opacity-90">
                   Work with your moderator and speakers to finalize the flow of
                   the conversation. Hosts may use the TRIIBE Talk preparation
@@ -344,23 +344,33 @@ export default function TriibeTalkGuidePage() {
                     </tr>
                     <tr className="border-b border-[#002c19]/10">
                       <td className="p-4 whitespace-nowrap font-medium">
-                        0:15 - 0:50
+                        0:15 - 0:45
                       </td>
                       <td className="p-4 font-medium">Moderated panel</td>
                       <td className="p-4">
-                        Thirty-five minutes typically allows for two to three
+                        Thirty minutes typically allows for two
                         questions, with speakers responding for approximately
                         three minutes each.
                       </td>
                     </tr>
                     <tr className="border-b border-[#002c19]/10">
                       <td className="p-4 whitespace-nowrap font-medium">
-                        0:50 - 1:00
+                        0:45 - 0:55
                       </td>
                       <td className="p-4 font-medium">Audience Q&A</td>
                       <td className="p-4">
                         Audience members are invited to ask questions and engage
                         directly with the speakers.
+                      </td>
+                    </tr>
+                    
+                    <tr className="border-b border-[#002c19]/10">
+                      <td className="p-4 whitespace-nowrap font-medium">
+                        0:55 - 1:00
+                      </td>
+                      <td className="p-4 font-medium">Closing speech</td>
+                      <td className="p-4">
+                        The host thanks attendees for coming.
                       </td>
                     </tr>
                     <tr className="border-b border-[#002c19]/10">
@@ -379,7 +389,7 @@ export default function TriibeTalkGuidePage() {
               <p className="text-sm italic opacity-75 mt-2">
                 Additional note: If you&apos;re planning to host two TRIIBE
                 Talks, allow for a 15 minute break after Q&A, then continue with
-                the second 35+10 minute panel before community building.
+                the second 30 minute panel before community building.
               </p>
             </div>
           </div>

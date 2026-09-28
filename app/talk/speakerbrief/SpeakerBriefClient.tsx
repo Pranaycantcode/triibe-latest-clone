@@ -134,7 +134,7 @@ export default function SpeakerBriefClient({
               <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10">
                 <h3 className="font-bold text-xl mb-3">Embrace the audience</h3>
                 <p className="opacity-90 leading-relaxed">
-                  The last 10-15 minutes are dedicated to Audience Q&A. Be
+                  The last 10 minutes are dedicated to Audience Q&A. Be
                   prepared for direct engagement and off-the-cuff questions from
                   the local community.
                 </p>
@@ -157,7 +157,7 @@ export default function SpeakerBriefClient({
               <li className="flex gap-4">
                 <span className="font-bold min-w-[120px]">The panel:</span>
                 <span>
-                  Expect a 35-minute moderated discussion covering 2 to 3 core
+                  Expect a 30-minute moderated discussion covering 2 core
                   questions.
                 </span>
               </li>

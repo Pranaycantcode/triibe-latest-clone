@@ -149,7 +149,7 @@ export default function TriibeBranchPlaybookPage() {
                   Pass the promotional review
                 </h3>
                 <p className="opacity-90 leading-relaxed">
-                  The four kick-off steps are complete, with both boards seated
+                  The three kick-off steps are complete, with both boards seated
                   at five members or more.
                 </p>
               </div>
@@ -202,7 +202,7 @@ export default function TriibeBranchPlaybookPage() {
               </h2>
               <p className="text-lg opacity-90 leading-relaxed">
                 A living branch runs on rhythm. Four things repeat, each feeding
-                the next: Talks fill the pipeline, the cohorts grow, the boards
+                the next: Talks fill the pipeline, the boards
                 open doors, and the Summit turns it into revenue that funds the
                 next year.
               </p>
@@ -266,7 +266,7 @@ export default function TriibeBranchPlaybookPage() {
                   <h4 className="text-xl font-bold">TRIIBE Talks</h4>
                   <p className="opacity-90">
                     Keep facilitating intergenerational talks, promoting TRIIBE
-                    and feeding the fellow pipeline.
+                    and awarding prices to phil-entrepreneurs.
                   </p>
                 </div>
               </div>
