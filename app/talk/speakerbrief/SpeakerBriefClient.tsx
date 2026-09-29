@@ -67,7 +67,7 @@ export default function SpeakerBriefClient({
             </h1>
             <p className="text-xl md:text-2xl opacity-90 font-light mb-10 max-w-2xl mx-auto">
               "People will forget what you said, but people will never forget
-              how you made them feel” - Maya Angelou
+              how you made them feel" - Maya Angelou
             </p>
 
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
