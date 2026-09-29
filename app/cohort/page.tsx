@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Cohort from "@/components/cohort";
+import Changemakers from "@/components/changemakers";
 import CTASection from "@/components/cta";
 
 export const metadata = {
@@ -18,7 +19,7 @@ const page = () => {
     <main>
       <Header />
       <section className="pt-16 pb-8 px-4  bg-white">
-        <Cohort />
+        <Changemakers />
       </section>
 
       {/* <CTASection /> */}
