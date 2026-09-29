@@ -40,187 +40,192 @@ const partneredWithLogos = [
     src: "/images/home/image-131.png",
     alt: "ESG News",
     url: "https://esgnews.com",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/image-132.png",
     alt: "Cloz Talk",
     url: "https://cloztalk.com/",
-    className: "w-full h-12 object-contain scale-95",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/image-133.png",
     alt: "Brooklyn Law School",
     url: "https://www.brooklaw.edu/",
-    className: "w-full h-12 object-contain scale-110",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/womensOrg1.png",
     alt: "WEDO",
     url: "https://www.joinwedo.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/illuminen1.png",
     alt: "illuminem",
     url: "https://illuminem.com/",
-    className: "w-full h-12 object-contain scale-105",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/unitedPlanet.png",
     alt: "United Planet",
     url: "https://www.up.game/",
-    className: "w-full h-12 object-contain scale-95",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/inspireYouthJournal.png",
     alt: "Inspire Youth Journal",
     url: "http://inspireyouthjournal.org/",
-    className: "w-full h-12 object-contain scale-110",
+    // Shorter height so the solid cyan background block doesn't dominate
+    className: "h-7 md:h-8 max-w-full object-contain",
   },
   {
     src: "/images/home/learningplanet.png",
     alt: "Learning Planet Institute",
     url: "https://www.learningplanetinstitute.org/en/",
-    className: "w-full h-12 object-contain scale-105",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   /* {
     src: "/images/home/climatecafe.png",
     alt: "Climate Cafe",
     url: "https://www.climatecafe.eco/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   }, */
   {
     src: "/images/home/we.png",
     alt: "WE7",
     url: "https://we7.ai/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/touchalife1.png",
     alt: "Touch-A-Life",
     url: "https://touchalife.org/",
-    className: "w-full h-12 object-contain scale-115",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   /* {
     src: "/images/home/Kids-Rights2.png",
     alt: "Kids Rights",
     url: "https://www.kidsrights.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   }, */
   /* {
     src: "/images/home/billionDollar2.png",
     alt: "The Billion Dollar Impact",
     url: "https://www.thebilliondollarimpact.com/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   }, */
   {
     src: "/images/home/onePercentBack.png",
     alt: "One Percent Back",
     url: "https://1pb.org/",
-    className: "w-full h-12 object-contain scale-135",
+    // Slightly taller height to make delicate line-art visible
+    className: "h-11 md:h-13 max-w-full object-contain",
   },
   {
     src: "/images/home/finpublica1.png",
     alt: "Finpublica",
     url: "https://www.finpublica.org/",
-    className: "w-full h-12 object-contain scale-110",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/silc1.png",
     alt: "SILC",
     url: "https://silcus.org/",
-    className: "w-full h-12 object-contain scale-105",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/fwe.png",
     alt: "FWE Forum",
     url: "https://www.fweforum.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/zenithLogo.png",
     alt: "Zenith",
     url: "https://app.zenithproject.co/",
-    className: "w-full h-12 object-contain scale-140",
+    // Taller height so delicate typography is legible
+    className: "h-10 md:h-12 max-w-full object-contain",
   },
   {
     src: "/images/home/bluePlanetAlliance2.png",
     alt: "Blue Planet Alliance",
     url: "https://blueplanetalliance.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/image-128.png",
     alt: "Steve Madden",
     url: "https://www.stevemadden.com/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/image-129.png",
     alt: "Allegiance Partners",
     url: "https://www.allegiance-partners.com/",
-    className: "w-full h-12 object-contain scale-140",
+    // Taller height so thin serif font expands to full cell width
+    className: "h-10 md:h-12 max-w-full object-contain",
   },
   {
     src: "/images/home/image-130.png",
     alt: "Rayze",
     url: "https://www.rayzeapp.com/",
-    className: "w-full h-12 object-contain scale-90",
+    // Compact height so square icon doesn't tower over neighbors
+    className: "h-8 md:h-9 max-w-full object-contain",
   },
   /* {
     src: "/images/home/dothething.png",
     alt: "Do The Thing",
     url: "https://dothething.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   }, */
   {
     src: "/images/home/vice_city_district2.png",
     alt: "Vice City District",
     url: "https://www.supercarrooms.com/vicecitydistrict",
-    className: "w-full h-12 object-contain scale-130",
+    className: "h-10 md:h-12 max-w-full object-contain",
   },
   /* {
     src: "/images/summit/Alethos2.png",
     alt: "Alethos Initiative",
     url: "https://alethosinitiative.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   }, */
   {
     src: "/images/home/logictry1.png",
     alt: "Logictry",
     url: "https://logictry.com/",
-    className: "w-full h-12 object-contain scale-110",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/BronsterLLP.png",
     alt: "Bronster LLP",
     url: "https://www.bronsterllp.com/",
-    className: "w-full h-12 object-contain scale-110",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/axiom_pathways.png",
     alt: "Axiom Pathways",
     url: "https://www.axiompathways.org/",
-    className: "w-full h-12 object-contain scale-135",
+    className: "h-9 md:h-11 max-w-full object-contain",
   },
   {
     src: "/images/home/360onefirm.png",
     alt: "361 Firm",
     url: "https://361firm.com/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   {
     src: "/images/home/Berkana_Logo.png",
     alt: "Berkana Capital",
     url: "https://berkanacapital.com/",
-    className: "w-full h-12 object-contain scale-110",
+    className: "h-8 md:h-10 max-w-full object-contain",
   },
   /* {
     src: "/images/home/unitedyouthcouncil.png",
     alt: "United Youth Council",
     url: "https://www.unitedyc.org/",
-    className: "w-full h-12 object-contain scale-100",
+    className: "h-9 md:h-11 max-w-full object-contain",
   }, */
 ];
 
