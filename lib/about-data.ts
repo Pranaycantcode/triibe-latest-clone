@@ -280,12 +280,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/summit/ericaford.jpg",
     linkedIn: "https://www.instagram.com/ericaford_ilovemylife?stkn=MWpjc2cwcDlqcmNodw==",
   }, */
-  /* {
+  {
     name: "Todd Jacobson",
     title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
     imagePath: "/images/team/ToddJacobson.jpg",
     linkedIn: "https://www.linkedin.com/in/todd-jacobson/",
-  }, */
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
