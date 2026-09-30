@@ -30,7 +30,7 @@ const SummitPage = () => {
       items: [
         {
           time: "8:30 AM",
-          title: "Top Floor Opening Remarks",
+          title: "Top floor opening remarks",
         },
         {
           time: "9:00 AM",
@@ -134,20 +134,20 @@ const SummitPage = () => {
           "500 curated guests. Featuring keynotes, concerts, a fashion show, and paddle raise.",
         bullets: [
           "Black tie attire",
-          "Next-Gen Design runway show",
+          "Next-Gen design runway show",
           "Keynotes & live paddle raise",
         ],
       },
       items: [
         {
           time: "6:00 PM",
-          title: "Gala Arrival & Seating",
+          title: "Gala arrival & seating",
           description:
             "Black tie. Plated appetizers served as guests take their seats.",
         },
         {
           time: "7:00 PM",
-          title: "Welcome Remarks",
+          title: "Welcome remarks",
         },
         {
           time: "7:10 PM",
@@ -155,7 +155,7 @@ const SummitPage = () => {
         },
         {
           time: "7:25 PM",
-          title: "Kyle Matthys & Title Sponsor keynotes & Paddle Raise",
+          title: "Kyle Matthys & Title Sponsor keynotes & paddle raise",
         },
         {
           time: "7:40 PM",
@@ -164,11 +164,11 @@ const SummitPage = () => {
         },
         {
           time: "8:20 PM",
-          title: "Dessert & Mingling",
+          title: "Dessert & mingling",
         },
         {
           time: "11:00 PM",
-          title: "Gala Concludes",
+          title: "Gala concludes",
         },
       ],
     },
