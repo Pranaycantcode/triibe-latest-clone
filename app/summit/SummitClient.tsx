@@ -22,7 +22,7 @@ const SummitPage = () => {
         description:
           "Founders only. Round tables, workshops, an intimate evening dinner and private concert.",
         bullets: [
-          "Observatory Views",
+          "Observatory views",
           "Cohort workshops & fireside chats",
           "Private dinner concert",
         ],
