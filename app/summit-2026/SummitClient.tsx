@@ -362,12 +362,12 @@ const SummitPage = () => {
         },
         {
           time: "6:30 PM",
-          title: "Guests Take Seats",
+          title: "Guests take seats",
           description: "Chime for people to take their seats",
         },
         {
           time: "6:40 PM",
-          title: "Gala Dinner Opening Ceremony",
+          title: "Gala dinner opening ceremony",
           description:
             "Kyle Matthys gives the welcome, Opening Remarks by Dr. Steven Melnik, Keynote by Kent Seton and James Keyes",
         },
@@ -384,12 +384,12 @@ const SummitPage = () => {
         },
         {
           time: "8:00 PM",
-          title: "Live Auction",
+          title: "Live auction",
           description: "Pat Tully on stage and guests in participation",
         },
         {
           time: "8:15 PM",
-          title: "Music Concert",
+          title: "Music concert",
           description: "Eric Matthys performing live",
         },
         {
@@ -500,7 +500,7 @@ const SummitPage = () => {
       items: [
         {
           time: "11:00 AM",
-          title: "Closing Ceremony",
+          title: "Closing ceremony",
           description:
             "Workshop over lunch, connecting with guests, final ceremonies",
         },
@@ -931,11 +931,11 @@ const SummitPage = () => {
                         className="text-2xl md:text-3xl italic text-[#002c19]"
                         style={{ fontFamily: "'Cormorant Garamond', serif" }}
                       >
-                        Private transport to and from Saturday's Venue
+                        Private transport to and from Saturday's venue
                       </h3>
 
                       <p className="text-sm md:text-base text-[#002c19]/80 leading-relaxed max-w-2xl">
-                        Private transport to and from Saturday's Venue will
+                        Private transport to and from Saturday's venue will
                         leave from Ideal Glass Studios at 9AM and will return
                         from Rallypoint East at 7:30 PM.
                       </p>
