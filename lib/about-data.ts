@@ -286,6 +286,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/team/ToddJacobson.jpg",
     linkedIn: "https://www.linkedin.com/in/todd-jacobson/",
   },
+  {
+    name: "Vin Infante",
+    title: "Founder, Omega Lifestyles NYC",
+    imagePath: "/images/summit/VinInfante.png",
+    linkedIn: "https://www.linkedin.com/in/vininfante/",
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
