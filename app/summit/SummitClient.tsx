@@ -182,7 +182,7 @@ const SummitPage = () => {
       bullets: [
         "Keynote opportunity",
         "Logo on stage and marketing for 1 year",
-        "Next-gen awards presenter at gala",
+        "Next-gen awards presenter at Gala",
         "Two Gala tables for 8 each",
         "Personal interviews highlighted in our media, pre and post event",
         "Documentary acknowledgements",
