@@ -414,28 +414,28 @@ export const locations: LocationEntry[] = [
     mdImagePath: "/images/team/satyam-pandey.jpg",
     mdLinkedIn: "https://www.linkedin.com/in/satyyampandey/",
     advisoryBoard: [
-      {
+      /* {
         name: "Rajeev Saxena",
         imagePath: "/images/team/rajeev-saxena.jpg",
         linkedIn: "",
         title: "Project Head at Marie Projects Ltd.",
-      },
+      }, */
 
-      {
+      /* {
         name: "Sanjoy Roy Choudhury",
         imagePath: "/images/team/SanjoyRoyChoudhury.jpg",
         linkedIn: "https://www.linkedin.com/in/sanjoy-roychoudhury-2535a5325/",
         title: "International Energy & Commodities Strategist",
-      },
+      }, */
 
-      {
+      /* {
         name: "Indranil Dutta",
         imagePath: "/images/team/IndranilDutta.jpeg",
         linkedIn: "https://www.linkedin.com/in/indrdta/",
         title: "Chief Executive Officer - Leveraging Human Capital",
-      },
+      }, */
     ],
-    advisoryBoardForming: false,
+    advisoryBoardForming: true,
   },
   {
     location: "Singapore",
