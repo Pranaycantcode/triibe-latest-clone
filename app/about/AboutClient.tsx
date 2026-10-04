@@ -743,18 +743,13 @@ export default function AboutPage() {
           className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
         >
           <FadeUp delay={0}>
-            <SectionHeader
-              title="Our Team"
-              description=""
-            />
+            <SectionHeader title="Our Team" description="" />
           </FadeUp>
 
           <FadeUp delay={100}>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
               {ourTeam.map((person) => (
                 <div key={person.name} className="w-full">
-                  
                   <LegacyMemberItem person={person} />
                 </div>
               ))}

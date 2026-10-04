@@ -8,16 +8,21 @@ interface Props {
 
 export default function LegacyMemberItem({ person }: Props) {
   return (
-    <div className="flex flex-col items-center text-center p-6 rounded-xl border border-gray-100 bg-white hover:border-[#C0DD97] transition-colors h-full">
+    <div className="flex flex-col items-center text-center p-3 sm:p-6 rounded-xl border border-gray-100 bg-white hover:border-[#C0DD97] transition-colors h-full">
       <PersonAvatar src={person.imagePath} name={person.name} size={80} />
-      <p className="font-bold text-[#002c19] text-sm mt-4 leading-tight">
+      
+      <p className="font-bold text-[#002c19] text-xs sm:text-sm mt-3 sm:mt-4 leading-tight">
         {person.name}
       </p>
+
       {person.role && (
-        <span className="inline-block mt-2 px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#EAF3DE] text-[#002c19]/80 border border-[#C0DD97]">
-          {person.role}
-        </span>
+        <div className="mt-2 w-full flex justify-center items-center">
+          <span className="inline-block w-full max-w-[150px] px-2 py-1 rounded-lg text-[10px] sm:text-xs font-medium leading-snug bg-[#EAF3DE] text-[#002c19]/80 border border-[#C0DD97]">
+            {person.role}
+          </span>
+        </div>
       )}
+
       {person.title && (
         <p
           style={{
@@ -30,6 +35,7 @@ export default function LegacyMemberItem({ person }: Props) {
           {person.title}
         </p>
       )}
+
       <div className="mt-auto pt-3">
         <LinkedInBadge url={person.linkedIn} />
       </div>
