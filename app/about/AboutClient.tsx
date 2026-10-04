@@ -14,7 +14,7 @@ import {
   legacyBoard,
   locations,
   ourTeam,
-  honoraryMembers,
+  /* honoraryMembers, */
 } from "@/lib/about-data";
 import TableOfContents from "@/components/about/TableOfContents";
 import PersonCard from "@/components/about/PersonCard";
@@ -750,11 +750,11 @@ export default function AboutPage() {
           </FadeUp>
 
           <FadeUp delay={100}>
-            {/* 2x2 Grid Container */}
+            
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {ourTeam.map((person) => (
                 <div key={person.name} className="w-full">
-                  {/* If your LegacyMemberItem already accepts these props: */}
+                  
                   <LegacyMemberItem person={person} />
                 </div>
               ))}
@@ -762,7 +762,7 @@ export default function AboutPage() {
           </FadeUp>
         </section>
 
-        {/* Honorary Members */}
+        {/* 
         <section
           id="honorary"
           className="py-16 border-t border-gray-100 scroll-mt-28"
@@ -780,7 +780,7 @@ export default function AboutPage() {
               ))}
             </div>
           </FadeUp>
-        </section>
+        </section> */}
       </div>
 
       {/* ── 3-CTA Section ────────────────────────────────────────── */}

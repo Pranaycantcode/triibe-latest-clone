@@ -14,8 +14,8 @@ const sections = [
   { id: "associate", label: "Associate Board", Icon: UserCheck },
   { id: "legacy", label: "Legacy Board", Icon: Star },
   { id: "locations", label: "Locations", Icon: MapPin },
-  { id: "departments", label: "Departments", Icon: LayoutGrid },
-  { id: "honorary", label: "Honorary Members", Icon: Award },
+  { id: "team", label: "Our Team", Icon: LayoutGrid },
+  /* { id: "honorary", label: "Honorary Members", Icon: Award }, */
 ];
 
 export default function TableOfContents() {

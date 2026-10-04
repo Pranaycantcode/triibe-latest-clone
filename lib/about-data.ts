@@ -545,7 +545,7 @@ export const ourTeam: TeamMember[] = [
   },
 ];
 
-export const honoraryMembers: HonoraryMember[] = [
+/* export const honoraryMembers: HonoraryMember[] = [
   {
     name: "Chirag Nijjer",
     imagePath: "/images/team/chirag-nijjer.jpg",
@@ -661,11 +661,4 @@ export const honoraryMembers: HonoraryMember[] = [
     imagePath: "/images/team/aria-mohajer.png",
     linkedIn: "https://www.linkedin.com/in/aria-mohajer/",
   },
-  /* hidden:
-  {
-    name: "Zachary Anglemyer",
-    imagePath: "/images/team/zachary-anglemyer.jfif",
-    linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
-  },
-  */
-];
+]; */
