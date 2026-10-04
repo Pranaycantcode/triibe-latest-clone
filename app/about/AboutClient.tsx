@@ -633,7 +633,7 @@ export default function AboutPage() {
         {/* Associate Board */}
         <section
           id="associate"
-          className="py-16 border-t border-gray-100 scroll-mt-28 px-4" // Added responsive side padding
+          className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
         >
           <FadeUp delay={0}>
             <SectionHeader
@@ -642,14 +642,23 @@ export default function AboutPage() {
             />
           </FadeUp>
 
-          {/* Changed grid-cols-1 to grid-cols-2 for perfect mobile side-by-side look */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
-            {associateBoard.map((person, i) => (
-              <FadeUp key={person.name} delay={i * 80}>
-                <PersonCard person={person} photoSize={80} />
-              </FadeUp>
-            ))}
-          </div>
+          <FadeUp delay={100}>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto">
+              {associateBoard[0] && (
+                <div className="col-span-2 flex justify-center mb-1 sm:mb-2">
+                  <div className="w-full max-w-[160px] sm:max-w-[200px] md:max-w-xs lg:w-1/4">
+                    <PersonCard person={associateBoard[0]} photoSize={80} />
+                  </div>
+                </div>
+              )}
+
+              {associateBoard.slice(1).map((person, i) => (
+                <div key={person.name} className="w-full">
+                  <PersonCard person={person} photoSize={80} />
+                </div>
+              ))}
+            </div>
+          </FadeUp>
         </section>
 
         {/* Legacy Board */}
@@ -667,9 +676,7 @@ export default function AboutPage() {
           <FadeUp delay={100}>
             {/* Combined Single Grid Container for all members */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {/* The Chair (First Person) - Centered on desktop,
-        but flows naturally into the 2-column grid on mobile
-      */}
+              
               <div className="col-span-2 md:col-span-3 lg:col-span-4 flex justify-center mb-2 lg:mb-4">
                 <div className="w-full max-w-[160px] sm:max-w-[200px] md:max-w-xs lg:w-1/4">
                   <LegacyMemberItem person={legacyBoard[0]} />
