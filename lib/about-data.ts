@@ -511,245 +511,37 @@ export const locations: LocationEntry[] = [
   },
 ];
 
-export const departments: Department[] = [
-  /* {
-    name: "Media",
-    Icon: Megaphone,
-    members: [
-      {
-        name: "Ritikesh Kunwar",
-        imagePath: "/images/team/ritikesh-kunwar.jpg",
-        linkedIn: "https://www.linkedin.com/in/ritikesh-kunwar-141779326/",
-        isHead: true,
-      },
-      {
-        name: "Grace Sengul",
-        imagePath: "/images/team/grace-sengul.jpg",
-        linkedIn: "https://www.linkedin.com/in/grace-sengul-a74a00329/",
-      },
-    ],
-  }, */
-  /*  {
-    name: "Events",
-    Icon: CalendarDays,
-    members: [
-      {
-        name: "Parker Johnson",
-        imagePath: "/images/team/parker-johnson.jpg",
-        linkedIn: "https://www.linkedin.com/in/zachary-parker-johnson/",
-        isHead: true,
-      },
-      {
-        name: "Everett Mader",
-        imagePath: "/images/team/everett-mader.jfif",
-        linkedIn: "https://www.linkedin.com/in/everettmader/",
-      },
-      {
-        name: "Evelyn Sar",
-        imagePath: "/images/team/evelyn-sar.jpg",
-        linkedIn: "https://www.linkedin.com/in/evelynsar/",
-      },
-      {
-        name: "Zachary Anglemyer",
-        imagePath: "/images/team/zachary-anglemyer.jfif",
-        linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
-      },
-    ],
-  }, */
-  /* {
-    name: "Outreach",
-    Icon: Share2,
-    members: [
-      {
-        name: "Grace Sengul",
-        imagePath: "/images/team/grace-sengul.jpg",
-        linkedIn: "https://www.linkedin.com/in/grace-sengul-a74a00329/",
-        isHead: true,
-      },
-      {
-        name: "Pranay Mishra",
-        imagePath: "/images/team/pranay-mishra.jpeg",
-        linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
-      },
-      {
-        name: "Ryan Miller",
-        imagePath: "/images/team/ryan-miller.jpg",
-        linkedIn: "https://www.linkedin.com/in/ryanmillerhq/",
-      },
-    ],
-  }, */
+export interface TeamMember {
+  name: string;
+  role: string;
+  imagePath: string;
+  linkedIn: string;
+}
+
+export const ourTeam: TeamMember[] = [
   {
-    name: "Global Relations",
-    Icon: Globe,
-    members: [
-      {
-        name: "Parker Johnson",
-        imagePath: "/images/team/parker-johnson.jpg",
-        linkedIn: "https://www.linkedin.com/in/zachary-parker-johnson/",
-        isHead: true,
-      },
-      {
-        name: "Everett Mader",
-        imagePath: "/images/team/everett-mader.jfif",
-        linkedIn: "https://www.linkedin.com/in/everettmader/",
-      },
-      {
-        name: "Quinn Hoeven",
-        imagePath: "/images/team/quinn-hoeven.jpg",
-        linkedIn: "https://www.linkedin.com/in/quinnvanderhoeven/",
-        isHead: true,
-      },
-      {
-        name: "Zachary Anglemyer",
-        imagePath: "/images/team/zachary-anglemyer.jfif",
-        linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
-      },
-      {
-        name: "Ryan Miller",
-        imagePath: "/images/team/ryan-miller.jpg",
-        linkedIn: "https://www.linkedin.com/in/ryanmillerhq/",
-      },
-      /* {
-        name: "Shradha Adhikari",
-        imagePath: "/images/team/shradha-adhikari.jpg",
-        linkedIn: "https://www.linkedin.com/in/shradhadhikari/",
-      }, */
-      /* hidden:
-      {
-        name: "Jade Kashemsant",
-        imagePath: "/images/team/jade-kashemsant.jpg",
-        linkedIn: "https://www.linkedin.com/in/jadekashemsant/",
-      },
-      */
-      {
-        name: "Satyam Pandey",
-        imagePath: "/images/team/satyam-pandey.jpg",
-        linkedIn: "https://www.linkedin.com/in/satyyampandey/",
-      },
-      /* hidden:
-      {
-        name: "Rida Karim",
-        imagePath: "/images/team/rida-karim.jpg",
-        linkedIn: "https://www.linkedin.com/in/ridakarim/",
-      },
-      */
-    ],
-  },
-  /* {
-    name: "Research",
-    Icon: FlaskConical,
-    members: [
-      {
-        name: "Nancy Thadhani",
-        imagePath: "/images/team/nancy-thadhani.jpg",
-        linkedIn: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
-        isHead: true,
-      },
-      {
-        name: "Taylor Anderson",
-        imagePath: "/images/team/taylor-anderson.jpg",
-        linkedIn: "https://www.linkedin.com/in/taylor-anderson-74a577396/",
-      },
-      {
-        name: "Rida Karim",
-        imagePath: "/images/team/rida-karim.jpg",
-        linkedIn: "https://www.linkedin.com/in/ridakarim/",
-      },
-    ],
-  }, */
-  {
-    name: "Partnerships",
-    Icon: Handshake,
-    members: [
-      {
-        name: "Laya Pothunuri",
-        imagePath: "/images/team/laya-pothunuri.jpg",
-        linkedIn: "https://www.linkedin.com/in/laya-pothunuri-964878175/",
-        isHead: true,
-      },
-      {
-        name: "Maryam Rana",
-        imagePath: "/images/team/maryam-rana.jpg",
-        linkedIn: "https://www.linkedin.com/in/maryam-rana-0b21a728b/",
-      },
-      {
-        name: "Imane Abdel Jelil",
-        imagePath: "/images/team/imane-abdel-jelil.jpg",
-        linkedIn: "https://www.linkedin.com/in/imane-abdel-jelil/",
-      },
-      {
-        name: "Rida Karim",
-        imagePath: "/images/team/rida-karim.jpg",
-        linkedIn: "https://www.linkedin.com/in/ridakarim/",
-      },
-      {
-        name: "Sathvik Kunigal",
-        imagePath: "/images/team/SathvikKunigal.jpg",
-        linkedIn: "https://www.linkedin.com/in/sathvik-kunigal-50ab16232/",
-      },
-    ],
+    name: "Pranay Mishra",
+    role: "Head of Website Development",
+    imagePath: "/images/team/pranay-mishra.jpeg",
+    linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
   },
   {
-    name: "Technology",
-    Icon: Monitor,
-    members: [
-      {
-        name: "Pranay Mishra",
-        imagePath: "/images/team/pranay-mishra.jpeg",
-        linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
-        isHead: true,
-      },
-      {
-        name: "Riya Bose",
-        imagePath: "/images/team/riya-bose.jfif",
-        linkedIn: "https://www.linkedin.com/in/riya-bose-781699273/",
-      },
-    ],
+    name: "Riya Bose",
+    role: "Head of Google Ad Grants",
+    imagePath: "/images/team/riya-bose.jfif",
+    linkedIn: "https://www.linkedin.com/in/riya-bose-781699273/",
   },
   {
-    name: "Studio",
-    Icon: Palette,
-    members: [
-      {
-        name: "Tanuja Bodas",
-        imagePath: "/images/team/tanuja-bodas.jpg",
-        linkedIn: "https://www.linkedin.com/in/tanujabodas23/",
-        isHead: true,
-      },
-      {
-        name: "Grace Sengul",
-        imagePath: "/images/team/grace-sengul.jpg",
-        linkedIn: "https://www.linkedin.com/in/grace-sengul-a74a00329/",
-        isHead: true,
-      },
-      {
-        name: "Nancy Thadhani",
-        imagePath: "/images/team/nancy-thadhani.jpg",
-        linkedIn: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
-        isHead: true,
-      },
-      /* {
-        name: "Keshav Gautam",
-        imagePath: "/images/team/KeshavGautam.png",
-        linkedIn: "https://www.linkedin.com/in/keshav-gautam918/",
-        isHead: true,
-      }, */
-      {
-        name: "Riya Bose",
-        imagePath: "/images/team/riya-bose.jfif",
-        linkedIn: "https://www.linkedin.com/in/riya-bose-781699273/",
-      },
-      /* {
-        name: "Angela Goldberg",
-        imagePath: "/images/team/angela-goldberg.jpg",
-        linkedIn: "https://www.linkedin.com/in/angela-goldberg/",
-      },
-      {
-        name: "Fionnuala Eastwood",
-        imagePath: "/images/team/fionnuala-eastwood.jpg",
-        linkedIn: "https://www.linkedin.com/in/fionnuala-eastwood/",
-      }, */
-    ],
+    name: "Tanuja Bodas",
+    role: "Head of Studio Design",
+    imagePath: "/images/team/tanuja-bodas.jpg",
+    linkedIn: "https://www.linkedin.com/in/tanujabodas23/",
+  },
+  {
+    name: "Nancy Thadhani",
+    role: "Head of Research",
+    imagePath: "/images/team/nancy-thadhani.jpg",
+    linkedIn: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
   },
 ];
 

@@ -13,7 +13,7 @@ import {
   associateBoard,
   legacyBoard,
   locations,
-  departments,
+  ourTeam,
   honoraryMembers,
 } from "@/lib/about-data";
 import TableOfContents from "@/components/about/TableOfContents";
@@ -737,24 +737,29 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Departments */}
+        {/* Our Team */}
         <section
-          id="departments"
-          className="py-16 border-t border-gray-100 scroll-mt-28"
+          id="team"
+          className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
         >
           <FadeUp delay={0}>
             <SectionHeader
-              title="Departments"
-              description="Four departments, each led by a head and supported by a growing team of contributors."
+              title="Our Team"
+              description=""
             />
           </FadeUp>
-          <div className="space-y-4">
-            {departments.map((dept, i) => (
-              <FadeUp key={dept.name} delay={i * 100}>
-                <DepartmentRow department={dept} />
-              </FadeUp>
-            ))}
-          </div>
+
+          <FadeUp delay={100}>
+            {/* 2x2 Grid Container */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {ourTeam.map((person) => (
+                <div key={person.name} className="w-full">
+                  {/* If your LegacyMemberItem already accepts these props: */}
+                  <LegacyMemberItem person={person} />
+                </div>
+              ))}
+            </div>
+          </FadeUp>
         </section>
 
         {/* Honorary Members */}
