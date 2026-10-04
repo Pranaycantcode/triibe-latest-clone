@@ -521,7 +521,7 @@ export interface TeamMember {
 export const ourTeam: TeamMember[] = [
   {
     name: "Pranay Mishra",
-    role: "Head of Website Development",
+    role: "Head of Website development",
     imagePath: "/images/team/pranay-mishra.jpeg",
     linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
   },
@@ -533,7 +533,7 @@ export const ourTeam: TeamMember[] = [
   },
   {
     name: "Tanuja Bodas",
-    role: "Head of Studio Design",
+    role: "Head of Studio design",
     imagePath: "/images/team/tanuja-bodas.jpg",
     linkedIn: "https://www.linkedin.com/in/tanujabodas23/",
   },
