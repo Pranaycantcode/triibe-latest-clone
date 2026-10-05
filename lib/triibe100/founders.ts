@@ -799,7 +799,7 @@ const restOverrides: Partial<Founder>[] = [
     website: "https://www.oceanrescuealliance.org/",
     linkedin: "https://www.linkedin.com/in/dr-shelby-thomas-phd-347241b5/",
   },
-  {
+  /* {
     name: "Kyle Matthys",
     org: "",
     bio: "Founder and CEO, TRIIBE",
@@ -808,7 +808,7 @@ const restOverrides: Partial<Founder>[] = [
     image: "/images/triibe100/KyleMatthys.jpg",
     website: "https://www.triibe.org/",
     linkedin: "https://www.linkedin.com/in/kylematthys/",
-  },
+  }, */
   {
     name: "Shreya Ramachandran",
     org: "",
@@ -928,6 +928,116 @@ const restOverrides: Partial<Founder>[] = [
     image: "/images/triibe100/SarahShelke.png",
     website: "https://mind4youth.com",
     linkedin: "https://www.linkedin.com/in/sarahshelke/",
+  },
+  {
+    name: "Nana Kusi Appiah",
+    org: "",
+    bio: "Co-Founder and CEO, GanaFert Company Limited",
+    description:
+      "Co-founded GanaFert in Ghana to close a gap smallholder farmers face every season: the higher-performing fertilizers tend to be too expensive for them, while the budget options often fail to deliver the yields they need. The company makes an organic fertilizer from crop residues and animal droppings, enriched with natural nematicide extracts that protect vegetables from pests.\n\nGanaFert is backed by the Kosmos Innovation Center in partnership with the Mastercard Foundation, and its founder pitched at the Youth Innovation Dome at the 2025 Africa Food Systems Forum in Dakar. A Mastercard Foundation alumnus with a BSc in Agriculture from the University of Ghana, he represented the African Union at the 2023 African Climate Summit, is a YALI West Africa alumnus, and sits on the WHO Technical Working Group on School Health.",
+    image: "/images/triibe100/NanaKusiAppiah.jpg",
+    website: "http://ganafert.com/",
+    linkedin: "https://www.linkedin.com/in/nana-kusi-appiah/",
+  },
+  {
+    name: "Maya Penn",
+    org: "",
+    bio: "Founder, Maya's Ideas 4 The Planet",
+    description:
+      "Launched Maya's Ideas 4 The Planet in 2011, three years after starting her sustainable fashion brand at eight, directing 10 to 20 percent of its profits to charities and environmental organizations. In 2012 she designed eco-friendly reusable sanitary pads for girls in countries in need.\n\nWorking with MedShare and Youth Action Without Borders, the nonprofit has distributed 3,000 pad kits to healthcare facilities in Haiti, Senegal, and Cameroon, and now supports young artists and environmental activists in more than 12 countries. Its founder is a three-time TED speaker and Simon & Schuster author who received a commendation from President Obama for environmental stewardship and was chosen by Oprah Winfrey as her youngest SuperSoul 100 changemaker.",
+    image: "/images/triibe100/MayaPenn.jpg",
+    website: "https://mayasidea.com/nonprofit",
+    linkedin: "https://www.linkedin.com/in/mayapenn/",
+  },
+  {
+    name: "Dev Sharma",
+    org: "",
+    bio: "Founding Member, Bite Back 2030",
+    description:
+      "Co-founded Bite Back 2030 with Jamie Oliver at 14, after growing up in Leicester's Rushey Mead, where health inequity and food poverty hit close to home, and later being bombarded by fast food ads on YouTube while studying for his GCSEs. The youth-led campaign calls for the food system to be redesigned to protect the health and futures of millions of children.\n\nHe spearheaded the campaign behind the UK's world-first ban on paid online junk food advertising, which made the Queen's Speech in 2021 and came into force in January 2026. He is a Diana Award recipient, chaired the UK government's first youth inquiry into the cost of living, was the first person elected to the Youth Parliament consecutively from two different constituencies, and now studies at the University of Cambridge.",
+    image: "/images/triibe100/DevSharma.png",
+    website: "https://www.biteback2030.com/",
+    linkedin: "https://www.linkedin.com/in/devsharmamyp/",
+  },
+  {
+    name: "Theresa Sebastian",
+    org: "",
+    bio: "Co-Founder, Re-Earth Initiative",
+    description:
+      "Co-founded Re-Earth Initiative in 2020 alongside Xiye Bastida, her climate work rooted in the 2018 floods that devastated Kerala. It began as a global Earth Day campaign asking each person for two pledges, one individual and one systemic, which reached more than 300,000 people across 40 countries.\n\nSince 2023, Re-Earth has distributed more than $500,000 in small grants to over 70 youth-led projects worldwide. Its co-founder received the Irish Climate Ambassadors' Outstanding Achievement Award, contributed to Ireland's national climate plans as a stakeholder, attended COP26 through COP29, and studies Common Law and Spanish at the University of Glasgow.",
+    image: "/images/triibe100/TheresaSebastian.png",
+    website: "https://reearthin.org/",
+    linkedin: "https://www.linkedin.com/in/theresa-rose-sebastian-a9b212159/?isSelfProfile=false",
+  },
+  {
+    name: "Anvi Palav",
+    org: "",
+    bio: "Founder and CEO, BioMedizone",
+    description:
+      "Founded BioMedizone in 2022 at 15 to bring biomedical research access to students in underserved communities, after seeing how many motivated students lacked clear entry points into research. The nonprofit connects students with research, mentorship, internships, and career resources, and its Junior Lab puts teams of ten to work on projects like a neurorehabilitation app for neurology clinics.\n\nBioMedizone has impacted 3,000 students in 68 countries, delivering an estimated $1.5 million in free biomedical instruction and research programming. It partners with The Princeton Review and Lumiere Education, and its founder is a Stamps Eminence Scholar studying neuroscience at Ohio State with research published in peer-reviewed journals including Cureus.",
+    image: "/images/triibe100/AnviPalav.png",
+    website: "https://www.biomedizone.org/",
+    linkedin: "https://www.linkedin.com/in/anvipalav/",
+  },
+  {
+    name: "Rishi Gurudevan",
+    org: "",
+    bio: "Co-Founder and President, Students for Nuclear Disarmament",
+    description:
+      "Launched Students for Nuclear Disarmament at 16, after a January 2023 talk at Phillips Exeter by physician Ira Helfand, who helped found the Nobel-winning International Campaign to Abolish Nuclear Weapons. The nonpartisan national organization raises Gen Z awareness of the nuclear threat and unites young people in urging common-sense nuclear weapons policy.\n\nStudents he worked with convinced the mayor of Burbank, California to issue a proclamation supporting nuclear abolition. Its founder received the Youth Nuclear Abolition Award at Harvard Medical School and was named a Coolidge Senator. He served as a US Senate page for Senator Maggie Hassan and writes for the Bulletin of the Atomic Scientists, and now studies at Yale.",
+    image: "/images/triibe100/RishiGurudevan.jpg",
+    website: "https://students4disarmament.org/",
+    linkedin: "https://www.linkedin.com/in/rishi-gurudevan-14164925b/",
+  },
+  {
+    name: "Aaron He",
+    org: "",
+    bio: "President and Founder, Indigenous Justice Coalition",
+    description:
+      "Founded the Indigenous Justice Coalition in 2023 after canvassing in the Muwekma Ohlone chairwoman's congressional campaign, confronting a problem few people know exists: hundreds of tribes are denied federal rights, from Bureau of Indian Affairs health programs to tuition assistance and the repatriation of ancestors.\n\nThe Coalition has grown to 35 chapters across 10 states supporting 11 tribes, helped secure a $500,000 California Air Resources Board grant for a tribal air quality app, and published peer-reviewed research with professors at Stanford and Santa Clara. Its founder won the Princeton Prize in Race Relations, is a Coca-Cola Scholar, and studies at Harvard.",
+    image: "/images/triibe100/AaronHe.png",
+    website: "https://indigenousjusticecoalition.com/",
+    linkedin: "https://www.linkedin.com/in/aaronjhe/",
+  },
+  {
+    name: "Divaa Uthkarsha",
+    org: "",
+    bio: "Founder, Project Surya",
+    description:
+      "Founded Project Surya in Bengaluru in 2021, after her brother Surya's type 1 diabetes diagnosis, to make insulin and diabetes care accessible to families of every background. The youth-led organization is now run by young people across 10 cities in 6 countries.\n\nProject Surya has provided 4,500 insulin vials, 2,500 glucose monitoring strips, and 1,000 insulin syringes to families unable to afford regular treatment. Its founder was named to Forbes 30 Under 30 Asia 2026 as the youngest in the Social Impact category, is a Diana Award recipient, and has spoken at UN Headquarters.",
+    image: "/images/triibe100/DivaaUthkarsha.png",
+    website: "https://projectsurya.info/",
+    linkedin: "https://www.linkedin.com/in/divaauthkarsha/",
+  },
+  {
+    name: "Leo Sharma",
+    org: "",
+    bio: "Co-Founder, Lëtz Make SDGs Happen",
+    description:
+      "Co-founded Lëtz Make SDGs Happen with Avanti Sharma, launching it on Luxembourg's National Day, 23 June, with one mission: activate one million young people by 2030 around the 17 Sustainable Development Goals. He is also co-founder and VP of technology at Workshop4Me, the Luxembourg nonprofit teaching children, especially girls, to code and create.\n\nHe led an app development workshop at TN'Teens and co-hosted the opening ceremony of Nexus Luxembourg 2025, which welcomed HRH The Crown Prince to the stage.",
+    image: "/images/triibe100/LeoSharma.jpg",
+    website: "https://www.letzmakesdgshappen.com/",
+    linkedin: "https://www.linkedin.com/in/atreyam-leo-s-68818b102/",
+  },
+  {
+    name: "Avanti Sharma",
+    org: "",
+    bio: "Founder, Lëtz Make SDGs Happen",
+    description:
+      "Founded Lëtz Make SDGs Happen after a 2020 TEDx talk in Berlin on embedding the SDGs into NGO strategy, naming it after Luxembourg's own slogan. The initiative works on three levels: influencing policy through decision-makers, partnering with companies behind a goal, and backing local grassroots movements.\n\nShe ran an SDG hackathon at Orange Luxembourg's headquarters judged by its CEO and gave the closing keynote at Codemotion Milan. She served as Brand Ambassador for Girls in Tech Luxembourg and placed third at POST Luxembourg's FinTech Hackathon on financial inclusion.",
+    image: "/images/triibe100/AvantiSharma.jpg",
+    website: "https://www.letzmakesdgshappen.com/",
+    linkedin: "https://www.linkedin.com/in/avanti-sharma-950a80291/",
+  },
+  {
+    name: "Kevin Patel",
+    org: "",
+    bio: "Founder and Executive Director, Earth Era Institute",
+    description:
+      "Grew up with severe heart issues caused by poor air quality in Los Angeles, then founded OneUpAction International in 2019 to give marginalized young people the resources to become changemakers. In 2026 he founded the Earth Era Institute, where he serves as Executive Director.\n\nHe pioneered the world's first Youth Climate Commission in Los Angeles County in 2019 and now serves as its Chair. He is a National Geographic Young Explorer, a UN Togetherband Ambassador, and a Men's Health 20 Under 20 honoree.",
+    image: "/images/triibe100/KevinPatel.png",
+    website: "https://eartherainstitute.org/",
+    linkedin: "https://www.linkedin.com/in/imkevinjpatel/",
   },
 
   {
