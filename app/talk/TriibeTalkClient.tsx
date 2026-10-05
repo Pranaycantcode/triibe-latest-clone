@@ -123,15 +123,15 @@ const mediaCards = [
     id: "newsletter",
     title: "TRIIBUNE Newsletter",
     image: "/images/triibetalk/July2026.avif",
-    badge: "September 2026",
-    heading: "Monthly Update | September 2026",
+    badge: "October 2026",
+    heading: "Monthly Update | October 2026",
     description:
-      "Check out the latest updates, stories, and community news in our September 2026 edition.",
+      "Check out the latest updates, stories, and community news in our October 2026 edition.",
     buttons: [
       {
         type: "link",
         text: "Read",
-        href: "https://blog.triibe.org/p/the-triibune-ef76bcb7a3fc41c7",
+        href: "https://blog.triibe.org/p/the-triibune-october-2026",
       },
     ],
   },

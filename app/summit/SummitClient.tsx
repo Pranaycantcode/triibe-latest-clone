@@ -59,7 +59,7 @@ const SummitPage = () => {
         label: "SATURDAY · FORUM",
         name: "TRIIBE Talks & Supercar Showcase",
         description:
-          "1,000 public attendees across seven simultaneous stages hosting TRIIBE Talks.",
+          "400 public attendees across seven simultaneous stages hosting TRIIBE Talks.",
         bullets: [
           "7 parallel session rooms",
           "Community activations",
@@ -131,7 +131,7 @@ const SummitPage = () => {
         label: "SATURDAY · GALA",
         name: "Black Tie VIP Gala & Fashion Show",
         description:
-          "500 curated guests. Featuring keynotes, concerts, a fashion show, and paddle raise.",
+          "400 curated guests. Featuring keynotes, concerts, a fashion show, and paddle raise.",
         bullets: [
           "Black tie attire",
           "Next-Gen design runway show",
@@ -289,7 +289,7 @@ const SummitPage = () => {
               <div className="w-60 flex flex-col items-center gap-8">
                 <div className="text-center flex flex-col items-center">
                   <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                    1000
+                    400
                   </span>
                   <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
                     Public Attendees
@@ -307,10 +307,10 @@ const SummitPage = () => {
               <div className="w-60 flex flex-col items-center gap-8">
                 <div className="text-center flex flex-col items-center">
                   <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                    100
+                    200
                   </span>
                   <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                    TRIIBE Fellows
+                    Speakers
                   </span>
                 </div>
                 <a
@@ -325,10 +325,10 @@ const SummitPage = () => {
               <div className="w-60 flex flex-col items-center gap-8">
                 <div className="text-center flex flex-col items-center">
                   <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                    500
+                    100
                   </span>
                   <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                    VIP Gala Guests
+                    TRIIBE Fellows
                   </span>
                 </div>
                 <Link
