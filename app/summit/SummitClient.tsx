@@ -59,7 +59,7 @@ const SummitPage = () => {
         label: "SATURDAY · FORUM",
         name: "TRIIBE Talks & Supercar Showcase",
         description:
-          "400 public attendees across seven simultaneous stages hosting TRIIBE Talks.",
+          "400 attendees across seven simultaneous stages hosting TRIIBE Talks.",
         bullets: [
           "7 parallel session rooms",
           "Community activations",
@@ -292,7 +292,7 @@ const SummitPage = () => {
                     400
                   </span>
                   <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                    Public Attendees
+                    Attendees
                   </span>
                 </div>
                 <a
