@@ -109,7 +109,7 @@ export default function TriibeBrandBookPage() {
                     out as a standalone icon for avatars and app icons.
                   </li>
                   <li>
-                    <strong>Clear Space:</strong> Always allow ample space
+                    <strong>Clear space:</strong> Always allow ample space
                     around the logo. Never obscure it with surrounding objects.
                   </li>
                 </ul>
@@ -167,17 +167,17 @@ export default function TriibeBrandBookPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-8">
                   {dontRules.map((rule, idx) => (
-                    <div key={idx} className="flex flex-col space-y-6">
-                      <div className="flex items-center gap-3">
-                        <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white text-lg font-bold pb-[2px] leading-none shrink-0">
+                    <div key={idx} className="flex flex-col">
+                      <div className="flex items-start gap-3 min-h-[48px]">
+                        <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center text-white text-lg font-bold pb-[2px] leading-none shrink-0 mt-0.5">
                           &times;
                         </div>
-                        <span className="font-bold text-red-900 tracking-tight">
+                        <span className="font-bold text-red-900 tracking-tight leading-snug">
                           {rule.label}
                         </span>
                       </div>
 
-                      <div className="w-full h-28 bg-white rounded-lg relative flex items-center justify-center p-3">
+                      <div className="w-full h-28 bg-white rounded-lg relative flex items-center justify-center p-3 mt-6">
                         <Image
                           src={rule.img}
                           alt={`Improper use: ${rule.label}`}
