@@ -685,7 +685,7 @@ const restOverrides: Partial<Founder>[] = [
     bio: "Founder & Managing Director, Corporate Jungle Impact",
     description:
       "Founded Corporate Jungle Impact on the belief that young people are not a problem to be managed, but a resource worth investing in. The organization builds programmes that put young people in front of the leaders and institutions making decisions about them, teaching them to structure an argument, speak with confidence, and turn their experiences into meaningful participation.\n\nIts flagship Own the Arena programme has expanded from the University of Portsmouth into new communities, with participants going on to speak in Parliament, secure scholarships and jobs, and return as alumni facilitators. The programme has generated £6.18 in social value for every £1 invested and is now expanding to West London with Bentley Motors and to schools in Exeter. Its founder has delivered the model at Anthropy and in prisons, and continues to serve on the Anthropy Emerging Leaders Committee.",
-    image: "/images/triibe100/EbunLawal.jpg",
+    image: "/images/triibe100/EbunLawalNew.jpg",
     website: "https://uk.linkedin.com/company/corporate-jungle-impact",
     linkedin: "https://www.linkedin.com/in/ebun-lawal/",
   },
