@@ -122,7 +122,7 @@ const mediaCards = [
   {
     id: "newsletter",
     title: "TRIIBUNE Newsletter",
-    image: "/images/triibetalk/July2026.avif",
+    image: "/images/triibetalk/cohort.avif",
     badge: "October 2026",
     heading: "Monthly Update | October 2026",
     description:
