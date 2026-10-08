@@ -17,10 +17,10 @@ const SummitPage = () => {
       location: "",
       highlight: {
         image: "/images/summit/cohort-friday.jpeg",
-        label: "FRIDAY · FORUM",
+        label: "FRIDAY · First Day",
         name: "Cohort Day & Dinner Concert",
         description:
-          "Founders only. Round tables, workshops, an intimate evening dinner and private concert.",
+          "Round tables, workshops, an intimate evening dinner and private concert.",
         bullets: [
           "Observatory views",
           "Cohort workshops & fireside chats",
@@ -42,17 +42,17 @@ const SummitPage = () => {
         },
         {
           time: "11:15 AM",
-          title: "Block 1 - TRIIBE Talks",
+          title: "Block 1 - 3 TRIIBE Talks and morning activation zone",
         },
         { time: "11:45 AM", title: "10 minute break" },
         {
           time: "11:55 AM",
-          title: "Block 2 - TRIIBE Talks",
+          title: "Block 2 - 3 TRIIBE Talks and morning activation zone",
         },
         { time: "12:25 PM", title: "10 minute break" },
         {
           time: "12:35 PM",
-          title: "Block 3 - TRIIBE Talks",
+          title: "Block 3 - 3 TRIIBE Talks and morning activation zone",
         },
         {
           time: "1:05 PM",
@@ -60,27 +60,27 @@ const SummitPage = () => {
         },
         {
           time: "1:55 PM",
-          title: "Block 4 - TRIIBE Talks",
+          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "2:25 PM", title: "10 minute break" },
         {
           time: "2:35 PM",
-          title: "Block 5 - TRIIBE Talks",
+          title: "Block 5 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "3:05 PM", title: "10 minute break" },
         {
           time: "3:15 PM",
-          title: "Block 6 - TRIIBE Talks",
+          title: "Block 6 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "3:45 PM", title: "10 minute break" },
         {
           time: "3:55 PM",
-          title: "Block 7 - TRIIBE Talks",
+          title: "Block 7 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "4:25 PM", title: "10 minute break" },
         {
           time: "4:35 PM",
-          title: "Block 8 - TRIIBE Talks",
+          title: "Block 8 - 3 TRIIBE Talks and afternoon activation zone",
         },
         {
           time: "5:05 PM",
@@ -94,10 +94,10 @@ const SummitPage = () => {
           time: "7:30 PM",
           title: "TRIIBE 100 dinner",
         },
-        {
+        /* {
           time: "9:00 PM",
           title: "Night ends",
-        },
+        }, */
       ],
     },
     {
@@ -106,8 +106,8 @@ const SummitPage = () => {
       location: "",
       highlight: {
         image: "/images/summit/summithead.jpeg",
-        label: "SATURDAY · FORUM",
-        name: "TRIIBE Talks & Supercar Showcase",
+        label: "SATURDAY · Second Day",
+        name: "TRIIBE Talks",
         description:
           "400 attendees across seven simultaneous stages hosting TRIIBE Talks.",
         bullets: [
@@ -131,17 +131,17 @@ const SummitPage = () => {
         },
         {
           time: "11:15 AM",
-          title: "Block 1 - TRIIBE Talks",
+          title: "Block 1 - 3 TRIIBE Talks and morning activation zone",
         },
         { time: "11:45 AM", title: "10 minute break" },
         {
           time: "11:55 AM",
-          title: "Block 2 - TRIIBE Talks",
+          title: "Block 2 - 3 TRIIBE Talks and morning activation zone",
         },
         { time: "12:25 PM", title: "10 minute break" },
         {
           time: "12:35 PM",
-          title: "Block 3 - TRIIBE Talks",
+          title: "Block 3 - 3 TRIIBE Talks and morning activation zone",
         },
         {
           time: "1:05 PM",
@@ -149,32 +149,32 @@ const SummitPage = () => {
         },
         {
           time: "1:55 PM",
-          title: "Block 4 - TRIIBE Talks",
+          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "2:25 PM", title: "10 minute break" },
         {
           time: "2:35 PM",
-          title: "Block 5 - TRIIBE Talks",
+          title: "Block 5 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "3:05 PM", title: "10 minute break" },
         {
           time: "3:15 PM",
-          title: "Block 6 - TRIIBE Talks",
+          title: "Block 6 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "3:45 PM", title: "10 minute break" },
         {
           time: "3:55 PM",
-          title: "Block 7 - TRIIBE Talks",
+          title: "Block 7 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "4:25 PM", title: "10 minute break" },
         {
           time: "4:35 PM",
-          title: "Block 8 - TRIIBE Talks",
+          title: "Block 8 - 3 TRIIBE Talks and afternoon activation zone",
         },
         { time: "5:05 PM", title: "10 minute break" },
         {
           time: "5:15 PM",
-          title: "Block 9 - TRIIBE Talks",
+          title: "Block 9 - 2 TRIIBE Talks",
         },
         {
           time: "5:45 PM",
@@ -188,7 +188,7 @@ const SummitPage = () => {
       location: "",
       highlight: {
         image: "/images/summit/javitscenter.jpg",
-        label: "SATURDAY · GALA",
+        label: "SATURDAY",
         name: "Black Tie VIP Gala & Fashion Show",
         description:
           "400 curated guests. Featuring keynotes, concerts and a fashion show.",
@@ -205,16 +205,16 @@ const SummitPage = () => {
         },
         {
           time: "6:20 PM",
-          title: "Parsons Fashion Show",
+          title: "Fashion Show",
         },
         {
           time: "7:00 PM",
           title: "Closing Party with served dinner",
         },
-        {
+        /* {
           time: "10:00 PM",
           title: "End of the night",
-        },
+        }, */
       ],
     },
   ];
