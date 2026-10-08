@@ -17,7 +17,7 @@ const SummitPage = () => {
       location: "",
       highlight: {
         image: "/images/summit/cohort-friday.jpeg",
-        label: "FELLOWS · EXCLUSIVE",
+        label: "FRIDAY · FORUM",
         name: "Cohort Day & Dinner Concert",
         description:
           "Founders only. Round tables, workshops, an intimate evening dinner and private concert.",
@@ -30,23 +30,73 @@ const SummitPage = () => {
       items: [
         {
           time: "8:30 AM",
-          title: "Top floor opening remarks",
+          title: "Morning Fellow Activation",
         },
         {
-          time: "9:00 AM",
-          title: "Cohort workshops and fireside chats",
+          time: "10:30 AM",
+          title: "Doors open to public",
         },
         {
-          time: "12:00 PM",
-          title: "Lunch",
+          time: "11:00 AM",
+          title: "Opening Remarks",
         },
         {
-          time: "1:00 PM",
-          title: "Afternoon sessions and interactive workshops with guests",
+          time: "11:15 AM",
+          title: "Block 1 - TRIIBE Talks",
+        },
+        { time: "11:45 AM", title: "10 minute break" },
+        {
+          time: "11:55 AM",
+          title: "Block 2 - TRIIBE Talks",
+        },
+        { time: "12:25 PM", title: "10 minute break" },
+        {
+          time: "12:35 PM",
+          title: "Block 3 - TRIIBE Talks",
         },
         {
-          time: "6:30 PM",
-          title: "TRIIBE 100 dinner with concert",
+          time: "1:05 PM",
+          title: "Lunch and activations",
+        },
+        {
+          time: "1:55 PM",
+          title: "Block 4 - TRIIBE Talks",
+        },
+        { time: "2:25 PM", title: "10 minute break" },
+        {
+          time: "2:35 PM",
+          title: "Block 5 - TRIIBE Talks",
+        },
+        { time: "3:05 PM", title: "10 minute break" },
+        {
+          time: "3:15 PM",
+          title: "Block 6 - TRIIBE Talks",
+        },
+        { time: "3:45 PM", title: "10 minute break" },
+        {
+          time: "3:55 PM",
+          title: "Block 7 - TRIIBE Talks",
+        },
+        { time: "4:25 PM", title: "10 minute break" },
+        {
+          time: "4:35 PM",
+          title: "Block 8 - TRIIBE Talks",
+        },
+        {
+          time: "5:05 PM",
+          title: "Closing remarks",
+        },
+        {
+          time: "5:20 PM",
+          title: "Reception & Friday Concert",
+        },
+        {
+          time: "7:30 PM",
+          title: "TRIIBE 100 dinner",
+        },
+        {
+          time: "9:00 PM",
+          title: "Night ends",
         },
       ],
     },
@@ -69,57 +119,67 @@ const SummitPage = () => {
       items: [
         {
           time: "8:30 AM",
+          title: "Morning Fellow Activation",
+        },
+        {
+          time: "10:30 AM",
           title: "Doors open to public",
         },
         {
-          time: "9:00 AM",
+          time: "11:00 AM",
+          title: "Opening Remarks",
+        },
+        {
+          time: "11:15 AM",
           title: "Block 1 - TRIIBE Talks",
         },
-        { time: "9:30 AM", title: "15 minute break" },
+        { time: "11:45 AM", title: "10 minute break" },
         {
-          time: "9:45 AM",
+          time: "11:55 AM",
           title: "Block 2 - TRIIBE Talks",
         },
+        { time: "12:25 PM", title: "10 minute break" },
         {
-          time: "10:15 AM",
-          title: "Refreshment break and community activations.",
-        },
-        {
-          time: "11:00 AM",
+          time: "12:35 PM",
           title: "Block 3 - TRIIBE Talks",
         },
-        { time: "11:30 AM", title: "15 minute break" },
         {
-          time: "11:45 AM",
+          time: "1:05 PM",
+          title: "Lunch and activations",
+        },
+        {
+          time: "1:55 PM",
           title: "Block 4 - TRIIBE Talks",
         },
-        { time: "12:15 PM", title: "15 minute break" },
+        { time: "2:25 PM", title: "10 minute break" },
         {
-          time: "12:30 PM",
+          time: "2:35 PM",
           title: "Block 5 - TRIIBE Talks",
         },
-        {
-          time: "1:00 PM",
-          title: "Lunch break",
-        },
-        {
-          time: "2:00 PM",
-          title: "Block 6 - TRIIBE Talks",
-        },
-        { time: "2:30 PM", title: "15 minute break" },
-        {
-          time: "2:45 PM",
-          title: "Block 7 - TRIIBE Talks",
-        },
+        { time: "3:05 PM", title: "10 minute break" },
         {
           time: "3:15 PM",
-          title: "Networking and activations",
+          title: "Block 6 - TRIIBE Talks",
         },
-        /* {
-          time: "4:30 PM",
-          title: "Venue closed to the public",
-          description: "",
-        }, */
+        { time: "3:45 PM", title: "10 minute break" },
+        {
+          time: "3:55 PM",
+          title: "Block 7 - TRIIBE Talks",
+        },
+        { time: "4:25 PM", title: "10 minute break" },
+        {
+          time: "4:35 PM",
+          title: "Block 8 - TRIIBE Talks",
+        },
+        { time: "5:05 PM", title: "10 minute break" },
+        {
+          time: "5:15 PM",
+          title: "Block 9 - TRIIBE Talks",
+        },
+        {
+          time: "5:45 PM",
+          title: "Closing remarks",
+        },
       ],
     },
     {
@@ -141,34 +201,19 @@ const SummitPage = () => {
       items: [
         {
           time: "6:00 PM",
-          title: "Gala arrival & seating",
-          description:
-            "Black tie. Plated appetizers served as guests take their seats.",
+          title: "Saturday Concert",
+        },
+        {
+          time: "6:20 PM",
+          title: "Parsons Fashion Show",
         },
         {
           time: "7:00 PM",
-          title: "Welcome remarks",
+          title: "Closing Party with served dinner",
         },
         {
-          time: "7:10 PM",
-          title: "Live celebrity musical performance.",
-        },
-        {
-          time: "7:25 PM",
-          title: "Kyle Matthys & Title Sponsor keynotes.",
-        },
-        {
-          time: "7:40 PM",
-          title:
-            "Next-Gen designed runway show. Guests vote on the winner for a cash prize.",
-        },
-        {
-          time: "8:20 PM",
-          title: "Dessert & mingling",
-        },
-        {
-          time: "11:00 PM",
-          title: "Gala concludes",
+          time: "10:00 PM",
+          title: "End of the night",
         },
       ],
     },
@@ -444,7 +489,7 @@ const SummitPage = () => {
                         </span>
 
                         {item.title === "BREAK" ||
-                        item.title === "15 minute break" ? (
+                        item.title === "10 minute break" ? (
                           <div className="flex items-center gap-4 w-full">
                             <div className="flex-1 h-px bg-gray-300"></div>
                             <span className="text-xs text-[#002c19]/80 tracking-[0.3em] uppercase">
