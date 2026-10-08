@@ -13,7 +13,7 @@ const SummitPage = () => {
   const scheduleDays = [
     {
       title: "Day 1, Friday September 17th",
-      badge: "The Cohort Day",
+      badge: "",
       location: "",
       highlight: {
         image: "/images/summit/cohort-friday.jpeg",
@@ -52,7 +52,7 @@ const SummitPage = () => {
     },
     {
       title: "Day 2, Saturday September 18th (Daytime)",
-      badge: "The Public Day",
+      badge: "",
       location: "",
       highlight: {
         image: "/images/summit/summithead.jpeg",
@@ -61,7 +61,7 @@ const SummitPage = () => {
         description:
           "400 attendees across seven simultaneous stages hosting TRIIBE Talks.",
         bullets: [
-          "7 parallel session rooms",
+          "3 parallel speaking rooms",
           "Community activations",
           "New York panoramic views",
         ],
@@ -115,27 +115,27 @@ const SummitPage = () => {
           time: "3:15 PM",
           title: "Networking and activations",
         },
-        {
+        /* {
           time: "4:30 PM",
           title: "Venue closed to the public",
           description: "",
-        },
+        }, */
       ],
     },
     {
       title: "Day 2, Saturday September 18th (Evening)",
-      badge: "VIP Gala",
+      badge: "",
       location: "",
       highlight: {
         image: "/images/summit/javitscenter.jpg",
         label: "SATURDAY · GALA",
         name: "Black Tie VIP Gala & Fashion Show",
         description:
-          "400 curated guests. Featuring keynotes, concerts, a fashion show, and paddle raise.",
+          "400 curated guests. Featuring keynotes, concerts and a fashion show.",
         bullets: [
-          "Black tie attire",
-          "Next-Gen design runway show",
-          "Keynotes & live paddle raise",
+          "Creative Cocktail attire",
+          "Next-Gen designed runway show",
+          "Keynotes and concerts",
         ],
       },
       items: [
@@ -155,12 +155,12 @@ const SummitPage = () => {
         },
         {
           time: "7:25 PM",
-          title: "Kyle Matthys & Title Sponsor keynotes & paddle raise",
+          title: "Kyle Matthys & Title Sponsor keynotes.",
         },
         {
           time: "7:40 PM",
           title:
-            "Next-Gen designer fashion show. Guests vote on the winner for a cash prize.",
+            "Next-Gen designed runway show. Guests vote on the winner for a cash prize.",
         },
         {
           time: "8:20 PM",
@@ -225,7 +225,7 @@ const SummitPage = () => {
       <section className="relative w-full bg-white overflow-hidden pb-20">
         <div className="relative w-full min-h-[500px] md:min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/summit/summithead.jpeg"
+            src="/images/triibetalk/cohort.avif"
             alt="Javits Center Exterior"
             fill
             className="object-cover object-center"
