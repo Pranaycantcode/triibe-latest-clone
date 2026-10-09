@@ -56,7 +56,7 @@ const SummitPage = () => {
         },
         {
           time: "1:05 PM",
-          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "Block 4 - 3 TRIIBE Talks and morning activation zone",
         },
         {
           time: "1:35 PM",
@@ -109,7 +109,7 @@ const SummitPage = () => {
         label: "SATURDAY · Second Day",
         name: "TRIIBE Talks",
         description:
-          "400 attendees across seven simultaneous stages hosting TRIIBE Talks.",
+          "300 attendees across seven simultaneous stages hosting TRIIBE Talks.",
         bullets: [
           "3 parallel speaking rooms",
           "Community activations",
@@ -145,7 +145,7 @@ const SummitPage = () => {
         },
         {
           time: "1:05 PM",
-          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "Block 4 - 3 TRIIBE Talks and morning activation zone",
         },
         {
           time: "1:35 PM",
@@ -191,7 +191,7 @@ const SummitPage = () => {
         label: "SATURDAY",
         name: "Black Tie VIP Gala & Fashion Show",
         description:
-          "400 curated guests. Featuring keynotes, concerts and a fashion show.",
+          "300 curated guests. Featuring keynotes, concerts and a fashion show.",
         bullets: [
           "Creative Cocktail attire",
           "Next-Gen designed runway show",
@@ -334,7 +334,7 @@ const SummitPage = () => {
               <div className="w-60 flex flex-col items-center gap-8">
                 <div className="text-center flex flex-col items-center">
                   <span className="block text-3xl sm:text-4xl md:text-5xl font-black text-[#002c19]">
-                    400
+                    300
                   </span>
                   <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
                     Attendees
