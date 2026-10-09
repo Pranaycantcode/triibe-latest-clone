@@ -56,11 +56,11 @@ const SummitPage = () => {
         },
         {
           time: "1:05 PM",
-          title: "Lunch and activations",
+          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
         },
         {
-          time: "1:55 PM",
-          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
+          time: "1:35 PM",
+          title: "Lunch and activations",
         },
         { time: "2:25 PM", title: "10 minute break" },
         {
@@ -145,11 +145,11 @@ const SummitPage = () => {
         },
         {
           time: "1:05 PM",
-          title: "Lunch and activations",
+          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
         },
         {
-          time: "1:55 PM",
-          title: "Block 4 - 3 TRIIBE Talks and afternoon activation zone",
+          time: "1:35 PM",
+          title: "Lunch and activations",
         },
         { time: "2:25 PM", title: "10 minute break" },
         {
@@ -174,7 +174,7 @@ const SummitPage = () => {
         { time: "5:05 PM", title: "10 minute break" },
         {
           time: "5:15 PM",
-          title: "Block 9 - 2 TRIIBE Talks",
+          title: "Block 9 - 2 TRIIBE Talks and afternoon activation zone",
         },
         {
           time: "5:45 PM",
