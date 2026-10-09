@@ -70,7 +70,7 @@ export const associateBoard: Person[] = [
     name: "Christian Elam",
     role: "Member",
     imagePath: "/images/team/christian-elam.jfif",
-    linkedIn: "https://www.linkedin.com/in/h-e-amb-christian-elam-4b0a471a8/",
+    linkedIn: "https://www.linkedin.com/in/christian-elam-4b0a471a8/",
   },
   {
     name: "Rida Karim",
