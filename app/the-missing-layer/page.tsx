@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "@/components/header"; 
-import CTASection from "@/components/cta"; 
-
+import Header from "@/components/header";
+import CTASection from "@/components/cta";
 
 const Cite = ({ children }: { children: React.ReactNode }) => (
   <sup className="text-[10px] text-zinc-400 font-normal ml-0.5 select-none align-super">
@@ -16,21 +15,18 @@ export default function TheMissingLayerPage() {
 
       <main className="flex-grow py-16 px-4 sm:px-6 lg:px-8">
         <article className="max-w-3xl mx-auto">
-          
           <header className="mb-12 border-b border-zinc-200 pb-8">
-            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full mb-4">
-            </span>
+            <span className="inline-block text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full mb-4"></span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-zinc-950 leading-tight">
               TRIIBE and the Missing Philanthropic Layer
             </h1>
             <div className="mt-4 flex flex-wrap items-center gap-x-4 text-sm text-zinc-600 font-medium">
               <span>Written by Kyle Matthys</span>
               <span aria-hidden="true">&bull;</span>
-              <time dateTime="2026-09-10">September 10, 2026</time>
+              <time dateTime="2026-09-10">October 9, 2026</time>
             </div>
           </header>
 
-          
           <div className="space-y-6 text-lg leading-relaxed text-zinc-700">
             <p className="text-xl font-normal text-zinc-900 leading-relaxed">
               In 2025, Americans gave $617.2 billion to charity, the largest
@@ -43,7 +39,6 @@ export default function TheMissingLayerPage() {
               the nonprofit sector.
             </p>
 
-            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Top Layer
@@ -53,7 +48,6 @@ export default function TheMissingLayerPage() {
                 <Cite>2</Cite>
               </p>
 
-              
               <div className="overflow-x-auto my-6">
                 <table className="min-w-full text-left text-sm border-collapse">
                   <thead>
@@ -158,7 +152,6 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Middle Layer
@@ -205,7 +198,6 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 Government Funding
@@ -238,7 +230,6 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Shrinking Pool
@@ -281,7 +272,6 @@ export default function TheMissingLayerPage() {
                 quarter of 2026.<Cite>14,15</Cite>
               </p>
 
-              
               <div className="flex justify-center my-6">
                 <table className="text-left text-sm border-collapse">
                   <thead>
@@ -368,7 +358,6 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 The Missing Layer
@@ -401,19 +390,12 @@ export default function TheMissingLayerPage() {
               <p className="mt-4">
                 From the outside, it looks like the money followed. Young
                 founders win awards, land press, and share impact reports that
-                read like success. Yet less than 0.002 percent of philanthropic
-                dollars reach early-stage, under-35-led initiatives (applied to
-                Giving USA&apos;s 2025 total, that is $12.3 million against
-                $617.2 billion).<Cite>2,21</Cite>
-              </p>
-              <p className="mt-4">
-                The TRIIBE 100, our global index of the 100 leading nonprofit
-                founders under 30, measures what each organization discloses
-                publicly. The 75 confirmed so far carry 512 years of nonprofit
-                leadership and have raised $8.6 million. On average, they have
-                run their organizations for 7 years and raised $115,000.
-                Measured differently than RIVET&apos;s broader estimate, the
-                conclusion is the same: Even the best of the nonprofit startup
+                read like success. Yet for TRIIBE 100, our global index of the
+                100 leading nonprofit founders under 30, measuring what each
+                organization discloses publicly, they raised $15.5 million, or
+                an average of $155,000 each. This, while carrying 653 years of
+                leadership, leading their nonprofits for an average of 6.5
+                years, highlights that even the best of the nonprofit startup
                 sector are underfunded.
               </p>
               <p className="mt-4">
@@ -426,7 +408,6 @@ export default function TheMissingLayerPage() {
               </p>
             </section>
 
-            
             <section className="pt-6">
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 mb-4">
                 What Comes Next
@@ -477,7 +458,6 @@ export default function TheMissingLayerPage() {
             </section>
           </div>
 
-          
           <footer className="mt-16 pt-10 border-t border-zinc-200">
             <h3 className="text-lg font-bold text-zinc-900 mb-6">Sources</h3>
             <ol className="list-decimal list-outside pl-5 space-y-3 text-xs leading-normal text-zinc-500">
@@ -768,7 +748,7 @@ export default function TheMissingLayerPage() {
                 </a>
                 .
               </li>
-              <li>
+              {/* <li>
                 RIVET. <em>Impact Report</em>. RIVET,{" "}
                 <a
                   href="https://rivet.org"
@@ -779,7 +759,7 @@ export default function TheMissingLayerPage() {
                   rivet.org
                 </a>
                 . Estimate covers global philanthropic giving.
-              </li>
+              </li> */}
               <li>
                 Parliament of England.{" "}
                 <em>
