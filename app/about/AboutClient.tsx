@@ -227,10 +227,10 @@ const ctaCards = [
 ];
 
 export default function AboutPage() {
-  const { count: count0, start: start0 } = useCountUp(8);
-  const { count: count1, start: start1 } = useCountUp(9);
-  const { count: count2, start: start2 } = useCountUp(90);
-  const { count: count3, start: start3 } = useCountUp(7);
+  const { count: count0, start: start0 } = useCountUp(100);
+  const { count: count1, start: start1 } = useCountUp(653);
+  const { count: count2, start: start2 } = useCountUp(23);
+  /* const { count: count3, start: start3 } = useCountUp(7); */
   const [showNewsletter, setShowNewsletter] = useState(false);
   const statsRef = useRef<HTMLDivElement>(null);
   const [animated, setAnimated] = useState(false);
@@ -243,7 +243,7 @@ export default function AboutPage() {
           start0();
           setTimeout(() => start1(), 100);
           setTimeout(() => start2(), 200);
-          setTimeout(() => start3(), 300);
+          /* setTimeout(() => start3(), 300); */
         }
       },
       { threshold: 0.3 },
@@ -388,7 +388,7 @@ export default function AboutPage() {
                 {count0}
               </p>
               <p style={{ fontSize: 11, color: "#002c19cc" }}>
-                Global departments
+                Fellows supported
               </p>
             </div>
             <div className="text-center">
@@ -396,7 +396,7 @@ export default function AboutPage() {
                 {count1}
               </p>
               <p style={{ fontSize: 11, color: "#002c19cc" }}>
-                Nonprofit founders funded
+                Years of non-profit leadership
               </p>
             </div>
             <div className="text-center">
@@ -411,16 +411,16 @@ export default function AboutPage() {
                   +
                 </span>
               </p>
-              <p style={{ fontSize: 11, color: "#002c19cc" }}>TRIIBE members</p>
+              <p style={{ fontSize: 11, color: "#002c19cc" }}>Countries covered</p>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <p style={{ fontSize: 22, fontWeight: 700, color: "#1A6B3C" }}>
                 {count3}
               </p>
               <p style={{ fontSize: 11, color: "#002c19cc" }}>
                 Locations worldwide
               </p>
-            </div>
+            </div> */}
           </div>
         </FadeUp>
 
