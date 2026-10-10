@@ -30,7 +30,7 @@ const SummitPage = () => {
       items: [
         {
           time: "8:30 AM",
-          title: "Morning Fellow Activation",
+          title: "Morning fellow activation",
         },
         {
           time: "10:30 AM",
@@ -38,7 +38,7 @@ const SummitPage = () => {
         },
         {
           time: "11:00 AM",
-          title: "Opening Remarks",
+          title: "Opening remarks",
         },
         {
           time: "11:15 AM",
@@ -88,7 +88,7 @@ const SummitPage = () => {
         },
         {
           time: "5:20 PM",
-          title: "Reception & Friday Concert",
+          title: "Reception & friday Concert",
         },
         {
           time: "7:30 PM",
@@ -119,7 +119,7 @@ const SummitPage = () => {
       items: [
         {
           time: "8:30 AM",
-          title: "Morning Fellow Activation",
+          title: "Morning fellow activation",
         },
         {
           time: "10:30 AM",
@@ -127,7 +127,7 @@ const SummitPage = () => {
         },
         {
           time: "11:00 AM",
-          title: "Opening Remarks",
+          title: "Opening remarks",
         },
         {
           time: "11:15 AM",
