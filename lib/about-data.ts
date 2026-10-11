@@ -304,12 +304,12 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/summit/AMBASSADOR PHD VLADIMIR BOZOVIC.jpg",
     linkedIn: "https://www.linkedin.com/in/vladimir-bo%C5%BEovi%C4%87-phd-4059451b/",
   },
-  /* {
+  {
     name: "Iva Kaufman",
     title: "Principal, Iva Kaufman Associates",
     imagePath: "/images/summit/IvaKaufman.jpg",
     linkedIn: "https://www.linkedin.com/in/iva-kaufman-b08242a/",
-  }, */
+  },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
   { name: "David Homan", title: "Founder, Orchestrated Connections", imagePath: "/images/team/david-homan.jpg", linkedIn: "https://www.linkedin.com/in/davidrhoman/" },
