@@ -10,7 +10,7 @@ export const csuite: Person[] = [
   {
     name: "Kyle Matthys",
     role: "Founder & CEO",
-    imagePath: "/images/team/kyle-matthys.jpg",
+    imagePath: "/images/team/KyleMatthys.jpeg",
     linkedIn: "https://www.linkedin.com/in/kylematthys/",
   },
   {
@@ -328,7 +328,7 @@ export const locations: LocationEntry[] = [
     location: "United States, New York",
     flag: "🇺🇸",
     mdName: "Kyle Matthys",
-    mdImagePath: "/images/team/kyle-matthys.jpg",
+    mdImagePath: "/images/team/KyleMatthys.jpeg",
     mdLinkedIn: "https://www.linkedin.com/in/kylematthys/",
     advisoryBoard: [
       /* hidden:
