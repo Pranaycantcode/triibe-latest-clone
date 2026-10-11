@@ -4,6 +4,7 @@ import Hero from "@/components/triibe100/Hero";
 import ZoneSection from "@/components/triibe100/ZoneSection";
 import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
+import HowWePick from "@/components/triibe100/HowWePick";
 import FellowshipBenefits from "@/components/fellowshipBenefits";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 
@@ -21,6 +22,7 @@ export default function Triibe100Page() {
     <div style={{ background: "#002C19" }}>
       <Header />
       <Hero />
+      <HowWePick />
       {zones.map((zone, i) => {
         const zoneFounders = founders.slice(i * 10, i * 10 + 10);
 
