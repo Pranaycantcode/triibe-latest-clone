@@ -39,8 +39,7 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The annual index of leading nonprofit founders under 30 to know,
-          measuring the social return on investment with Purposefy
+          The annual index of leading nonprofit founders under 30 to know.
         </p>
       </div>
     </section>
