@@ -214,8 +214,7 @@ export const legacyBoard: Person[] = [
   }, */
   {
     name: "Holland Haiis",
-    title:
-      "Founder, Alchemzing Humanity",
+    title: "Founder, Alchemzing Humanity",
     imagePath: "/images/summit/HollandHaiis.png",
     linkedIn: "https://www.linkedin.com/in/hollandhaiis/",
   },
@@ -258,7 +257,8 @@ export const legacyBoard: Person[] = [
   },
   {
     name: "Shirley Hon",
-    title: "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
+    title:
+      "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
     imagePath: "/images/team/ShirleyHon.jpg",
     linkedIn: "https://www.linkedin.com/in/shirleyw-hon/",
   },
@@ -282,7 +282,8 @@ export const legacyBoard: Person[] = [
   }, */
   {
     name: "Todd Jacobson",
-    title: "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
+    title:
+      "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
     imagePath: "/images/team/ToddJacobson.jpg",
     linkedIn: "https://www.linkedin.com/in/todd-jacobson/",
   },
@@ -299,10 +300,12 @@ export const legacyBoard: Person[] = [
     linkedIn: "",
   },
   {
-    name: "AMBASSADOR PHD VLADIMIR BOZOVIC",
-    title: "CONSUL GENERAL OF SERBIA IN NYC\n\nPRESIDENT OF SOCIETY OF FOREIGN CONSULS IN NEW YORK",
+    name: "Ambassador PhD Vladimir Bozovic",
+    title:
+      "Consul General of Serbia in NYC\n\nPresident of Society of Foreign Consuls in New York",
     imagePath: "/images/summit/AMBASSADOR PHD VLADIMIR BOZOVIC.jpg",
-    linkedIn: "https://www.linkedin.com/in/vladimir-bo%C5%BEovi%C4%87-phd-4059451b/",
+    linkedIn:
+      "https://www.linkedin.com/in/vladimir-bo%C5%BEovi%C4%87-phd-4059451b/",
   },
   {
     name: "Iva Kaufman",
@@ -438,14 +441,12 @@ export const locations: LocationEntry[] = [
         linkedIn: "",
         title: "Project Head at Marie Projects Ltd.",
       }, */
-
       /* {
         name: "Sanjoy Roy Choudhury",
         imagePath: "/images/team/SanjoyRoyChoudhury.jpg",
         linkedIn: "https://www.linkedin.com/in/sanjoy-roychoudhury-2535a5325/",
         title: "International Energy & Commodities Strategist",
       }, */
-
       /* {
         name: "Indranil Dutta",
         imagePath: "/images/team/IndranilDutta.jpeg",
