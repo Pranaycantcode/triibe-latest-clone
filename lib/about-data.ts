@@ -429,7 +429,7 @@ export const locations: LocationEntry[] = [
     location: "India, Ranchi",
     flag: "🇮🇳",
     mdName: "Satyam Pandey",
-    mdImagePath: "/images/team/satyam-pandey.jpg",
+    mdImagePath: "/images/team/SatyamPandey.jpg",
     mdLinkedIn: "https://www.linkedin.com/in/satyyampandey/",
     advisoryBoard: [
       /* {
