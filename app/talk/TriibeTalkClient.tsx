@@ -214,7 +214,7 @@ const EventsPage = () => {
               <div className="flex justify-end">
                 <div className="relative w-full max-w-[630px] h-[360px] rounded-xl overflow-hidden shadow-lg">
                   <Image
-                    src="/images/home/TRIIBE-TALK.png"
+                    src="/images/triibetalk/TeaCeremony.jpeg"
                     alt="TRIIBE Talk"
                     fill
                     className="object-cover"

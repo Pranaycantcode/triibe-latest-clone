@@ -478,6 +478,12 @@ export const locations: LocationEntry[] = [
         linkedIn: "https://www.linkedin.com/in/christine-amour-levar007/",
         title: "Co-Founder, Investors For Climate",
       },
+      {
+        name: "Ee Ling Lim",
+        imagePath: "/images/team/EeLingLim.jpg",
+        linkedIn: "https://www.linkedin.com/in/ee-ling-lim/",
+        title: "Co-Founder, Wavesparks",
+      },
     ],
     advisoryBoardForming: false,
   },
