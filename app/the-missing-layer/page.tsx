@@ -440,7 +440,7 @@ export default function TheMissingLayerPage() {
               </p>
 
               <p className="my-8 leading-relaxed">
-                So we built TRIIBE, maximizing return on impact and income for
+                So we built TRIIBE, maximizing return on impact and investment for
                 philentrepreneurs. We back the TRIIBE 100 with funding,
                 mentorship, and measurement of their social return on
                 investment. TRIIBE Talks give visibility: Intergenerational
