@@ -28,7 +28,7 @@ export default function Hero() {
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-3xl md:text-3xl lg:text-[56px] text-center tracking-tight leading-tight max-w-200">
               Maximizing return on impact
               <br />
-              and income for nonprofits
+              and investment for nonprofits
             </h1>
           </div>
 
