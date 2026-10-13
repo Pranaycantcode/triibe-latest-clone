@@ -79,7 +79,7 @@ export default function WorldMapSection() {
   return (
     <section className="w-full bg-[#002C19] py-8 sm:py-12 px-4 sm:px-8 border-b border-white/10 select-none">
       <div className="max-w-[1100px] mx-auto">
-        <div className="relative bg-black rounded-3xl p-4 sm:p-8 border border-white/10 shadow-2xl">
+        <div className="relative bg-transparent p-4 sm:p-8">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="w-full h-auto drop-shadow-sm pointer-events-none"
