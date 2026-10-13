@@ -2,7 +2,7 @@ export default function HowWePick() {
   const criteria = [
     "We research every founder’s work before any interview. Then a 30-minute Zoom call gets us to know the person behind it.",
     "We measure each founder’s social return on investment with Purposefy, so the value of their impact, and of our donation, is clear.",
-    "We don’t bet on ideas. We back founders with years of impact already behind them, an average of 6.5 across the 100.",
+    "We don’t bet on ideas. We back founders with years of impact already behind them. Fellows average 6.5 years each already leading foundations",
   ];
 
   return (
