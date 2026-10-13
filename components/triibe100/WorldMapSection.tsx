@@ -13,34 +13,27 @@ interface CountryLocation {
 const FOUNDER_LOCATIONS: CountryLocation[] = [
   { name: "United States", count: 58, coordinates: [-98.5795, 39.8283] },
   { name: "Canada", count: 2, coordinates: [-106.3468, 56.1304] },
+  { name: "Mexico", count: 1, coordinates: [-102.5528, 23.6345] },
+  { name: "Haiti", count: 1, coordinates: [-72.2852, 18.9712] },
+  { name: "Brazil", count: 1, coordinates: [-51.9253, -14.235] },
   { name: "United Kingdom", count: 3, coordinates: [-1.1743, 52.3555] },
   { name: "Germany", count: 2, coordinates: [10.4515, 51.1657] },
   { name: "Switzerland", count: 1, coordinates: [8.2275, 46.8182] },
   { name: "Luxembourg", count: 2, coordinates: [6.1296, 49.8153] },
+  { name: "Tunisia", count: 1, coordinates: [9.5375, 33.8869] },
+  { name: "Turkey", count: 1, coordinates: [35.2433, 38.9637] },
   { name: "Lebanon", count: 1, coordinates: [35.8623, 33.8547] },
-  { name: "India", count: 6, coordinates: [78.9629, 20.5937] },
+  { name: "Ghana", count: 2, coordinates: [-1.0232, 7.9465] },
+  { name: "Nigeria", count: 2, coordinates: [8.6753, 9.082] },
+  { name: "Uganda", count: 1, coordinates: [32.2903, 1.3733] },
+  { name: "Kenya", count: 3, coordinates: [37.9062, -0.0236] },
   { name: "Pakistan", count: 1, coordinates: [69.3451, 30.3753] },
+  { name: "India", count: 6, coordinates: [78.9629, 20.5937] },
+  { name: "Sri Lanka", count: 1, coordinates: [80.7718, 7.8731] },
   { name: "Bangladesh", count: 2, coordinates: [90.3563, 23.685] },
   { name: "Philippines", count: 2, coordinates: [121.774, 12.8797] },
-  { name: "Nigeria", count: 2, coordinates: [8.6753, 9.082] },
-  { name: "Ghana", count: 2, coordinates: [-1.0232, 7.9465] },
-  { name: "Kenya", count: 3, coordinates: [37.9062, -0.0236] },
-  { name: "Uganda", count: 1, coordinates: [32.2903, 1.3733] },
-  { name: "South Africa", count: 1, coordinates: [24.6727, -28.7282] },
-  { name: "Tunisia", count: 1, coordinates: [9.5375, 33.8869] },
-  { name: "Brazil", count: 1, coordinates: [-51.9253, -14.235] },
-  { name: "Haiti", count: 1, coordinates: [-72.2852, 18.9712] },
-  { name: "Trinidad and Tobago", count: 1, coordinates: [-61.2225, 10.6918] },
+  { name: "Australia", count: 1, coordinates: [133.7751, -25.2744] },
   { name: "New Zealand", count: 1, coordinates: [174.886, -40.9006] },
-];
-
-const CONTINENT_BREAKDOWN = [
-  { name: "North America", count: 62 },
-  { name: "Africa", count: 11 },
-  { name: "Asia", count: 12 },
-  { name: "Europe", count: 8 },
-  { name: "Oceania", count: 2 },
-  { name: "South America", count: 2 },
 ];
 
 interface LandPath {
@@ -86,38 +79,15 @@ export default function WorldMapSection() {
   }, [worldData, pathGenerator]);
 
   return (
-    <section className="w-full bg-[#002C19] text-white py-14 px-4 sm:px-8 border-b border-white/10 select-none">
+    <section className="w-full bg-[#002C19] py-8 sm:py-12 px-4 sm:px-8 border-b border-white/10 select-none">
       <div className="max-w-[1100px] mx-auto">
-        {/* Top Header & Stats Counter */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-8 border-b border-white/15 gap-6">
-          <div>
-            <div className="text-white/70 text-sm font-medium tracking-wide mb-1">
-              United States
-            </div>
-            <div className="text-5xl font-extrabold tracking-tight text-white">
-              58
-            </div>
-          </div>
-          <div className="text-left sm:text-right">
-            <div className="text-white/70 text-sm font-medium tracking-wide mb-1">
-              International
-            </div>
-            <div className="text-5xl font-extrabold tracking-tight text-white">
-              42{" "}
-              <span className="text-lg font-normal text-white/60">
-                in 22 countries
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* 2D Curved Equal-Area Map (Inner Pure Black Card) */}
-        <div className="relative my-8 bg-black rounded-3xl p-4 sm:p-8 border border-white/10 shadow-2xl">
+        
+        <div className="relative bg-black rounded-3xl p-4 sm:p-8 border border-white/10 shadow-2xl">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="w-full h-auto drop-shadow-sm pointer-events-none"
           >
-            {/* Latitude/Longitude Curved Graticules */}
+            
             {graticulePath && (
               <path
                 d={graticulePath}
@@ -127,7 +97,7 @@ export default function WorldMapSection() {
               />
             )}
 
-            {/* Landmass Outlines (Grey) */}
+            
             {landPaths.map((c: LandPath, i: number) => (
               <path
                 key={c.id || i}
@@ -138,7 +108,7 @@ export default function WorldMapSection() {
               />
             ))}
 
-            {/* OG TRIIBE Green Founder Dots */}
+            
             {FOUNDER_LOCATIONS.map((loc) => {
               const coords = projection(loc.coordinates);
               if (!coords) return null;
@@ -159,42 +129,6 @@ export default function WorldMapSection() {
               );
             })}
           </svg>
-        </div>
-
-        {/* Legend */}
-        <div className="flex items-center justify-center gap-8 mb-8 text-sm">
-          <div className="flex items-center gap-2">
-            <span className="w-3.5 h-3.5 rounded-full bg-[#002C19] border border-white/60" />
-            <span className="text-white/80">United States: 58</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="w-3.5 h-3.5 rounded-full bg-[#002C19] border border-white/60" />
-            <span className="text-white/80">International: 42</span>
-          </div>
-        </div>
-
-        {/* Continent Breakdown Horizontal Bars */}
-        <div className="space-y-4 max-w-[700px] mx-auto pt-2">
-          {CONTINENT_BREAKDOWN.map((region) => {
-            const barWidth = (region.count / 62) * 100;
-
-            return (
-              <div key={region.name} className="flex items-center text-sm gap-4">
-                <span className="w-32 text-right text-white/70 font-medium text-xs sm:text-sm">
-                  {region.name}
-                </span>
-                <div className="flex-1 bg-white/10 rounded-full h-3.5 overflow-hidden">
-                  <div
-                    style={{ width: `${barWidth}%` }}
-                    className="bg-white/80 h-full rounded-full"
-                  />
-                </div>
-                <span className="w-8 text-left text-white/80 text-xs font-semibold">
-                  {region.count}
-                </span>
-              </div>
-            );
-          })}
         </div>
       </div>
     </section>
