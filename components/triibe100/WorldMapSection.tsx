@@ -97,9 +97,9 @@ export default function WorldMapSection() {
               <path
                 key={c.id || i}
                 d={c.d || ""}
-                fill="#2b2f36"
-                stroke="#373c45"
-                strokeWidth="0.5"
+                fill="#ffffff"
+                stroke="#002C19"
+                strokeWidth="0.6"
               />
             ))}
 
