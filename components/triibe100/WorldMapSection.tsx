@@ -77,7 +77,7 @@ export default function WorldMapSection() {
   }, [worldData, pathGenerator]);
 
   return (
-    <section className="w-full bg-[#002C19] py-8 sm:py-12 px-4 sm:px-8 border-b border-white/10 select-none">
+    <section className="w-full bg-[#002C19] py-8 sm:py-12 px-4 sm:px-8 select-none">
       <div className="max-w-[1100px] mx-auto">
         <div className="relative bg-transparent p-4 sm:p-8">
           <svg
@@ -88,8 +88,8 @@ export default function WorldMapSection() {
               <path
                 d={graticulePath}
                 fill="none"
-                stroke="rgba(255, 255, 255, 0.08)"
-                strokeWidth="0.7"
+                stroke="rgba(255, 255, 255, 0.04)"
+                strokeWidth="0.5"
               />
             )}
 
@@ -97,9 +97,9 @@ export default function WorldMapSection() {
               <path
                 key={c.id || i}
                 d={c.d || ""}
-                fill="#ffffff"
-                stroke="#002C19"
-                strokeWidth="0.6"
+                fill="rgba(255, 255, 255, 0.08)"
+                stroke="rgba(255, 255, 255, 0.18)"
+                strokeWidth="0.5"
               />
             ))}
 
@@ -116,9 +116,9 @@ export default function WorldMapSection() {
                   cx={cx}
                   cy={cy}
                   r={radius}
-                  fill="#002C19"
-                  stroke="#ffffff"
-                  strokeWidth="1.2"
+                  fill="#ffffff"
+                  stroke="#002C19"
+                  strokeWidth="1.8"
                 />
               );
             })}
