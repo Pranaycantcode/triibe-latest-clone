@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Hero from "@/components/triibe100/Hero";
+import WorldMapSection from "@/components/triibe100/WorldMapSection";
 import ZoneSection from "@/components/triibe100/ZoneSection";
 import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
@@ -22,6 +23,7 @@ export default function Triibe100Page() {
     <div style={{ background: "#002C19" }}>
       <Header />
       <Hero />
+      <WorldMapSection />
       <HowWePick />
       {zones.map((zone, i) => {
         const zoneFounders = founders.slice(i * 10, i * 10 + 10);
