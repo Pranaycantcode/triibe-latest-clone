@@ -88,7 +88,7 @@ export default function WorldMapSection() {
               <path
                 d={graticulePath}
                 fill="none"
-                stroke="rgba(255, 255, 255, 0.04)"
+                stroke="rgba(255, 255, 255, 0.05)"
                 strokeWidth="0.5"
               />
             )}
@@ -97,8 +97,8 @@ export default function WorldMapSection() {
               <path
                 key={c.id || i}
                 d={c.d || ""}
-                fill="rgba(255, 255, 255, 0.08)"
-                stroke="rgba(255, 255, 255, 0.18)"
+                fill="rgba(255, 255, 255, 0.13)"
+                stroke="rgba(255, 255, 255, 0.22)"
                 strokeWidth="0.5"
               />
             ))}
