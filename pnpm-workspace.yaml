@@ -1,0 +1,12 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
+permissions:
+  '@prisma/client':
+    build: true
+  '@prisma/engines':
+    build: true
+  prisma:
+    build: true
+    skills: true
