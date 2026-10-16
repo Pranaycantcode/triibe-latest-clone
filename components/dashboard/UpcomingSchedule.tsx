@@ -1,6 +1,6 @@
 import { getGoogleCalendarUrl, getICSDataUrl } from "@/lib/calendar";
 
-export interface ScheduleItemData {
+export interface ScheduleEvent {
   id: string;
   title: string;
   description: string | null;
@@ -11,75 +11,81 @@ export interface ScheduleItemData {
   link: string | null;
 }
 
-export function UpcomingSchedule({ items }: { items: ScheduleItemData[] }) {
-  if (items.length === 0) {
+interface UpcomingScheduleProps {
+  events: ScheduleEvent[];
+}
+
+export function UpcomingSchedule({ events }: UpcomingScheduleProps) {
+  if (events.length === 0) {
     return (
-      <div className="p-8 text-center border border-dashed border-neutral-300 rounded-xl bg-neutral-50/50">
-        <p className="text-sm text-neutral-500">
-          No upcoming grant deadlines or events scheduled right now.
+      <div className="rounded-2xl border border-dashed border-gray-300 p-12 text-center bg-white">
+        <p className="text-base text-[#002c19]/70">
+          No upcoming grant deadlines or gathering dates scheduled right now.
         </p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-3">
-      {items.map((item) => {
-        const isGrant = item.type === "GRANT_DEADLINE";
-        const start = new Date(item.startDate);
-        const googleUrl = getGoogleCalendarUrl(item);
-        const icsUrl = getICSDataUrl(item);
+    <div className="space-y-4">
+      {events.map((event) => {
+        const isGrant = event.type === "GRANT_DEADLINE";
+        const start = new Date(event.startDate);
+        const googleUrl = getGoogleCalendarUrl(event);
+        const icsUrl = getICSDataUrl(event);
 
         return (
           <div
-            key={item.id}
-            className="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl border border-neutral-200 bg-white hover:border-neutral-300 transition-colors gap-4"
+            key={event.id}
+            className="flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-2xl border border-gray-200 bg-white hover:border-[#1C5945]/40 hover:shadow-md transition-all duration-300 gap-6"
           >
-            <div className="flex items-start gap-4">
-              <div className="flex flex-col items-center justify-center min-w-[56px] px-2.5 py-2 rounded-lg bg-neutral-100 border border-neutral-200 text-neutral-900 shrink-0">
-                <span className="text-[10px] uppercase font-bold tracking-wider text-neutral-500">
+            <div className="flex items-start gap-5">
+              <div className="flex flex-col items-center justify-center min-w-[64px] h-[64px] rounded-xl bg-[#3036411A] text-[#002c19] shrink-0">
+                <span className="text-[11px] uppercase font-bold tracking-wider text-[#002c19]/70">
                   {start.toLocaleString("en-US", { month: "short" })}
                 </span>
-                <span className="text-lg font-bold leading-none mt-0.5">
+                <span className="text-2xl font-bold leading-none mt-0.5">
                   {start.getDate()}
                 </span>
               </div>
 
               <div>
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2 mb-1.5">
                   <span
-                    className={`text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full ${
+                    className={`text-xs font-semibold px-2.5 py-0.5 rounded ${
                       isGrant
-                        ? "bg-amber-100 text-amber-800"
-                        : "bg-emerald-100 text-emerald-800"
+                        ? "bg-amber-100 text-amber-900 border border-amber-200"
+                        : "bg-[#002c19]/10 text-[#002c19]"
                     }`}
                   >
-                    {isGrant ? "Grant Deadline" : "TRIIBE Event"}
+                    {isGrant ? "Grant Cutoff" : "Community Event"}
                   </span>
-                  {item.location && (
-                    <span className="text-xs text-neutral-500">
-                      {item.location}
+                  {event.location && (
+                    <span className="text-xs text-[#002c19]/60 font-medium">
+                      • {event.location}
                     </span>
                   )}
                 </div>
-                <h3 className="font-semibold text-neutral-900 mt-1 text-sm sm:text-base">
-                  {item.title}
+
+                <h3 className="text-lg md:text-xl font-bold text-[#002c19]">
+                  {event.title}
                 </h3>
-                {item.description && (
-                  <p className="text-xs sm:text-sm text-neutral-600 line-clamp-1 mt-0.5">
-                    {item.description}
+
+                {event.description && (
+                  <p className="text-sm text-[#002c19]/80 mt-1 line-clamp-2 max-w-2xl leading-relaxed">
+                    {event.description}
                   </p>
                 )}
               </div>
             </div>
 
-            <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
-              {item.link && (
+            <div className="flex items-center gap-2.5 shrink-0 self-start sm:self-center">
+              {event.link && (
                 <a
-                  href={item.link}
+                  href={event.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-medium px-3 py-1.5 rounded-md bg-neutral-100 hover:bg-neutral-200 text-neutral-800 transition"
+                  className="h-[38px] px-4 rounded-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-colors text-xs font-semibold inline-flex items-center"
                 >
                   View Details
                 </a>
@@ -88,14 +94,14 @@ export function UpcomingSchedule({ items }: { items: ScheduleItemData[] }) {
                 href={googleUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs font-medium px-2.5 py-1.5 rounded-md border border-neutral-200 hover:bg-neutral-50 text-neutral-700 transition"
+                className="h-[38px] px-3.5 rounded-sm border border-gray-300 hover:border-[#002c19] text-[#002c19] hover:bg-gray-50 transition-colors text-xs font-medium inline-flex items-center"
               >
                 + Google
               </a>
               <a
                 href={icsUrl}
-                download={`${item.title.toLowerCase().replace(/\s+/g, "-")}.ics`}
-                className="text-xs font-medium px-2.5 py-1.5 rounded-md border border-neutral-200 hover:bg-neutral-50 text-neutral-700 transition"
+                download={`${event.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.ics`}
+                className="h-[38px] px-3.5 rounded-sm border border-gray-300 hover:border-[#002c19] text-[#002c19] hover:bg-gray-50 transition-colors text-xs font-medium inline-flex items-center"
               >
                 .ICS
               </a>
