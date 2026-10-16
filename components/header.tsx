@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { NavAuthButton } from "@/components/NavAuthButton";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,19 +37,11 @@ export default function Header() {
           <div className="hidden xl:flex items-center gap-8">
             {[
               { name: "Home", href: "/" },
-
               { name: "Summit", href: "/summit" },
-
               { name: "TRIIBE I00", href: "/100" },
-
               { name: "TRIIBE Talk", href: "/talk" },
-
               { name: "TRIIBE Grants", href: "/grants" },
-
-              /* { name: "Fellowship", href: "/fellowship" }, */
-
               { name: "About Us", href: "/about" },
-              // { name: "Contact Us", href: "/contact" },
             ].map((link) => (
               <a
                 key={link.href}
@@ -67,6 +59,9 @@ export default function Header() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden xl:flex items-center gap-4">
+            {/* Added before Donate CTA */}
+            <NavAuthButton />
+
             <a
               href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
               target="_blank"
@@ -75,12 +70,6 @@ export default function Header() {
             >
               Donate
             </a>
-            {/* <a
-              href="/apply"
-              className="h-9 px-4 py-2 bg-[#ffffff] font-normal text-black text-sm text-center tracking-[0] leading-5 hover:bg-[#f0f0f0] transition-colors rounded inline-flex items-center"
-            >
-              Apply
-            </a> */}
           </div>
 
           {/* Mobile menu button */}
@@ -100,6 +89,7 @@ export default function Header() {
         </nav>
       </div>
 
+      {/* Mobile Menu Dropdown */}
       <div
         className={`xl:hidden px-4 py-4 bg-[#002c19] ${
           mobileMenuOpen ? "block" : "hidden"
@@ -108,19 +98,11 @@ export default function Header() {
         <div className="flex flex-col gap-1">
           {[
             { name: "Home", href: "/" },
-
             { name: "Summit", href: "/summit" },
-
             { name: "TRIIBE I00", href: "/100" },
-
             { name: "TRIIBE Talk", href: "/talk" },
-
             { name: "TRIIBE Grants", href: "/grants" },
-
-            /* { name: "Fellowship", href: "/fellowship" }, */
-
             { name: "About Us", href: "/about" },
-            // { name: "Contact us", href: "/contact" },
           ].map((link) => (
             <a
               key={link.href}
@@ -137,6 +119,9 @@ export default function Header() {
           ))}
 
           <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-white/20">
+            {/* Added before Donate CTA on Mobile */}
+            <NavAuthButton onItemClick={() => setMobileMenuOpen(false)} />
+
             <a
               href="https://donate.rayzeapp.com/orgs/tIbe07j0XKkLQezHHXoz"
               target="_blank"
@@ -146,13 +131,6 @@ export default function Header() {
             >
               Donate
             </a>
-            {/* <a
-              href="/apply"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-6 py-3 text-center text-sm font-semibold text-black bg-white rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              Apply
-            </a> */}
           </div>
         </div>
       </div>
