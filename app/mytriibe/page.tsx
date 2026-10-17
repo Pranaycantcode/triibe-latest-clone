@@ -45,21 +45,24 @@ export default async function MyTriibePage() {
               Welcome back{session.name ? `, ${session.name}` : ""}
             </h1>
             <p className="text-[#002c19]/80 text-base md:text-lg mt-2 font-normal">
-              Signed in as <span className="font-semibold text-[#002c19]">{session.email}</span>
+              Signed in as{" "}
+              <span className="font-semibold text-[#002c19]">
+                {session.email}
+              </span>
             </p>
           </div>
 
           <div className="flex items-center gap-3">
             <Link
               href="/"
-              className="h-[44px] px-6 rounded-sm border border-[#002c19] text-[#002c19] hover:bg-white transition-colors text-sm font-medium inline-flex items-center"
+              className="h-[44px] min-w-[130px] px-6 rounded-sm border border-[#002c19] text-[#002c19] hover:bg-white transition-colors text-sm font-medium whitespace-nowrap inline-flex items-center justify-center text-center"
             >
               Back to Home
             </Link>
-            <form action={logoutAction}>
+            <form action={logoutAction} className="m-0">
               <button
                 type="submit"
-                className="h-[44px] px-6 rounded-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-colors text-sm font-medium inline-flex items-center cursor-pointer"
+                className="h-[44px] min-w-[130px] px-6 rounded-sm bg-[#002c19] text-white hover:bg-[#1C5945] transition-colors text-sm font-medium whitespace-nowrap inline-flex items-center justify-center text-center cursor-pointer"
               >
                 Sign Out
               </button>
@@ -77,7 +80,8 @@ export default async function MyTriibePage() {
                   TRIIBE Grants & Impact Opportunities
                 </p>
                 <p className="text-sm md:text-base text-[#002c19]/80 mt-2 max-w-xl">
-                  Explore current funding cycles, track your application milestones, and access official grant guidelines.
+                  Explore current funding cycles, track your application
+                  milestones, and access official grant guidelines.
                 </p>
               </div>
 
@@ -96,7 +100,8 @@ export default async function MyTriibePage() {
                 Upcoming Dates & Grant Deadlines
               </h2>
               <p className="text-[#002c19]/80 text-sm md:text-base mt-1">
-                Sync critical cutoff dates, gathering sessions, and TRIIBE talks directly to your schedule.
+                Sync critical cutoff dates, gathering sessions, and TRIIBE talks
+                directly to your schedule.
               </p>
             </div>
 
@@ -109,7 +114,8 @@ export default async function MyTriibePage() {
                 Partner Ecosystem & Resources
               </h2>
               <p className="text-[#002c19]/80 text-sm md:text-base mt-1">
-                Vetted platforms, hiring networks, and fellowship access curated for the TRIIBE community.
+                Vetted platforms, hiring networks, and fellowship access curated
+                for the TRIIBE community.
               </p>
             </div>
 
