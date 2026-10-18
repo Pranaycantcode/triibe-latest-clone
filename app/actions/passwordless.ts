@@ -73,6 +73,8 @@ export async function verifyCodeAction(
   const code = (formData.get("code") as string)?.trim();
   let shouldRedirect = false;
 
+  const MAX_ATTEMPTS = 5;
+
   if (!email || !code || code.length !== 6) {
     return { error: "Please enter a valid 6-digit verification code.", email };
   }
@@ -81,7 +83,6 @@ export async function verifyCodeAction(
     const record = await prisma.verificationToken.findFirst({
       where: {
         identifier: email,
-        code,
         expires: {
           gt: new Date(),
         },
@@ -90,7 +91,37 @@ export async function verifyCodeAction(
 
     if (!record) {
       return {
-        error: "Incorrect code. Please check your email and try again.",
+        error:
+          "This code has expired or has already been used. Please request a new one.",
+        email,
+      };
+    }
+
+    if (record.attempts >= MAX_ATTEMPTS - 1 && record.code !== code) {
+      await prisma.verificationToken.delete({
+        where: { id: record.id },
+      });
+
+      return {
+        error:
+          "Too many incorrect attempts. For security, please request a new login code.",
+        email,
+      };
+    }
+
+    if (record.code !== code) {
+      const updated = await prisma.verificationToken.update({
+        where: { id: record.id },
+        data: {
+          attempts: {
+            increment: 1,
+          },
+        },
+      });
+
+      const remaining = MAX_ATTEMPTS - updated.attempts;
+      return {
+        error: `Incorrect code. ${remaining} attempt${remaining === 1 ? "" : "s"} remaining.`,
         email,
       };
     }

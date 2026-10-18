@@ -19,7 +19,6 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 w-full max-w-[100vw] overflow-hidden bg-[#002c19] border-b border-[#002c19]">
       <div className="w-full px-4 md:px-25 lg:px-50">
         <nav className="flex h-16 items-center justify-between w-full max-w-[1200px] mx-auto">
-          {/* Logo */}
           <div className="font-normal text-[#ffffff] text-xl tracking-[0.50px] leading-7">
             <a href="/">
               <Image
@@ -33,7 +32,6 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden xl:flex items-center gap-8">
             {[
               { name: "Home", href: "/" },
@@ -57,9 +55,7 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Desktop CTA Buttons */}
           <div className="hidden xl:flex items-center gap-4">
-            {/* Added before Donate CTA */}
             <NavAuthButton />
 
             <a
@@ -72,7 +68,6 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Mobile menu button */}
           <div className="xl:hidden relative">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -89,7 +84,6 @@ export default function Header() {
         </nav>
       </div>
 
-      {/* Mobile Menu Dropdown */}
       <div
         className={`xl:hidden px-4 py-4 bg-[#002c19] ${
           mobileMenuOpen ? "block" : "hidden"
@@ -119,7 +113,6 @@ export default function Header() {
           ))}
 
           <div className="flex flex-col gap-3 pt-4 mt-4 border-t border-white/20">
-            {/* Added before Donate CTA on Mobile */}
             <NavAuthButton onItemClick={() => setMobileMenuOpen(false)} />
 
             <a
