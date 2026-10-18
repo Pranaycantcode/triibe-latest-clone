@@ -33,7 +33,7 @@ export default function Hero() {
             color: "#002c19",
             opacity: 0.65,
             fontWeight: 300,
-            maxWidth: "420px",
+            maxWidth: "max-content",
             margin: "0 auto",
             textAlign: "center",
             lineHeight: 1.6,
