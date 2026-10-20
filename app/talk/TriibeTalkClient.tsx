@@ -131,7 +131,7 @@ const mediaCards = [
       {
         type: "link",
         text: "Read",
-        href: "https://blog.triibe.org/p/the-triibune-october-2026",
+        href: "/blog/the-triibune-october-2026",
       },
     ],
   },
