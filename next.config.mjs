@@ -5,7 +5,6 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      
       {
         source: "/index",
         destination: "/100",
@@ -17,7 +16,6 @@ const nextConfig = {
         permanent: true,
       },
 
-      
       {
         source: "/about-us",
         destination: "/about",
@@ -58,13 +56,13 @@ const nextConfig = {
         destination: "/100",
         permanent: true,
       },
-      
+
       {
         source: "/apply",
         destination: "/talk",
         permanent: true,
       },
-      
+
       {
         source: "/triibeindex",
         destination: "/100",
@@ -90,6 +88,12 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "images.lumacdn.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.beehiiv.com",
         port: "",
         pathname: "/**",
       },

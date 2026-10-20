@@ -182,7 +182,7 @@ const EventsPage = () => {
               />
 
               <p className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Intergenerational talks featuring next-gen voices
+                Intergenerational and interdisciplinary talks featuring next-gen voices
               </p>
 
               <div className="flex w-full items-center justify-start gap-4">

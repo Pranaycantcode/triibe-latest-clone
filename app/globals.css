@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -187,4 +188,45 @@ body {
 
 .branch-revealed {
   animation: branchGrow 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.triibune-article {
+  line-height: 1.8;
+}
+
+.triibune-article table {
+  width: 100% !important;
+  max-width: 100% !important;
+  border: none !important;
+  margin: 1.5rem 0 !important;
+  display: block;
+}
+
+.triibune-article tbody,
+.triibune-article tr {
+  display: block;
+  width: 100%;
+}
+
+.triibune-article td {
+  display: block;
+  width: 100% !important;
+  padding: 0.5rem 0 !important;
+  border: none !important;
+}
+
+.triibune-article a {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.triibune-article img {
+  border-radius: 0.75rem;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  display: block;
 }
