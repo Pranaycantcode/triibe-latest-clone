@@ -11,21 +11,24 @@ export const csuite: Person[] = [
     name: "Kyle Matthys",
     role: "Founder & CEO",
     imagePath: "/images/team/KyleMatthys.jpeg",
-    description: "Description for Kyle Matthys",
+    description:
+      "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE 100, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
     linkedIn: "https://www.linkedin.com/in/kylematthys/",
   },
   {
     name: "Nawaf Alshaikhmubarak",
     role: "Chief Operating Officer",
     imagePath: "/images/team/nawaf-alshaikhmubarak.jpg",
-    description: "Description for Nawaf Alshaikhmubarak",
+    description:
+      "Nawaf Alshaikhmubarak is a Mechanical Engineering student at NYU Tandon School of Engineering and Chief Operating Officer of TRIIBE, where he oversees strategy, partnerships, financial planning, and operations to support emerging nonprofit founders. With experience in software engineering from his internship at Aramco’s Houston Research Center, he combines technical problem-solving with organizational leadership. At TRIIBE, he has helped lead the Changemaker Summit and facilitated conversations connecting nonprofit founders, mentors, and leaders to strengthen collaboration and expand social impact.",
     linkedIn: "https://www.linkedin.com/in/nawaf-mub/",
   },
   {
     name: "James Hetherington",
     role: "Board Chair",
     imagePath: "/images/team/james-hetherington.jpg",
-    description: "Description for James Hetherington",
+    description:
+      "James Hetherington serves as Board Chair at TRIIBE, supporting its mission to help young nonprofit founders build sustainable, high-impact organizations. He contributes to the organization’s governance and strategic direction as it connects emerging changemakers with philanthropic funding, mentorship, and practical resources. Through initiatives such as the College Fellowship, TRIIBE Talks, and TRIIBE 100, James supports TRIIBE’s broader goal of strengthening the nonprofit startup ecosystem and helping young social entrepreneurs turn promising ideas into lasting impact.",
     linkedIn: "https://www.linkedin.com/in/james-hetherington-590b981b8/",
   },
 ];
@@ -35,14 +38,16 @@ export const associateBoard: Person[] = [
     name: "Jovan Nguyen Tran",
     role: "Chair",
     imagePath: "/images/team/jovan-nguyen-tran.jfif",
-    description: "Description for Jovan Nguyen Tran",
+    description:
+      "Jovan Nguyen-Tran is an aspiring business and finance professional interested in entrepreneurship, financial markets, and leadership. Alongside Gavan Roi, he organized the 2025 Finance Mentorship Panel at Singapore American School, connecting students with professionals from J.P. Morgan, BlackRock, BP, and SC Ventures. He also became the first international participant in Bhutan’s DeSuung Programme, undertaking leadership and resilience training and serving as a Section Captain. Having traveled to more than 60 countries, Jovan brings a global perspective and a commitment to mentorship, knowledge-sharing, and helping young people explore opportunities in business and finance.",
     linkedIn: "https://www.linkedin.com/in/jovannguyentran/",
   },
   {
     name: "Laya Pothunuri",
     role: "Vice Chair",
     imagePath: "/images/team/laya-pothunuri.jpg",
-    description: "Description for Laya Pothunuri",
+    description:
+      "Laya Pothunuri is a sustainability advocate and engineer with an MPhil in Engineering for Sustainable Development from the University of Cambridge. As a National Geographic Young Explorer and DARWIN200 Leader, she has explored circular economy solutions, water filtration, and plastic upcycling. Through her engagement with Chatham House, the Royal Botanic Gardens, Kew, and Generation Earthshot, she champions climate action, biodiversity conservation, and youth participation in building a sustainable future.",
     linkedIn: "https://www.linkedin.com/in/laya-pothunuri-964878175/",
   },
   /* {
@@ -55,14 +60,16 @@ export const associateBoard: Person[] = [
     name: "Adam Shatzman",
     role: "Member",
     imagePath: "/images/team/AdamShatzman.jpg",
-    description: "Description for Adam Shatzman",
+    description:
+      "Adam Shatzman is an investment banking professional at District Capital Partners, specializing in mergers and acquisitions and strategic transactions. His experience includes private equity, financial research, and roles at NextGen Growth Partners and Advisor Perspectives. A graduate of Indiana University’s Kelley School of Business, he also founded Shatz’s Shoes, gaining entrepreneurial experience in operations, inventory management, and digital marketing. His background combines financial analysis and business ownership to support strategic growth and investment decisions.",
     linkedIn: "https://www.linkedin.com/in/adamshatzman/",
   },
   {
     name: "Maryam Rana",
     role: "Member",
     imagePath: "/images/team/maryam-rana.jpg",
-    description: "Description for Maryam Rana",
+    description:
+      "Maryam Rana is a History and International Relations student at King’s College London, focusing on international law, South Asian history, and global politics. As President of the Foreign Policy and Security Conference, she brings together students, policymakers, and speakers to discuss geopolitical challenges. An Avicenna Foundation Scholar, she has contributed to political communications and youth-led policy advocacy through organizations including the Afghanistan and Central Asian Association and RAIA. Having participated in international discussions at Davos and UN-related events, Maryam is passionate about diplomacy, multilateralism, and amplifying young people’s voices in global affairs.",
     linkedIn: "https://www.linkedin.com/in/maryam-rana-0b21a728b/",
   },
   /* hidden:
@@ -77,14 +84,16 @@ export const associateBoard: Person[] = [
     name: "Christian Elam",
     role: "Member",
     imagePath: "/images/team/christian-elam.jfif",
-    description: "Description for Christian Elam",
+    description:
+      "Christian Elam is an investor and entrepreneur focused on frontier technology, national security, and public policy. As Co-Founder and General Partner of Andromeda Ventures, he backs dual-use technologies across defense, AI, space, energy, and robotics. He previously founded Bachmanity Capital and helped incubate Thor Dynamics, a defense technology company developing laser systems for counter-drone applications. Christian also co-authored the bipartisan Kids Online Safety Act, which passed the U.S. Senate by a 91–3 vote. A UC Berkeley Haas School of Business graduate, he combines venture investing and policy experience to support technologies addressing critical real-world challenges.",
     linkedIn: "https://www.linkedin.com/in/christian-elam-4b0a471a8/",
   },
   {
     name: "Rida Karim",
     role: "Member",
     imagePath: "/images/team/rida-karim.jpg",
-    description: "Description for Rida Karim",
+    description:
+      "Rida Karim is a technology advocate and youth leader dedicated to expanding access to STEM education. As Founder and CEO of Technology Youth Empowerment, she empowers young people through hands-on STEM learning and supports underrepresented communities. She has co-authored a Brookings Institution report on generative AI and student well-being and serves as Co-Chair of Youth at UNA-USA, having previously led its Technology Committee. Through OpenAI’s Product Lab and recognition from NCWIT and the Women of the Future Programme, Rida brings together research, AI advocacy, and youth leadership to promote equitable access to technology.",
     linkedIn: "https://www.linkedin.com/in/ridakarim/",
   },
   /* hidden:
@@ -114,35 +123,40 @@ export const associateBoard: Person[] = [
     name: "Maximilian Goetz",
     role: "Member",
     imagePath: "/images/team/maximilian-goetz.jpg",
-    description: "Description for Maximilian Goetz",
+    description:
+      "Maximilian Goetz is an education strategy consultant and social entrepreneur dedicated to expanding access to STEM education. As Founder and Board President of Robotics For All, he established a nonprofit that has reached over 25,000 students through robotics and STEM programmes. A Fulbright Scholar, he also taught English in Taiwan, promoting cross-cultural learning. Max has worked in market research at Peerless Insights and strategy consulting at EY-Parthenon. A magna cum laude graduate of Georgetown University with degrees in Business and Global Affairs, he combines analytical expertise and entrepreneurial leadership to create educational opportunities.",
     linkedIn: "https://www.linkedin.com/in/maxgoetz/",
   },
   {
     name: "Aveneel Waadhwa",
     role: "Member",
     imagePath: "/images/team/aveneel-waadhwa.jpg",
-    description: "Description for Aveneel Waadhwa",
+    description:
+      "Aveneel Waadhwa is a technology and product management professional with experience developing AI-powered solutions at Kalepa and Microsoft, including LLM pipelines for insurance underwriting and generative AI features for Azure Copilot. A UC Berkeley graduate with degrees in Data Science and Economics, he won the Microsoft Global Hackathon in 2021. As a Global Shaper with the World Economic Forum’s New York Hub, he also leads OneRise, an initiative supporting immigrant founders in building businesses in the United States.",
     linkedIn: "https://www.linkedin.com/in/aveneel/",
   },
   {
     name: "Zachary Anglemyer",
     role: "Member",
     imagePath: "/images/team/zachary-anglemyer.jfif",
-    description: "Description for Zachary Anglemyer",
+    description:
+      "Zachary Anglemyer is an entrepreneur and sustainability innovator focused on advancing circular-economy solutions. As Co-Founder and CEO of Stealth Commodity Company, he works to transform waste into valuable resources and promote more regenerative economic systems. With an interdisciplinary background from the Rochester Institute of Technology spanning engineering, design, economics, and entrepreneurship, he applies systems thinking to complex sustainability challenges. He also contributes to initiatives focused on youth development, mental well-being, and sustainable design through organizations including Pathways for Kids, THE REAL Mental Health Foundation, and the Bio Based Materials Collective.",
     linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
   },
   {
     name: "Imane Abdel Jelil",
     role: "Member",
     imagePath: "/images/team/ImaneAbdel.jpg",
-    description: "Description for Imane Abdel Jelil",
+    description:
+      "Imane Abdel Jelil is an investment and economic development leader working across AI, digital transformation, and international partnerships. As Founder and Managing Director of RUKN Partners, she connects investors and institutions with opportunities in Mauritania and West Africa across sectors including energy, infrastructure, mining, and digital technologies. She also serves as Vice President of Nouakchott AI Build, supporting AI innovation and youth empowerment. Through initiatives such as Young Arab Leaders and WomenTech Network, Imane promotes international collaboration, women’s participation in technology, and inclusive economic growth.",
     linkedIn: "https://www.linkedin.com/in/imane-abdel-jelil/",
   },
   {
     name: "Tahnoon Murtza",
     role: "Member",
     imagePath: "/images/team/TahnoonMurtza.jpg",
-    description: "Description for Tahnoon Murtza",
+    description:
+      "Tahnoon Murtza is an entrepreneur, venture capitalist, and independent punk artist working at the intersection of investment, entertainment, and consumer brands. As Founding Partner of Grey Sheep Ventures, he invests in early-stage, celebrity-founded, and viral-first consumer businesses, drawing on his network across entertainment, sports, and digital media. A three-time founder and Babson College graduate, he previously worked with Brock Capital Group and NZVC and founded ReComune, a technology initiative addressing senior loneliness. Alongside investing, Tahnoon has built a music audience of over three million, combining creative entrepreneurship with strategic brand-building.",
     linkedIn: "https://www.linkedin.com/in/tahnoon-m-b4071419a/",
   },
 ];
@@ -153,7 +167,8 @@ export const legacyBoard: Person[] = [
     role: "Chair",
     title: "CEO Advisor & Entrepreneur",
     imagePath: "/images/team/stefan-avivson.jpg",
-    description: "Description for Stefan Avivson",
+    description:
+      "Stefan Avivson is the CEO and Co-Founder of VOKT, a serial entrepreneur with nearly 30 years of experience, having built 15 companies and exited five. He specializes in business operations, automation, and strategic growth, helping companies connect systems and streamline processes. Beyond VOKT, he advises founders on commercial strategy and customer communication through his Raw Series of books and fosters meaningful professional connections through REASON.",
     linkedIn: "https://www.linkedin.com/in/avivson/",
   },
   /* {
@@ -167,35 +182,40 @@ export const legacyBoard: Person[] = [
     name: "Gregg Meyer",
     title: "Chief Sustainability Officer, Steve Madden",
     imagePath: "/images/team/gregg-meyer.jpg",
-    description: "Description for Gregg Meyer",
+    description:
+      "Gregg Meyer leads global sustainability at Steve Madden, overseeing environmental strategy, supply-chain responsibility, and ESG initiatives. With a background in law and corporate governance, he focuses on carbon reduction, responsible sourcing, and sustainable fashion. He has advanced the company's Let's Get Real sustainability strategy and emissions targets. As President of the Steve Madden Corporate Foundation, he also supports charitable partnerships and community initiatives, promoting transparency and measurable environmental progress.",
     linkedIn: "https://www.linkedin.com/in/gregg-meyer/",
   },
   {
     name: "Japneet Kaur",
     title: "Cybersecurity & Risk Management Professional, Mphasis",
     imagePath: "/images/team/japneet-k.jpg",
-    description: "Description for Japneet Kaur",
+    description:
+      "Japneet Kaur is a cybersecurity and risk management leader serving as Cyber Security Services Portfolio Director and Associate Vice President at Mphasis. With over 14 years of experience, she specializes in enterprise security, data protection, risk management, and digital resilience. She also chairs The Digital Economist’s Cyber Studio and contributes to ISACA leadership and mentorship initiatives supporting women in technology. Beyond cybersecurity, she is an artist, illustrator, and author who connects technology, sustainability, and inclusion through storytelling, promoting digital trust and a more secure, accessible technological future.",
     linkedIn: "https://www.linkedin.com/in/japneet-k-34816426/",
   },
   {
     name: "Geoffrey Sargeant",
     title: "Managing Director & Head of Capital Markets, The REAL",
     imagePath: "/images/team/geoffrey-sargeant.jpg",
-    description: "Description for Geoffrey Sargeant",
+    description:
+      "Geoffrey Sargeant is a financial-services professional with over two decades of experience across institutional finance, wealth management, and capital markets, including roles at Lazard Asset Management, Calamos Wealth Management, and Neuberger Berman. A Certified Financial Planner (CFP®), he combines financial expertise with a strong commitment to mental-health advocacy. As Executive Ambassador of THE REAL Mental Health Foundation, he promotes open conversations about mental health, builds supportive communities, and expands the foundation’s global ambassador network. Through corporate partnerships and international initiatives, he advocates for vulnerability and meaningful connections.",
     linkedIn: "https://www.linkedin.com/in/geoffsargeant/",
   },
   {
     name: "Flaviu Simihaian",
     title: "Founder, 1PB.org & Co-host, Founder Secrets Podcast",
     imagePath: "/images/team/flaviu-simihaian.jpg",
-    description: "Description for Flaviu Simihaian",
+    description:
+      "Flaviu Simihaian is a serial entrepreneur and startup builder, known for co-founding Amplicare, acquired by Omnicell, and Aventi Health, a healthcare technology company. As Founder of 1PB.org (1 Percent Back), he connects entrepreneurs with mentorship, investors, and resources while encouraging successful companies to support future founders. He also co-founded OpenThanks.com and co-hosts the Founder Secrets Podcast, sharing insights on entrepreneurship and business growth. Through his ventures, Flaviu champions underrepresented entrepreneurs, community-building, and sustainable support for the next generation of founders.",
     linkedIn: "https://www.linkedin.com/in/flaviusimihaian/",
   },
   {
     name: "Lara Stein",
     title: "Founder, TEDx",
     imagePath: "/images/team/lara-stein.jpg",
-    description: "Description for Lara Stein",
+    description:
+      "Lara Stein is an entrepreneur and global innovation leader best known for founding TEDx and expanding TED’s ideas-sharing model into a worldwide community movement. She helped launch TEDxWomen and TEDYouth, creating platforms for diverse and underrepresented voices. She also founded Boma Global and held leadership roles at Singularity University, Women’s March Global, and MIT ReACT, supporting innovation, education, and social impact. Through Regenerative Consulting, Lara advises organizations on long-term strategy and systemic change, focusing on connecting people, scaling impactful ideas, and building sustainable solutions for global challenges.",
     linkedIn: "https://www.linkedin.com/in/citizenstein/",
   },
   /* {
@@ -208,14 +228,16 @@ export const legacyBoard: Person[] = [
     name: "Purnima Voria",
     title: "Founder & CEO, National US India Chamber of Commerce",
     imagePath: "/images/team/dr-purnima-voria.jpg",
-    description: "Description for Purnima Voria",
+    description:
+      "Dr. Purnima Voria is an international business advocate and founder of the National U.S.-India Chamber of Commerce, established in 2005 to strengthen trade and investment between the United States and India. Through NUICC, she connects businesses with investors, industry leaders, and government partners while supporting cross-border expansion. She has advised the U.S. Department of Commerce on minority business policy and was appointed President of the Rajasthan Foundation’s New York Chapter in 2026. Recognized for her contributions to international business, Voria continues to promote economic growth, cultural exchange, and stronger ties between India and the United States.",
     linkedIn: "https://www.linkedin.com/in/purnimavoria/",
   },
   {
     name: "Mark Sadovnick",
     title: "Founder, 5th Gen Leaders Community",
     imagePath: "/images/team/mark-sadovnick.jpg",
-    description: "Description for Mark Sadovnick",
+    description:
+      "Mark Sadovnick is a global executive search and leadership professional with diverse experiences securing the right fit talent for founders, entrepreneurs and other Leaders Who Care® about concurrently making a greater economic and social impact. Recognized by Business Week as one of 150 most influential headhunters, he gained previous experiences at Deloitte and Jaycees International. He is also a Partner at Tower Capital, leaders on Generational Health and the Athlete-led Generational Sports Science Fund/Initiative. He serves on Boards, is a CPA, a huge hockey fan and sports advocate, and is most proud of his three sons and bonus daughter.",
     linkedIn: "https://www.linkedin.com/in/marksadovnick/",
   },
   /* hidden:
@@ -238,21 +260,24 @@ export const legacyBoard: Person[] = [
     name: "Holland Haiis",
     title: "Founder, Alchemzing Humanity",
     imagePath: "/images/summit/HollandHaiis.png",
-    description: "Description for Holland Haiis",
+    description:
+      "Holland leads a global advisory firm specializing in organizational strategy, governance, succession planning, leadership development, and human performance. She works with Fortune 500 companies, family offices, nonprofits, and business leaders to strengthen organizational effectiveness, mental fitness, and intergenerational alignment. With more than 30 years of experience, her work is grounded in behavioral and positive psychology. She is an award-winning author and was recognized as one of 100 Global Thought Leaders in Conscious Leadership and one of 28 International Digital Wellness Experts for three consecutive years. Her insights have been featured on CNN, CNBC, ABC, NBC, FOX News, Inc., Fast Company, and other leading media outlets.",
     linkedIn: "https://www.linkedin.com/in/hollandhaiis/",
   },
   {
     name: "Cheng Davis",
     title: "President, Forum for World Education",
     imagePath: "/images/team/ChengDavis.png",
-    description: "Description for Cheng Davis",
+    description:
+      "Dr. Cheng Yan Davis is an international education leader who has held senior positions at the University of Pennsylvania and Drexel University, advancing global partnerships between universities, governments, and institutions. At Penn, she founded GSE International and developed cross-cultural education initiatives across multiple countries. As President of the Forum for World Education, she promotes international collaboration and explores emerging challenges, including AI in education. Recognized for her contributions to educational leadership and international cooperation, Davis continues to connect education, diplomacy, and leadership development worldwide.",
     linkedIn: "https://www.linkedin.com/in/cheng-davis-82511937/",
   },
   {
     name: "Gurdon “Topper” Flagg Quinn",
     title: "Managing Partner, Challenge Capital Advisors",
     imagePath: "/images/team/GurdonQuinn.jpg",
-    description: "Description for Gurdon “Topper” Flagg Quinn",
+    description:
+      "Gurdon “Topper” Flagg Quinn is an investment and capital-markets professional with over three decades of experience in investment banking, private equity, and venture capital. After beginning his career in mergers and acquisitions, he founded the Challenge Group in 2006 and advises businesses on growth, financing, and capital-market opportunities across multiple industries. As President of the Global Network for Energy and the Environment, he promotes investment in energy and sustainability. His work combines entrepreneurship, strategic investment, and emerging technologies, alongside a longstanding interest in film and the arts through Quinn Vision Arts.",
     linkedIn:
       "https://www.linkedin.com/in/gurdon-%E2%80%9Ctopper%E2%80%9D-flagg-quinn-61931b1/",
   },
@@ -260,28 +285,32 @@ export const legacyBoard: Person[] = [
     name: "Stanley Goldstein",
     title: "Chairman, Sustainability Investment Leadership Council",
     imagePath: "/images/team/StanleyGoldstein.jpg",
-    description: "Description for Stanley Goldstein",
+    description:
+      "Stanley Goldstein is an entrepreneur, investor, and corporate leader with extensive experience in accounting, private equity, and alternative investments. He founded Goldstein Golub & Kessler, later part of RSM, and served as Chairman of Knickerbocker Financial Group. He also founded the Sustainability Investment Leadership Council, bringing finance and business professionals together to advance sustainable investing, ESG reporting, and climate-focused strategies. Through his leadership in investment forums and philanthropic initiatives, Goldstein promotes collaboration, sustainability, and long-term value creation.",
     linkedIn: "https://www.linkedin.com/in/stanley-goldstein-baa86a/",
   },
   {
     name: "Bleu Blakslee",
     title: "Managing Director, Quantum Philanthropy Partners",
     imagePath: "/images/team/BleuBlakslee.jpg",
-    description: "Description for Bleu Blakslee",
+    description:
+      "Bleu Blakslee is a philanthropic strategist, advisor, and speaker with over 35 years of experience helping individuals, families, nextgens and institutions create meaningful social impact nationally and internationally. Through Quantum Philanthropy Partners, she advises on major gifts, legacy planning, and purpose-driven giving, incorporating emerging technologies such as AI, blockchain, AR/VR, space. She also trains wealth advisors, family office leaders and philanthropic advisors through Stanford PACS Effective Philanthropy 2-day certificate program and Daylight’s Advisors in Philanthropy (AiP) 20-week certification program and serves on the board of the Asian & Pacific Islander American Health Forum (APIAHF) and aichildsafety.org. Her work focuses on aligning wealth with personal values, advancing responsible philanthropy, and preparing donors for a rapidly evolving world.",
     linkedIn: "https://www.linkedin.com/in/bleublakslee/",
   },
   {
     name: "Lanz Pierce",
     title: "Founder & CEO, Luminary Creative Agency",
     imagePath: "/images/team/LanzPierce.jpg",
-    description: "Description for Lanz Pierce",
+    description:
+      "Lanz Pierce is an entrepreneur, artist, creative director, and brand strategist with experience across music, entertainment, and technology. After working with industry figures such as Jimmy Iovine and Snoop Dogg, she transitioned into directing and founded Luminary Creative Agency in 2018. Through Luminary, she helps businesses develop distinctive brands, creative strategies, and growth opportunities. She also supports emerging technology ventures, including AI-driven music innovation, serves on TRIIBE's Legacy Board, and advises founders on storytelling, positioning, and business development.",
     linkedIn: "https://www.linkedin.com/in/lanzpierce/",
   },
   {
     name: "Zachary Pogue",
     title: "CTO, Dapper Care Inc",
     imagePath: "/images/team/ZacharyPogue.jpg",
-    description: "Description for Zachary Pogue",
+    description:
+      "Zachary Pogue is a technology executive, entrepreneur, and investor with experience in software development, machine learning, sustainable infrastructure, and deep technology. At Dapper Care, he leads technology development for a digital health platform focused on personalized healthcare and longevity. He also serves as Strategic Advisor for Cross-Border Activities at TimeX Capital, supporting technology, sustainability, and international expansion. With over 15 years of experience, Zachary combines technical innovation, business strategy, and commercialization to develop solutions across healthcare, energy, and emerging technologies.",
     linkedIn: "https://www.linkedin.com/in/zachpogue/",
   },
   {
@@ -289,21 +318,24 @@ export const legacyBoard: Person[] = [
     title:
       "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
     imagePath: "/images/team/ShirleyHon.jpg",
-    description: "Description for Shirley Hon",
+    description:
+      "Shirley Hon is an investment and business strategist specializing in family offices, cross-border investments, and global business development. Through Globoconsult, she connects investors and entrepreneurs across international markets, particularly between Asia and the United States. As Co-Founder and Chief Revenue Officer of United Womens Sports NIL Agency, she helps female athletes build brand partnerships, access investment opportunities, and develop their professional identities. Through her work in finance, entrepreneurship, and women's sports, Shirley focuses on expanding opportunities for women and creating long-term economic value.",
     linkedIn: "https://www.linkedin.com/in/shirleyw-hon/",
   },
   {
     name: "Andrea Holmes Thompkins",
     title: "President & CEO, ACE Media Corp",
     imagePath: "/images/summit/AndreaHolmes.jpg",
-    description: "Description for Andrea Holmes Thompkins",
+    description:
+      "Andrea Holmes Thompkins is a media sales and marketing executive who founded ACE Media Corp in 2002, specializing in advertising, branding, and entertainment. She has developed campaigns and partnerships across major sporting events and entertainment platforms, working with global brands including Google, Coca-Cola, Nike, and American Express. Through ACE and its production arm, ACE LAND, she continues to expand opportunities across television, digital media, and film. A Howard University graduate, Andrea also supports education and community initiatives, earning recognition for her contributions to media and social impact.",
     linkedIn: "https://www.linkedin.com/in/andreaholmesthompkins/",
   },
   {
     name: "Jax Harrison",
     title: "Co-Founder, Grant Authority",
     imagePath: "/images/summit/JaxHarrison.jpg",
-    description: "Description for Jax Harrison",
+    description:
+      "Jax Harrison is an entrepreneur, connector, and humanitarian with over 35 years of experience across technology, investment, and government. As Founder and CEO of The Future Found, she combines responsible innovation and investment to address humanitarian challenges, including human trafficking, conflict response, and the protection of vulnerable communities. Her work explores emerging technologies such as AI and cybersecurity to strengthen humanitarian support. She also supports TRIIBE’s mission to expand resources for nonprofit founders, focusing on connecting people, organizations, and capital to create meaningful social impact.",
     linkedIn: "https://www.linkedin.com/in/jaxharrison/",
   },
   /* {
@@ -317,21 +349,24 @@ export const legacyBoard: Person[] = [
     title:
       "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
     imagePath: "/images/team/ToddJacobson.jpg",
-    description: "Description for Todd Jacobson",
+    description:
+      "Todd Jacobson is a strategic advisor and social impact leader with over 25 years of experience across business, philanthropy, and nonprofit leadership. During his 23-year career at the NBA, he served as Senior Vice President and Head of Social Responsibility, helping develop initiatives including NBA Cares, Basketball Without Borders, and the NBA Foundation. In 2024, he founded TAJ Global to advise organizations on strategic growth, partnerships, and community impact. He also teaches at Columbia University’s School of International and Public Affairs, focusing on corporate social responsibility and public-private partnerships.",
     linkedIn: "https://www.linkedin.com/in/todd-jacobson/",
   },
   {
     name: "Vin Infante",
     title: "Founder, Omega Lifestyles NYC",
     imagePath: "/images/summit/VinInfante.png",
-    description: "Description for Vin Infante",
+    description:
+      "Vin Infante is an entrepreneur, licensed psychotherapist, and mental performance coach who helps founders and executives navigate leadership challenges, manage stress, and achieve sustainable success. Drawing on his experience in mental health and entrepreneurship, he combines therapy, mentoring, and coaching to support personal and professional growth. In 2026, he launched Omega Lifestyle NYC, a curated community connecting founders, investors, and executives through meaningful relationships and wellness-focused experiences. He also hosts MARKED, exploring entrepreneurship, leadership, and the personal challenges behind business success.",
     linkedIn: "https://www.linkedin.com/in/vininfante/",
   },
   {
     name: "Gina Otto",
     title: "Founder, We the Peoples Fund",
     imagePath: "/images/summit/GinaOtto.jpeg",
-    description: "Description for Gina Otto",
+    description:
+      "Gina Otto is an author, international speaker, and social impact entrepreneur dedicated to empowering children and promoting global sustainability. As founder of Gina’s Ink, she uses storytelling and education to inspire young people, particularly those in underserved communities. She also founded We the Peoples Fund, supporting initiatives in reforestation, ocean restoration, and climate action. Having advised Pope Francis’s Summit on Climate and held global leadership roles in environmental advocacy, Gina continues to advance humanitarian causes, peacebuilding, and environmental stewardship through cross-sector partnerships.",
     linkedIn: "",
   },
   {
@@ -339,7 +374,8 @@ export const legacyBoard: Person[] = [
     title:
       "Consul General of Serbia in NYC\n\nPresident of Society of Foreign Consuls in New York",
     imagePath: "/images/summit/AMBASSADOR PHD VLADIMIR BOZOVIC.jpg",
-    description: "Description for Ambassador PhD Vladimir Bozovic",
+    description:
+      "Vladimir Božović is a Serbian diplomat, lawyer and Assistant Professor with decades of experience in public administration, diplomacy, international cooperation, security, anti-corruption and the protection of human rights.\n\nBorn on December 3, 1970, in Nikšić, he completed his secondary education there with a concentration in literature. He graduated from the Higher School of Internal Affairs of the Ministry of Internal Affairs in Zemun and subsequently earned a law degree.\n\nHe earned the academic degree of Master of Legal Sciences (Magister) with a thesis entitled “Corruption and Anti-Corruption Awareness with Special Reference to the Police.” On March 12, 2019, he successfully defended his doctoral dissertation, “Police Integrity and Corruption in the Police in Serbia,” at the Faculty of Security Studies, University of Belgrade, earning his PhD.\n\nHe was elected to the academic rank of Assistant Professor at the School of Engineering Management, University “Union – Nikola Tesla,” in Belgrade. His research and professional work encompass police integrity, corruption, internal oversight, security, criminal law and the protection of human rights.\n\nBetween 1991 and 1993, he served as President of the Student Union of the Higher School of Internal Affairs, President of the Student Union of Higher Schools in Belgrade, and a member of the Executive Board of the Student Union of Belgrade.\n\nFrom 1995 to 1997, he undertook legal traineeships in Belgrade, Milwaukee and Chicago. In 1997, he established Božović Law Office. He also worked as a lawyer and Head of the Department of Justice and Human Rights at the Coordination Center of the Governments of the Federal Republic of Yugoslavia and the Republic of Serbia for Kosovo and Metohija. He served as legal counsel to the Serbian Orthodox Church and the Metropolitanate of Montenegro and the Littoral, handling numerous cases concerning fundamental human and civil rights.\n\nFrom 2004 to 2007, he served as Assistant Minister of Internal Affairs and Inspector General of the Public Security Department of the Ministry of Internal Affairs of the Republic of Serbia. In 2005, he was Serbia and Montenegro’s National Coordinator for Police and Human Rights at the Council of Europe.\n\nFrom April to November 2012, and again from June 2017 to December 2019, he served as an adviser in the Cabinet of the Minister of Internal Affairs of the Republic of Serbia. From November 2012 to May 2014, he was State Secretary at the Ministry of Internal Affairs, responsible for internal oversight and international cooperation. From May 2015 to June 2017, he served as Adviser to the Prime Minister of the Republic of Serbia for regional cooperation and relations with religious communities.\n\nFrom November 2019 to July 2023, he served as Ambassador of the Republic of Serbia to Montenegro. Since November 2023, he has served as Consul General of the Republic of Serbia in New York.\n\nOn June 16, 2026, he was elected President of the Society of Foreign Consuls in New York, becoming the first representative of Serbia to lead the association in its more than a century of history. In this capacity, he is committed to strengthening the consular community’s cooperation with American institutions, the business and financial sectors, academic institutions, religious communities and other partners.\n\nOn September 14, 2026, he was elected Chairman of the Global Consular Leadership Council of United World Leaders, a New York-based organization.\n\nHe has completed specialized courses and professional training in Serbia, the United States and Hungary, as well as the ICITAP program in Bosnia and Herzegovina and the Kokkalis program on the science and art of negotiation, held in Greece. As Assistant Minister of Internal Affairs and Inspector General, he participated in three international conferences addressing anti-corruption efforts in the European Union.\n\nHis scientific and professional publications include:\n\n• “Temporary Criminal Procedure Code of Kosovo,” Pravni život, 2003, Vol. 52, No. 9, pp. 509–524;\n\n• “Corruption in the Serbian Police — Current State,” Pravo — teorija i praksa, 2012, Vol. 29, Nos. 1–3, pp. 27–43;\n\n• “Personal Evidence in Criminalistics and Criminal Procedural Law,” conference proceedings, Sarajevo–Banja Luka: International Association of Criminalists, 2013;\n\n• “Humanitarian Organizations in the Function of Terrorism,” proceedings of the international conference “Terrorism as a Global Threat,” Faculty of Law for Commerce and Judiciary, University Business Academy in Novi Sad, 2012.\n\nIn March 2017, he received an award from the Academy of Criminal Justice Sciences for the paper “A Comparative Study of Public Opinion about Police Corruption in Croatia and Serbia.”\n\nHe has delivered presentations at numerous international and domestic scientific and professional conferences and seminars. Selected international engagements include:\n\n• The international conference “Civil Defense and Preparing Civil Society for Disaster Risk Prevention,” held in Baku and Gabala from March 11 to 14, 2013, organized by the Ministry of Emergency Situations of the Republic of Azerbaijan and the International Civil Defence Organisation, with 150 participants from 54 countries;\n\n• Council for Inclusive Governance roundtables in Istanbul, Skopje and Belgrade, addressing possible solutions for northern Kosovo and relations between Belgrade and Priština;\n\n• “Defense World 2013 — International Defense and Security,” held in Athens on April 2–3, 2013, at the invitation of the American-Hellenic Chamber of Commerce;\n\n• The Fifth Ministerial Conference of the Budapest Process, “Silk Routes Partnership for Migration,” held in Istanbul from April 18 to 20, 2013, where he advocated greater understanding, solidarity and humanity in responding to migration;\n\n• Leadership of the Serbian Ministry of Internal Affairs delegation to the 42nd INTERPOL European Regional Conference in Budapest, held from May 13 to 16, 2013. At his initiative, Serbia was nominated for membership of the provisional committee of INTERPOL’s European Sub-Directorate and, alongside France and Germany, for participation in the selection team for the appointment of its acting head;\n\n• An international meeting on strategic guidance for United Nations police in peacekeeping operations, held from October 14 to 17, 2013, organized by the United Nations Department of Peacekeeping Operations and Durham University’s Institute for Global Security.\n\nIn 2014, he served as Deputy Chairman of the Organizing Committee and Chairman of the Protocol Committee for the Third Meeting of Heads of Government of China and Central and Eastern European Countries.\n\nHis professional work brings together diplomacy, international police and institutional cooperation, the rule of law, anti-corruption, human rights and relations with religious communities.",
     linkedIn:
       "https://www.linkedin.com/in/vladimir-bo%C5%BEovi%C4%87-phd-4059451b/",
   },
@@ -347,7 +383,7 @@ export const legacyBoard: Person[] = [
     name: "Iva Kaufman",
     title: "Principal, Iva Kaufman Associates",
     imagePath: "/images/summit/IvaKaufman.jpg",
-    description: "Description for Iva Kaufman",
+    description: "Iva Kaufman is a philanthropy and social impact strategist specializing in nonprofit management, foundation advising, and sustainable development. Through Iva Kaufman Associates, she advises businesses, foundations, and nonprofits on initiatives promoting gender equality, environmental sustainability, and community development. Her work connects financial resources with meaningful social outcomes, supporting women’s advancement, conservation, and cultural initiatives. She also contributes to international development and peacebuilding efforts, including engagement with the United Nations High-Level Political Forum.",
     linkedIn: "https://www.linkedin.com/in/iva-kaufman-b08242a/",
   },
   /* hidden:
