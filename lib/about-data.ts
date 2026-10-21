@@ -403,7 +403,7 @@ export const locations: LocationEntry[] = [
     mdName: "Kyle Matthys",
     mdImagePath: "/images/team/KyleMatthys.jpeg",
     mdLinkedIn: "https://www.linkedin.com/in/kylematthys/",
-    mdDescription: "Description for Kyle Matthys 1",
+    mdDescription: "Description for Kyle Matthys 2",
     advisoryBoard: [
       /* hidden:
       { name: "Helen Kramer", imagePath: "/images/team/helen-kramer.jpg", role: "Chair" },
