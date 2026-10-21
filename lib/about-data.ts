@@ -11,18 +11,21 @@ export const csuite: Person[] = [
     name: "Kyle Matthys",
     role: "Founder & CEO",
     imagePath: "/images/team/KyleMatthys.jpeg",
+    description: "Description for Kyle Matthys",
     linkedIn: "https://www.linkedin.com/in/kylematthys/",
   },
   {
     name: "Nawaf Alshaikhmubarak",
     role: "Chief Operating Officer",
     imagePath: "/images/team/nawaf-alshaikhmubarak.jpg",
+    description: "Description for Nawaf Alshaikhmubarak",
     linkedIn: "https://www.linkedin.com/in/nawaf-mub/",
   },
   {
     name: "James Hetherington",
     role: "Board Chair",
     imagePath: "/images/team/james-hetherington.jpg",
+    description: "Description for James Hetherington",
     linkedIn: "https://www.linkedin.com/in/james-hetherington-590b981b8/",
   },
 ];
@@ -32,12 +35,14 @@ export const associateBoard: Person[] = [
     name: "Jovan Nguyen Tran",
     role: "Chair",
     imagePath: "/images/team/jovan-nguyen-tran.jfif",
+    description: "Description for Jovan Nguyen Tran",
     linkedIn: "https://www.linkedin.com/in/jovannguyentran/",
   },
   {
     name: "Laya Pothunuri",
     role: "Vice Chair",
     imagePath: "/images/team/laya-pothunuri.jpg",
+    description: "Description for Laya Pothunuri",
     linkedIn: "https://www.linkedin.com/in/laya-pothunuri-964878175/",
   },
   /* {
@@ -50,12 +55,14 @@ export const associateBoard: Person[] = [
     name: "Adam Shatzman",
     role: "Member",
     imagePath: "/images/team/AdamShatzman.jpg",
+    description: "Description for Adam Shatzman",
     linkedIn: "https://www.linkedin.com/in/adamshatzman/",
   },
   {
     name: "Maryam Rana",
     role: "Member",
     imagePath: "/images/team/maryam-rana.jpg",
+    description: "Description for Maryam Rana",
     linkedIn: "https://www.linkedin.com/in/maryam-rana-0b21a728b/",
   },
   /* hidden:
@@ -70,12 +77,14 @@ export const associateBoard: Person[] = [
     name: "Christian Elam",
     role: "Member",
     imagePath: "/images/team/christian-elam.jfif",
+    description: "Description for Christian Elam",
     linkedIn: "https://www.linkedin.com/in/christian-elam-4b0a471a8/",
   },
   {
     name: "Rida Karim",
     role: "Member",
     imagePath: "/images/team/rida-karim.jpg",
+    description: "Description for Rida Karim",
     linkedIn: "https://www.linkedin.com/in/ridakarim/",
   },
   /* hidden:
@@ -105,30 +114,35 @@ export const associateBoard: Person[] = [
     name: "Maximilian Goetz",
     role: "Member",
     imagePath: "/images/team/maximilian-goetz.jpg",
+    description: "Description for Maximilian Goetz",
     linkedIn: "https://www.linkedin.com/in/maxgoetz/",
   },
   {
     name: "Aveneel Waadhwa",
     role: "Member",
     imagePath: "/images/team/aveneel-waadhwa.jpg",
+    description: "Description for Aveneel Waadhwa",
     linkedIn: "https://www.linkedin.com/in/aveneel/",
   },
   {
     name: "Zachary Anglemyer",
     role: "Member",
     imagePath: "/images/team/zachary-anglemyer.jfif",
+    description: "Description for Zachary Anglemyer",
     linkedIn: "https://www.linkedin.com/in/zacharyanglemyer/",
   },
   {
     name: "Imane Abdel Jelil",
     role: "Member",
     imagePath: "/images/team/ImaneAbdel.jpg",
+    description: "Description for Imane Abdel Jelil",
     linkedIn: "https://www.linkedin.com/in/imane-abdel-jelil/",
   },
   {
     name: "Tahnoon Murtza",
     role: "Member",
     imagePath: "/images/team/TahnoonMurtza.jpg",
+    description: "Description for Tahnoon Murtza",
     linkedIn: "https://www.linkedin.com/in/tahnoon-m-b4071419a/",
   },
 ];
@@ -139,6 +153,7 @@ export const legacyBoard: Person[] = [
     role: "Chair",
     title: "CEO Advisor & Entrepreneur",
     imagePath: "/images/team/stefan-avivson.jpg",
+    description: "Description for Stefan Avivson",
     linkedIn: "https://www.linkedin.com/in/avivson/",
   },
   /* {
@@ -152,30 +167,35 @@ export const legacyBoard: Person[] = [
     name: "Gregg Meyer",
     title: "Chief Sustainability Officer, Steve Madden",
     imagePath: "/images/team/gregg-meyer.jpg",
+    description: "Description for Gregg Meyer",
     linkedIn: "https://www.linkedin.com/in/gregg-meyer/",
   },
   {
     name: "Japneet Kaur",
     title: "Cybersecurity & Risk Management Professional, Mphasis",
     imagePath: "/images/team/japneet-k.jpg",
+    description: "Description for Japneet Kaur",
     linkedIn: "https://www.linkedin.com/in/japneet-k-34816426/",
   },
   {
     name: "Geoffrey Sargeant",
     title: "Managing Director & Head of Capital Markets, The REAL",
     imagePath: "/images/team/geoffrey-sargeant.jpg",
+    description: "Description for Geoffrey Sargeant",
     linkedIn: "https://www.linkedin.com/in/geoffsargeant/",
   },
   {
     name: "Flaviu Simihaian",
     title: "Founder, 1PB.org & Co-host, Founder Secrets Podcast",
     imagePath: "/images/team/flaviu-simihaian.jpg",
+    description: "Description for Flaviu Simihaian",
     linkedIn: "https://www.linkedin.com/in/flaviusimihaian/",
   },
   {
     name: "Lara Stein",
     title: "Founder, TEDx",
     imagePath: "/images/team/lara-stein.jpg",
+    description: "Description for Lara Stein",
     linkedIn: "https://www.linkedin.com/in/citizenstein/",
   },
   /* {
@@ -188,12 +208,14 @@ export const legacyBoard: Person[] = [
     name: "Purnima Voria",
     title: "Founder & CEO, National US India Chamber of Commerce",
     imagePath: "/images/team/dr-purnima-voria.jpg",
+    description: "Description for Purnima Voria",
     linkedIn: "https://www.linkedin.com/in/purnimavoria/",
   },
   {
     name: "Mark Sadovnick",
     title: "Founder, 5th Gen Leaders Community",
     imagePath: "/images/team/mark-sadovnick.jpg",
+    description: "Description for Mark Sadovnick",
     linkedIn: "https://www.linkedin.com/in/marksadovnick/",
   },
   /* hidden:
@@ -216,18 +238,21 @@ export const legacyBoard: Person[] = [
     name: "Holland Haiis",
     title: "Founder, Alchemzing Humanity",
     imagePath: "/images/summit/HollandHaiis.png",
+    description: "Description for Holland Haiis",
     linkedIn: "https://www.linkedin.com/in/hollandhaiis/",
   },
   {
     name: "Cheng Davis",
     title: "President, Forum for World Education",
     imagePath: "/images/team/ChengDavis.png",
+    description: "Description for Cheng Davis",
     linkedIn: "https://www.linkedin.com/in/cheng-davis-82511937/",
   },
   {
     name: "Gurdon “Topper” Flagg Quinn",
     title: "Managing Partner, Challenge Capital Advisors",
     imagePath: "/images/team/GurdonQuinn.jpg",
+    description: "Description for Gurdon “Topper” Flagg Quinn",
     linkedIn:
       "https://www.linkedin.com/in/gurdon-%E2%80%9Ctopper%E2%80%9D-flagg-quinn-61931b1/",
   },
@@ -235,24 +260,28 @@ export const legacyBoard: Person[] = [
     name: "Stanley Goldstein",
     title: "Chairman, Sustainability Investment Leadership Council",
     imagePath: "/images/team/StanleyGoldstein.jpg",
+    description: "Description for Stanley Goldstein",
     linkedIn: "https://www.linkedin.com/in/stanley-goldstein-baa86a/",
   },
   {
     name: "Bleu Blakslee",
     title: "Managing Director, Quantum Philanthropy Partners",
     imagePath: "/images/team/BleuBlakslee.jpg",
+    description: "Description for Bleu Blakslee",
     linkedIn: "https://www.linkedin.com/in/bleublakslee/",
   },
   {
     name: "Lanz Pierce",
     title: "Founder & CEO, Luminary Creative Agency",
     imagePath: "/images/team/LanzPierce.jpg",
+    description: "Description for Lanz Pierce",
     linkedIn: "https://www.linkedin.com/in/lanzpierce/",
   },
   {
     name: "Zachary Pogue",
     title: "CTO, Dapper Care Inc",
     imagePath: "/images/team/ZacharyPogue.jpg",
+    description: "Description for Zachary Pogue",
     linkedIn: "https://www.linkedin.com/in/zachpogue/",
   },
   {
@@ -260,18 +289,21 @@ export const legacyBoard: Person[] = [
     title:
       "Principal, Globoconsult & Co-founder United Womens Sports NIL Agency",
     imagePath: "/images/team/ShirleyHon.jpg",
+    description: "Description for Shirley Hon",
     linkedIn: "https://www.linkedin.com/in/shirleyw-hon/",
   },
   {
     name: "Andrea Holmes Thompkins",
     title: "President & CEO, ACE Media Corp",
     imagePath: "/images/summit/AndreaHolmes.jpg",
+    description: "Description for Andrea Holmes Thompkins",
     linkedIn: "https://www.linkedin.com/in/andreaholmesthompkins/",
   },
   {
     name: "Jax Harrison",
     title: "Co-Founder, Grant Authority",
     imagePath: "/images/summit/JaxHarrison.jpg",
+    description: "Description for Jax Harrison",
     linkedIn: "https://www.linkedin.com/in/jaxharrison/",
   },
   /* {
@@ -285,18 +317,21 @@ export const legacyBoard: Person[] = [
     title:
       "Founder & CEO, TAJ Global & past head of social responsibility, NBA",
     imagePath: "/images/team/ToddJacobson.jpg",
+    description: "Description for Todd Jacobson",
     linkedIn: "https://www.linkedin.com/in/todd-jacobson/",
   },
   {
     name: "Vin Infante",
     title: "Founder, Omega Lifestyles NYC",
     imagePath: "/images/summit/VinInfante.png",
+    description: "Description for Vin Infante",
     linkedIn: "https://www.linkedin.com/in/vininfante/",
   },
   {
     name: "Gina Otto",
     title: "Founder, We the Peoples Fund",
     imagePath: "/images/summit/GinaOtto.jpeg",
+    description: "Description for Gina Otto",
     linkedIn: "",
   },
   {
@@ -304,6 +339,7 @@ export const legacyBoard: Person[] = [
     title:
       "Consul General of Serbia in NYC\n\nPresident of Society of Foreign Consuls in New York",
     imagePath: "/images/summit/AMBASSADOR PHD VLADIMIR BOZOVIC.jpg",
+    description: "Description for Ambassador PhD Vladimir Bozovic",
     linkedIn:
       "https://www.linkedin.com/in/vladimir-bo%C5%BEovi%C4%87-phd-4059451b/",
   },
@@ -311,6 +347,7 @@ export const legacyBoard: Person[] = [
     name: "Iva Kaufman",
     title: "Principal, Iva Kaufman Associates",
     imagePath: "/images/summit/IvaKaufman.jpg",
+    description: "Description for Iva Kaufman",
     linkedIn: "https://www.linkedin.com/in/iva-kaufman-b08242a/",
   },
   /* hidden:
@@ -330,6 +367,7 @@ export const locations: LocationEntry[] = [
     mdName: "Kyle Matthys",
     mdImagePath: "/images/team/KyleMatthys.jpeg",
     mdLinkedIn: "https://www.linkedin.com/in/kylematthys/",
+    mdDescription: "Description for Kyle Matthys 1",
     advisoryBoard: [
       /* hidden:
       { name: "Helen Kramer", imagePath: "/images/team/helen-kramer.jpg", role: "Chair" },
@@ -365,6 +403,7 @@ export const locations: LocationEntry[] = [
         name: "Megahan Peterson",
         imagePath: "/images/team/megahan-peterson.jfif",
         linkedIn: "https://www.linkedin.com/in/megahan-peterson-3b6b5012/",
+        description: "Description for Megahan Peterson",
         title: "CIO, Family Offices Global",
       },
       {
@@ -540,6 +579,7 @@ export interface TeamMember {
   name: string;
   role: string;
   imagePath: string;
+  description?: string;
   linkedIn: string;
 }
 
@@ -548,6 +588,7 @@ export const ourTeam: TeamMember[] = [
     name: "Pranay Mishra",
     role: "Head of Website development",
     imagePath: "/images/team/pranay-mishra.jpeg",
+    description: "Description for Pranay Mishra",
     linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
   },
   {
