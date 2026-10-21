@@ -7,6 +7,7 @@ import * as THREE from "three";
 
 import PersonAvatar from "@/components/about/PersonAvatar";
 import { LinkedInBadge } from "@/components/about/LinkedInBadge";
+import MemberModal, { type ModalMember } from "@/components/about/MemberModal";
 import { locations } from "@/lib/about-data";
 
 const Globe = GlobeImport as any;
@@ -222,6 +223,7 @@ function getLocationForBranch(branch: Branch) {
 
 function AdvisoryMember({
   member,
+  onSelect,
 }: {
   member: {
     name: string;
@@ -229,10 +231,22 @@ function AdvisoryMember({
     linkedIn?: string;
     title?: string;
     role?: string;
+    bio?: string;
+    description?: string;
   };
+  onSelect: (member: ModalMember) => void;
 }) {
   return (
     <div
+      onClick={() => onSelect(member)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onSelect(member);
+        }
+      }}
       style={{
         width: 112,
         minWidth: 112,
@@ -240,7 +254,10 @@ function AdvisoryMember({
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
+        cursor: "pointer",
+        transition: "transform 200ms ease",
       }}
+      className="hover:scale-105"
     >
       <PersonAvatar src={member.imagePath} name={member.name} size={48} />
 
@@ -289,7 +306,7 @@ function AdvisoryMember({
       )}
 
       {member.linkedIn && (
-        <div style={{ marginTop: 7 }}>
+        <div style={{ marginTop: 7 }} onClick={(e) => e.stopPropagation()}>
           <LinkedInBadge url={member.linkedIn} />
         </div>
       )}
@@ -300,9 +317,11 @@ function AdvisoryMember({
 function BranchPopup({
   branch,
   onClose,
+  onSelectMember,
 }: {
   branch: Branch;
   onClose: () => void;
+  onSelectMember: (member: ModalMember) => void;
 }) {
   const location = getLocationForBranch(branch);
 
@@ -362,65 +381,65 @@ function BranchPopup({
         }
 
         @media (max-width: 900px) {
-  .triibe-branch-popup {
-    right: 12px;
-    left: 12px;
-    width: auto;
-    max-width: none;
-    top: auto;
-    bottom: 12px;
-    transform: none;
+          .triibe-branch-popup {
+            right: 12px;
+            left: 12px;
+            width: auto;
+            max-width: none;
+            top: auto;
+            bottom: 12px;
+            transform: none;
 
-    height: min(70vh, calc(100% - 24px));
-    max-height: min(70vh, calc(100% - 24px));
+            height: min(70vh, calc(100% - 24px));
+            max-height: min(70vh, calc(100% - 24px));
 
-    overflow: hidden;
-  }
+            overflow: hidden;
+          }
 
-  .triibe-popup-scroll {
-    height: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+          .triibe-popup-scroll {
+            height: 100%;
+            max-height: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
 
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    touch-action: pan-y;
-  }
-}
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
+            touch-action: pan-y;
+          }
+        }
 
         @media (max-width: 520px) {
-  .triibe-popup-content {
-    flex-direction: column;
-  }
+          .triibe-popup-content {
+            flex-direction: column;
+          }
 
-  .triibe-popup-sidebar {
-    width: 100%;
-    min-width: 0;
-    border-right: none;
-    border-bottom: 1px solid #C0DD97;
-    padding: 12px 16px;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-  }
+          .triibe-popup-sidebar {
+            width: 100%;
+            min-width: 0;
+            border-right: none;
+            border-bottom: 1px solid #C0DD97;
+            padding: 12px 16px;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+          }
 
-  .triibe-popup-main {
-    padding: 16px;
-  }
+          .triibe-popup-main {
+            padding: 16px;
+          }
 
-  .triibe-advisory-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px 12px;
-  }
+          .triibe-advisory-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px 12px;
+          }
 
-  .triibe-advisory-grid > div {
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-}
+          .triibe-advisory-grid > div {
+            width: 100% !important;
+            min-width: 0 !important;
+          }
+        }
       `}</style>
 
       <div className="triibe-branch-popup">
@@ -502,11 +521,54 @@ function BranchPopup({
                       </p>
 
                       <div
+                        onClick={() =>
+                          onSelectMember({
+                            name: location.mdName!,
+                            imagePath: location.mdImagePath ?? "",
+                            role: "Managing Director",
+                            title: `Managing Director, ${branch.city}`,
+                            linkedIn: location.mdLinkedIn,
+                            bio:
+                              (location as any).mdBio ||
+                              (location as any).mdDescription ||
+                              `Managing Director for TRIIBE ${branch.city}.`,
+                            description:
+                              (location as any).mdDescription ||
+                              (location as any).mdBio ||
+                              `Managing Director for TRIIBE ${branch.city}.`,
+                          })
+                        }
+                        role="button"
+                        tabIndex={0}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            onSelectMember({
+                              name: location.mdName!,
+                              imagePath: location.mdImagePath ?? "",
+                              role: "Managing Director",
+                              title: `Managing Director, ${branch.city}`,
+                              linkedIn: location.mdLinkedIn,
+                              bio:
+                                (location as any).mdBio ||
+                                (location as any).mdDescription ||
+                                `Managing Director for TRIIBE ${branch.city}.`,
+                              description:
+                                (location as any).mdDescription ||
+                                (location as any).mdBio ||
+                                `Managing Director for TRIIBE ${branch.city}.`,
+                            });
+                          }
+                        }}
                         style={{
                           display: "flex",
                           alignItems: "center",
                           gap: 11,
+                          cursor: "pointer",
+                          transition: "transform 200ms ease",
+                          width: "fit-content",
                         }}
+                        className="hover:translate-x-1"
                       >
                         <PersonAvatar
                           src={location.mdImagePath ?? ""}
@@ -528,7 +590,10 @@ function BranchPopup({
                           </p>
 
                           {location.mdLinkedIn && (
-                            <div style={{ marginTop: 5 }}>
+                            <div
+                              style={{ marginTop: 5 }}
+                              onClick={(e) => e.stopPropagation()}
+                            >
                               <LinkedInBadge url={location.mdLinkedIn} />
                             </div>
                           )}
@@ -556,7 +621,11 @@ function BranchPopup({
 
                       <div className="triibe-advisory-grid">
                         {location.advisoryBoard.map((member) => (
-                          <AdvisoryMember key={member.name} member={member} />
+                          <AdvisoryMember
+                            key={member.name}
+                            member={member}
+                            onSelect={onSelectMember}
+                          />
                         ))}
                       </div>
                     </div>
@@ -616,6 +685,9 @@ export default function TriibeGlobe() {
   const [countries, setCountries] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeBranch, setActiveBranch] = useState<Branch | null>(null);
+  const [selectedMember, setSelectedMember] = useState<ModalMember | null>(
+    null,
+  );
   const [dimensions, setDimensions] = useState({
     width: 1100,
     height: 800,
@@ -786,7 +858,6 @@ export default function TriibeGlobe() {
     };
 
     const handleWheel = (e: WheelEvent) => {
-      // Allow the popup to handle its own scrolling
       if (
         e.target instanceof Element &&
         e.target.closest(".triibe-branch-popup")
@@ -802,8 +873,6 @@ export default function TriibeGlobe() {
     };
 
     const handleTouchMove = (e: TouchEvent) => {
-      // IMPORTANT:
-      // If the user is scrolling inside the popup, do not interfere.
       if (
         e.target instanceof Element &&
         e.target.closest(".triibe-branch-popup")
@@ -904,9 +973,6 @@ export default function TriibeGlobe() {
 
   /*
    * Select a location from the pills underneath the globe.
-   *
-   * Clicking the currently selected location again
-   * closes the popup and restores normal globe rotation.
    */
   const handleCountryClick = (branch: Branch) => {
     const isSameBranch = activeBranch?.id === branch.id;
@@ -1057,6 +1123,13 @@ export default function TriibeGlobe() {
         padding: "64px 0 48px",
       }}
     >
+      {/* Bio Modal Popup */}
+      <MemberModal
+        member={selectedMember}
+        isOpen={Boolean(selectedMember)}
+        onClose={() => setSelectedMember(null)}
+      />
+
       <div
         style={{
           textAlign: "center",
@@ -1177,12 +1250,11 @@ export default function TriibeGlobe() {
             />
           </div>
 
-          {/* =====================================================
-              REGIONAL MD + ADVISORY BOARD POPUP
-              ===================================================== */}
+          
           {activeBranch && (
             <BranchPopup
               branch={activeBranch}
+              onSelectMember={(m) => setSelectedMember(m)}
               onClose={() => {
                 setActiveBranch(null);
 
@@ -1196,9 +1268,7 @@ export default function TriibeGlobe() {
           )}
         </div>
 
-        {/* =====================================================
-            LOCATION BUTTONS
-            ===================================================== */}
+        
         <div
           style={{
             display: "flex",
@@ -1238,24 +1308,6 @@ export default function TriibeGlobe() {
             );
           })}
         </div>
-
-        {/* =====================================================
-            START YOUR OWN BRANCH
-            ===================================================== */}
-        {/* <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: 24,
-          }}
-        >
-          <Link
-            href="/branch"
-            className="inline-flex items-center justify-center bg-[#002C19] text-white no-underline px-12 py-4 rounded-md text-[15px] font-semibold transition-all duration-300 hover:bg-[#1C5945] hover:text-white"
-          >
-            Start your own branch
-          </Link>
-        </div> */}
       </div>
     </section>
   );
