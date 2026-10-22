@@ -8,22 +8,37 @@ export default function Hero() {
   return (
     <main className="pt-16 ">
       <section className="relative w-full min-h-screen bg-[#101828] flex items-center justify-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/summit/HeroSummit-new.png"
-            alt="College students collaborating"
-            fill
-            fetchPriority="high"
-            className="object-cover object-top"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 w-full h-full bg-black/60" />
+        <div className="absolute inset-0 overflow-hidden bg-[#101828]">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-50 scale-110 pointer-events-none"
+          >
+            <source src="/videos/Hero_Background.mp4" type="video/mp4" />
+          </video>
+
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="relative z-0 w-full h-full object-contain pointer-events-none [mask-image:linear-gradient(to_right,transparent_0%,black_18%,black_82%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_18%,black_82%,transparent_100%)]"
+          >
+            <source
+              src="/videos/Hero_Background_adjusted.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="absolute inset-0 w-full h-full bg-black/45 pointer-events-none z-[1]" />
         </div>
 
-        {/* Content */}
         <div className="relative z-10 flex flex-col items-center  px-6   max-w-225 mx-auto ">
-          {/* Heading */}
           <div className="flex flex-col items-center mt-40 md:mt-14 pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-3xl md:text-3xl lg:text-[56px] text-center tracking-tight leading-tight max-w-200">
               Maximizing return on impact
@@ -32,14 +47,6 @@ export default function Hero() {
             </h1>
           </div>
 
-          {/* Description
-          <div className="flex flex-col items-center pb-6">
-            <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-125 ">
-              The foundation building a world that prioritizes a return on impact, not income
-            </p>
-          </div> */}
-
-          {/* CTA Buttons */}
           <div className=" mt-7 flex flex-col md:flex-row items-center justify-center  gap-6 md:gap-12   ">
             {/* <Link
               href="/fellowship"
