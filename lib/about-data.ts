@@ -645,7 +645,7 @@ export const ourTeam: TeamMember[] = [
     name: "Pranay Mishra",
     role: "Head of Website development",
     imagePath: "/images/team/pranay-mishra.jpeg",
-    description: "Pranay Mishra leads website development at TRIIBE, managing its production website and building digital experiences for nonprofit founders. A Mechanical Engineering undergraduate at Birla Institute of Technology, Mesra, he combines full-stack development with platform management. Since joining TRIIBE in February 2026, he has contributed to its Fellowship, TRIIBE Index, event ticketing, and Grants experiences, focusing on website reliability, improved functionality, and seamless user engagement.",
+    description: "Pranay Mishra leads website development at TRIIBE, managing its production website and infrastructure for nonprofit founders. A Mechanical Engineering undergraduate at BIT Mesra, he works across the full stack to keep applications fast, reliable, and maintainable. Since joining in February 2026, he has built and shipped features for the Fellowship, Grants, event ticketing, and the TRIIBE Index. Most recently, he launched the Summit 2027 page and built the blog page that houses The TRIIBUNE, TRIIBE's official newsletter.",
     linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
   },
   {
