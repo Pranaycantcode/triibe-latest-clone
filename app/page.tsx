@@ -8,7 +8,7 @@ const KeyStatistics = dynamic(() => import("@/components/keyStatistics"));
 const Footer = dynamic(() => import("@/components/footer"));
 
 export const metadata = {
-  title: "Maximizing Return on Impact & Investment for Nonprofits | TRIIBE",
+  title: "Maximizing Return on Impact & Investment for Philentrepreneurs | TRIIBE",
   description:
     "TRIIBE helps nonprofits maximize return on impact and investment through funding, mentorship, and visibility.",
   alternates: {

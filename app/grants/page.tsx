@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import GrantsHeroGlobeWrapper from "@/components/grants/grants-hero-globe-wrapper";
 import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
 import GrantsPricing from "@/components/grants/grants-pricing";
+import GrantsBanner from "@/components/grants/GrantsBanner";
 import Footer from "@/components/footer";
 
 // TRIIBE owns this landing page. GrantAuthority receives only the outbound
@@ -96,11 +97,11 @@ export default function GrantsPage() {
               className="h-auto w-full max-w-[390px] brightness-0 invert"
             />
             <h1 className="mt-9 max-w-[640px] text-5xl font-bold leading-[1.05] tracking-[-0.045em] sm:text-6xl lg:text-[68px]">
-              The only grants platform built for next-gen founders.
+              The grant platform built for next-gen founders
             </h1>
             <p className="mt-7 max-w-[650px] text-lg leading-8 text-white/80 md:text-xl">
-              Most grants are never publicly posted. TRIIBE Grants finds them
-              anyway, enriched daily, matched to your mission, drafted in
+              Most grants are not publicly posted. TRIIBE Grants helps you find
+              them anyway, enriched daily, matched to your mission, drafted in
               minutes.
             </p>
             <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
@@ -119,7 +120,7 @@ export default function GrantsPage() {
               </a>
             </div>
             <p className="mt-4 text-sm text-white/65">
-              Searching is free. No card to browse.
+              Searching is free.
             </p>
           </div>
 
@@ -171,9 +172,12 @@ export default function GrantsPage() {
         </div>
       </section>
 
-      <div className="bg-[#f4f6f5]">
+      <GrantsBanner />
+
+
+      {/* <div className="bg-[#f4f6f5]">
         <GrantsPricing referralUrl={TRIIBE_GRANTS_PORTAL_URL} />
-      </div>
+      </div> */}
 
       <Footer />
     </main>

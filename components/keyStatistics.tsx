@@ -36,12 +36,12 @@ const supportedByLogos = [
 ];
 
 const partneredWithLogos = [
-  {
+  /* {
     src: "/images/home/image-131.png",
     alt: "ESG News",
     url: "https://esgnews.com",
     className: "h-9 md:h-11 max-w-full object-contain",
-  },
+  }, */
   {
     src: "/images/home/image-132.png",
     alt: "Cloz Talk",
@@ -197,12 +197,12 @@ const partneredWithLogos = [
     url: "https://logictry.com/",
     className: "h-8 md:h-10 max-w-full object-contain",
   },
-  {
+  /* {
     src: "/images/home/BronsterLLP.png",
     alt: "Bronster LLP",
     url: "https://www.bronsterllp.com/",
     className: "h-8 md:h-10 max-w-full object-contain",
-  },
+  }, */
   {
     src: "/images/home/axiom_pathways.png",
     alt: "Axiom Pathways",

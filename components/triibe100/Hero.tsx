@@ -39,7 +39,7 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The annual index of leading nonprofit founders under 30 to know.
+          Our index of nonprofit founders under 30 to know.
         </p>
       </div>
     </section>
