@@ -63,47 +63,39 @@ const benefits = [
 
 export default function FellowshipBenefits() {
   return (
-    <section className="flex flex-col items-start gap-12 px-4 md:px-25 lg:px-50 pt-10 pb-20 w-full bg-gray-50">
+    <section className="flex flex-col items-start gap-12 px-4 md:px-25 lg:px-50 pt-10 pb-20 w-full bg-white">
       <div className="flex flex-col items-start gap-4 w-full">
-        <h2 className=" font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
+        <h2 className="font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
           What fellows receive
         </h2>
-        <p className=" font-normal text-[#002c19]/80 text-lg leading-[29.2px] max-w-219">
-          Comprehensive support designed for founders under 30 navigating the unique challenges of scaling their nonprofits.
-        </p>
       </div>
 
-      <div className="w-full border-t border-gray-200 rounded-lg">
-        <div className="p-0">
-          {benefits.map((benefit, index) => (
-            <div
-              key={benefit.number}
-              className="flex items-center gap-4 px-3.5 py-5 border-b border-gray-200 last:border-b-0"
-            >
-              <div className="flex items-center justify-end min-w-6">
-                <span className=" font-normal text-[#002c19]/80 text-lg text-right leading-7">
-                  {benefit.number}
-                </span>
-              </div>
+      <div className="grid md:grid-cols-3 gap-8 w-full">
+        <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+          <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center text-[#002c19]">
+            Funding
+          </h4>
+          <p className="text-[#002c19]/90 flex-grow text-center font-medium">
+            We raise funds, distributed quarterly, to directly support our fellows
+          </p>
+        </div>
 
-              <Image
-                className="w-10 h-10 shrink-0"
-                alt={benefit.title}
-                src={benefit.icon}
-                width={40}
-                height={40}
-              />
+        <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+          <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center text-[#002c19]">
+            Operational support
+          </h4>
+          <p className="text-[#002c19]/90 flex-grow text-center font-medium">
+            Software, operating assistance, mental health support, and AI upskilling
+          </p>
+        </div>
 
-              <div className="flex flex-col gap-1 flex-1">
-                <h3 className=" font-semibold text-[#002c19] text-lg leading-[24.8px]">
-                  {benefit.title}
-                </h3>
-                <p className=" font-normal text-[#002c19]/80 text-sm leading-[21px]">
-                  {benefit.description}
-                </p>
-              </div>
-            </div>
-          ))}
+        <div className="border border-[#002c19] p-8 md:p-10 flex flex-col h-full rounded-lg">
+          <h4 className="text-2xl font-bold mb-6 min-h-[64px] flex items-center justify-center text-center text-[#002c19]">
+            Visibility
+          </h4>
+          <p className="text-[#002c19]/90 flex-grow text-center font-medium">
+            Featured by TRIIBE, connected to founders and funders, and on stage at the annual Next-Gen Summit
+          </p>
         </div>
       </div>
     </section>

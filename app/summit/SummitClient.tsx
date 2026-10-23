@@ -65,22 +65,22 @@ const SummitPage = () => {
         { time: "2:25 PM", title: "10 minute break" },
         {
           time: "2:35 PM",
-          title: "Block 5 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "3:05 PM", title: "10 minute break" },
         {
           time: "3:15 PM",
-          title: "Block 6 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "3:45 PM", title: "10 minute break" },
         {
           time: "3:55 PM",
-          title: "Block 7 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "4:25 PM", title: "10 minute break" },
         {
           time: "4:35 PM",
-          title: "Block 8 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         {
           time: "5:05 PM",
@@ -154,27 +154,27 @@ const SummitPage = () => {
         { time: "2:25 PM", title: "10 minute break" },
         {
           time: "2:35 PM",
-          title: "Block 5 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "3:05 PM", title: "10 minute break" },
         {
           time: "3:15 PM",
-          title: "Block 6 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "3:45 PM", title: "10 minute break" },
         {
           time: "3:55 PM",
-          title: "Block 7 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "4:25 PM", title: "10 minute break" },
         {
           time: "4:35 PM",
-          title: "Block 8 - 3 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         { time: "5:05 PM", title: "10 minute break" },
         {
           time: "5:15 PM",
-          title: "Block 9 - 2 TRIIBE Talks and afternoon activation zone",
+          title: "TRIIBE Talks",
         },
         {
           time: "5:45 PM",
@@ -317,8 +317,7 @@ const SummitPage = () => {
         
         <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20 pt-16">
           <p className="text-base sm:text-lg text-[#002c19] font-medium text-center max-w-3xl mx-auto leading-relaxed mb-12">
-            The annual gathering of the TRIIBE I00 leading nonprofit founders
-            under 30
+            The annual gathering of the TRIIBE I00
             <br />
             <span className="text-[#002c19]/80 text-sm sm:text-base">
               The opening weekend to Climate Week NYC and the UN General
@@ -373,7 +372,7 @@ const SummitPage = () => {
                     100
                   </span>
                   <span className="text-[10px] sm:text-xs md:text-sm font-semibold text-[#002c19]/80 uppercase tracking-wide">
-                    TRIIBE Fellows
+                    Philentrepreneurs
                   </span>
                 </div>
                 <Link

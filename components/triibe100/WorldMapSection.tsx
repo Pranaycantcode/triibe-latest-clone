@@ -77,9 +77,9 @@ export default function WorldMapSection() {
   }, [worldData, pathGenerator]);
 
   return (
-    <section className="w-full bg-[#002C19] py-8 sm:py-12 px-4 sm:px-8 select-none">
-      <div className="max-w-[1100px] mx-auto">
-        <div className="relative bg-transparent p-4 sm:p-8">
+    <section className="w-full bg-[#002C19] py-5 sm:py-8 px-4 sm:px-6 select-none">
+      <div className="max-w-[737px] mx-auto">
+        <div className="relative bg-transparent p-2 sm:p-5">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="w-full h-auto drop-shadow-sm pointer-events-none"

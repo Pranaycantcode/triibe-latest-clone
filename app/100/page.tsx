@@ -7,6 +7,7 @@ import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
 import HowWePick from "@/components/triibe100/HowWePick";
 import FellowshipBenefits from "@/components/fellowshipBenefits";
+import MeetTheTribe100 from "@/components/triibe100/MeetTheTribe100";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export const metadata = {
@@ -39,11 +40,15 @@ export default function Triibe100Page() {
           />
         );
       })}
-      <FellowshipBenefits />
+      
 
       <TestimonialCarousel />
 
-      <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
+      <FellowshipBenefits />
+
+      <MeetTheTribe100 />
+
+      {/* <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
         <div className="max-w-260 mx-auto">
           <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
             <blockquote className="text-[#002c19] text-xl font-normal leading-relaxed italic">
@@ -78,7 +83,7 @@ export default function Triibe100Page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
