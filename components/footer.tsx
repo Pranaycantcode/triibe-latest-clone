@@ -92,14 +92,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="w-full">
+          {/* <div className="w-full">
             <p className="font-normal text-[#002c19]/80 text-xs md:text-sm tracking-[0] leading-5">
               United World Leaders exercises no operational control over and
               assumes no responsibility for the activities of TRIIBE. TRIIBE is
               not authorized to legally bind United World Leaders or any of its
               representatives.
             </p>
-          </div>
+          </div> */}
 
           <div className="flex flex-col md:flex-row items-center justify-between w-full border-t border-gray-200 pt-4 pb-4 gap-4">
             <p className="font-normal text-[#002c19]/80 text-sm tracking-[0] leading-5">

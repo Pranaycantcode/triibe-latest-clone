@@ -270,7 +270,7 @@ const SummitPage = () => {
       <section className="relative w-full bg-white overflow-hidden pb-20">
         <div className="relative w-full min-h-[500px] md:min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden">
           <Image
-            src="/images/triibetalk/cohort.avif"
+            src="/images/summit/summit-hero.jpeg"
             alt="Javits Center Exterior"
             fill
             className="object-cover object-center"

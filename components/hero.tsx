@@ -69,18 +69,18 @@ export default function Hero() {
           </div>
 
           <div className="mt-15 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4">
-            <p className="leading-relaxed text-lg text-white tracking-wide md:text-2xl text-center">
+            {/* <p className="leading-relaxed text-lg text-white tracking-wide md:text-2xl text-center">
               Independent member of the United World Leaders
-            </p>
+            </p> */}
 
-            <Image
+            {/* <Image
               src="/UWL Raster File.png"
               alt="United World Leaders"
               width={60}
               height={60}
               className="object-contain"
               priority
-            />
+            /> */}
           </div>
         </div>
       </section>
