@@ -8,7 +8,6 @@ export default function Hero() {
   return (
     <main className="pt-16 ">
       <section className="relative w-full min-h-screen bg-[#101828] flex items-center justify-center">
-        {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
             src="/images/summit/HeroSummit-new.png"
@@ -18,12 +17,11 @@ export default function Hero() {
             className="object-cover object-top"
             sizes="100vw"
           />
+
           <div className="absolute inset-0 w-full h-full bg-black/60" />
         </div>
 
-        {/* Content */}
         <div className="relative z-10 flex flex-col items-center  px-6   max-w-225 mx-auto ">
-          {/* Heading */}
           <div className="flex flex-col items-center mt-40 md:mt-14 pb-3">
             <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-3xl md:text-3xl lg:text-[56px] text-center tracking-tight leading-tight max-w-200">
               Maximizing return on impact
@@ -32,30 +30,34 @@ export default function Hero() {
             </h1>
           </div>
 
-          {/* Description
-          <div className="flex flex-col items-center pb-6">
-            <p className="font-['DM_Sans',Helvetica]font-normal text-white/90 text-base md:text-lg text-center tracking-[0] leading-relaxed max-w-125 ">
-              The foundation building a world that prioritizes a return on impact, not income
-            </p>
-          </div> */}
-
-          {/* CTA Buttons */}
           <div className=" mt-7 flex flex-col md:flex-row items-center justify-center  gap-6 md:gap-12   ">
             {/* <Link
+
               href="/fellowship"
+
               className="px-6 py-3 font-bold bg-white text-[#002c19]
+
  hover:bg-gray-100 font-['DM_Sans',Helvetica] font-normal text-sm h-11 inline-flex items-center justify-center transition-colors rounded-sm h-[44px]"
+
             >
+
               Explore our Program
+
             </Link> */}
 
             {/* <Link
+
               href="/apply"
+
               className="px-6 py-3  font-bold bg-[#002c19] text-white rounded-sm h-[44px] hover:bg-[#003d24] font-['DM_Sans',Helvetica] font-normal text-sm  inline-flex items-center justify-center transition-colors "
+
             >
+
               Apply to Fellowship
+
             </Link> */}
           </div>
+
           <div className="mt-2">
             <Image
               src="/images/TRIIBELOGOS/TRIIBE NAME WHITE.png"
@@ -70,6 +72,7 @@ export default function Hero() {
             <p className="leading-relaxed text-lg text-white tracking-wide md:text-2xl text-center">
               Independent member of the United World Leaders
             </p>
+
             <Image
               src="/UWL Raster File.png"
               alt="United World Leaders"
