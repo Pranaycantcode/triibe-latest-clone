@@ -64,7 +64,7 @@ const benefits = [
 export default function FellowshipBenefits() {
   return (
     <section className="flex flex-col items-start gap-12 px-4 md:px-25 lg:px-50 pt-10 pb-20 w-full bg-white">
-      <div className="flex flex-col items-start gap-4 w-full">
+      <div className="flex flex-col items-center text-center gap-4 w-full">
         <h2 className="font-bold text-[#002c19] text-4xl tracking-[-0.90px] leading-10">
           What fellows receive
         </h2>

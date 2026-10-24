@@ -21,10 +21,12 @@ export default function ProgramOverviewTest() {
 
             <div className="flex flex-col gap-3 max-w-4xl mx-auto">
               <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-                TRIIBE backs founders under 30 who are reshaping philanthropy itself.
+                TRIIBE backs founders under 30 who are reshaping philanthropy
+                itself.
               </h3>
               <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-                With nothing yet to protect, they’re free to fail, and that freedom is where new ideas take root.
+                With nothing yet to protect, they’re free to fail, and that
+                freedom is where new ideas take root.
               </h3>
             </div>
           </div>
@@ -48,7 +50,7 @@ export default function ProgramOverviewTest() {
               </div>
             </div>
 
-            <div className="w-full max-w-[1200px] mx-auto mt-10 transition-all duration-300 hover:scale-[1.02]">
+            <div className="w-full max-w-[1000px] mx-auto mt-10 transition-all duration-300 hover:scale-[1.02]">
               <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
                 <p className="text-xl md:text-2xl font-medium text-[#002c19] text-center md:text-left">
                   Learn about the missing nonprofit layer
@@ -64,8 +66,7 @@ export default function ProgramOverviewTest() {
             </div>
 
             <div className="mt-8 md:mt-10 text-center">
-              <p className="text-white/90 text-sm md:text-base font-medium">
-              </p>
+              <p className="text-white/90 text-sm md:text-base font-medium"></p>
             </div>
           </div>
         </section>
@@ -89,41 +90,43 @@ export default function ProgramOverviewTest() {
               Our index of nonprofit founders under 30
             </h3>
 
-            <div className="w-full my-6">
+            <div className="w-full my-6 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
               <WorldMapSection />
+
+              <div className="w-full max-w-[600px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
+                <div className="bg-white rounded-[24px] px-8 py-5 shadow-sm flex items-center justify-between gap-6">
+                  <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+                    See who they are
+                  </p>
+
+                  <Link
+                    href="/100"
+                    className="inline-flex items-center justify-center h-[52px] px-6 rounded-xl font-semibold text-xl text-white bg-[#002c19] hover:bg-[#1C5945] whitespace-nowrap transition-colors shrink-0"
+                  >
+                    TRIIBE 100
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="py-12 w-full px-4 md:px-25 lg:px-50">
-          <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
-            <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-              <p className="text-xl md:text-2xl font-medium text-[#002c19]">
-                See who they are
-              </p>
-
-              <Link
-                href="/100"
-                className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
-              >
-                TRIIBE 100
-              </Link>
-            </div>
-          </div>
-
-          <div className="max-w-[1200px] mx-auto text-center text-[#002c19] mt-8 flex flex-col gap-2">
+        <section className="py-12 w-full px-4 md:px-25 lg:px-50 bg-white">
+          <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col gap-2">
             <p className="text-base md:text-lg font-medium">
-              Collectively, 653 years of nonprofit leadership and $15.5M raised last year.
+              Collectively, 653 years of nonprofit leadership and $15.5M raised
+              last year.
             </p>
-            <p className="text-base md:text-lg font-medium text-[#002c19]/80">
-              Measured by Purposefy: $3.60 in social return for every $1 donated.
+            <p className="text-base md:text-lg font-medium text-[#002c19]">
+              Measured by Purposefy: $3.60 in social return for every $1
+              donated.
             </p>
           </div>
         </section>
 
         <section className="py-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            <h2 className="text-4xl md:text-6xl font-bold mb-12">
               Beyond the 100
             </h2>
 
@@ -141,7 +144,8 @@ export default function ProgramOverviewTest() {
 
                 <div className="flex-1 flex items-center justify-center text-center">
                   <p className="text-lg leading-7">
-                    Free, AI-powered grant database for search, application, and submission tracking
+                    Free, AI-powered grant database for search, application, and
+                    submission tracking
                   </p>
                 </div>
 

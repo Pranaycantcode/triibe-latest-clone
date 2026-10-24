@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MeetTheTribe100() {
   return (
-    <section className="w-full bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-white pt-6 md:pt-10 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1000px] mx-auto flex flex-col items-center text-center">
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-14">
           <h2 className="font-['DM_Sans',Helvetica] font-bold text-[#002c19] text-3xl sm:text-4xl md:text-[48px] tracking-tight leading-none">

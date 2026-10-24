@@ -137,7 +137,7 @@ export default function GrantsPage() {
       <LiveGrantMetrics />
 
       <section
-        className="px-4 py-20 md:py-28"
+        className="px-4 pt-20 md:pt-28 pb-4 md:pb-6"
         aria-labelledby="mission-fundable-heading"
       >
         <div className="mx-auto max-w-[1200px]">
