@@ -535,7 +535,7 @@ const SummitPage = () => {
       </section>
 
       
-      <section className="pt-20 pb-24 px-4 md:px-12 lg:px-24 bg-[#05291b] text-white">
+      {/* <section className="pt-20 pb-24 px-4 md:px-12 lg:px-24 bg-[#05291b] text-white">
         <div className="max-w-5xl mx-auto flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-center mb-3">
             Sponsor our summit
@@ -574,7 +574,7 @@ const SummitPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       
       <section className="py-16 w-full px-4 md:px-25 lg:px-50 bg-[#F5F5F5]">

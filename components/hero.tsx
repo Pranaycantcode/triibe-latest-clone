@@ -22,12 +22,14 @@ export default function Hero() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center  px-6   max-w-225 mx-auto ">
-          <div className="flex flex-col items-center mt-40 md:mt-14 pb-3">
-            <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-3xl md:text-3xl lg:text-[56px] text-center tracking-tight leading-tight max-w-200">
-              Maximizing return on impact
-              <br />
-              and investment for philentrepreneurs
-            </h1>
+          <div className="mt-52 md:mt-32 pb-3">
+            <Image
+              src="/images/TRIIBELOGOS/TRIIBE NAME WHITE.png"
+              alt="TRIIBE"
+              width={320}
+              height={40}
+              priority
+            />
           </div>
 
           <div className=" mt-7 flex flex-col md:flex-row items-center justify-center  gap-6 md:gap-12   ">
@@ -58,14 +60,12 @@ export default function Hero() {
             </Link> */}
           </div>
 
-          <div className="mt-2">
-            <Image
-              src="/images/TRIIBELOGOS/TRIIBE NAME WHITE.png"
-              alt="TRIIBE"
-              width={320}
-              height={40}
-              priority
-            />
+          <div className="flex flex-col items-center mt-2">
+            <h1 className="font-['DM_Sans',Helvetica] font-bold text-white text-3xl md:text-3xl lg:text-[56px] text-center tracking-tight leading-tight max-w-200">
+              Maximizing return on impact
+              <br />
+              and investment for philentrepreneurs
+            </h1>
           </div>
 
           <div className="mt-15 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4">

@@ -10,17 +10,17 @@ export default function CTASection() {
           Support the Next-gen
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full max-w-5xl mx-auto">
-          <div className="flex-1 w-full flex justify-center md:justify-start">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-4xl mx-auto">
+          <div className="w-full max-w-[420px] flex justify-center md:justify-end">
             <a
               href="/donate"
-              className="w-full max-w-[420px] rounded-2xl bg-white py-6 px-10 text-center text-[#002c19] text-2xl md:text-3xl font-bold shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-[1.02]"
+              className="w-full rounded-2xl bg-white py-9 px-10 text-center text-[#002c19] text-2xl md:text-3xl font-bold shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center"
             >
               Donate here
             </a>
           </div>
 
-          <div className="flex-shrink-0 flex justify-center w-40 md:w-56 lg:w-64">
+          <div className="flex-shrink-0 flex justify-center md:justify-start w-40 md:w-56 lg:w-64">
             <Image
               src="/images/home/heroLogo.png"
               alt="TRIIBE Tree Logo"

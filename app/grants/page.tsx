@@ -106,22 +106,24 @@ export default function GrantsPage() {
             </p>
             <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <a
-                href={TRIIBE_GRANTS_PORTAL_URL}
+                href="https://www.grantauthority.org/triibe/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-14 items-center justify-center gap-2 rounded-md bg-white px-8 py-4 text-base font-bold text-[#002c19] transition-colors hover:bg-[#edf4f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 Find your grants
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href={TRIIBE_GRANTS_SIGN_IN_URL}
+                href="https://www.grantauthority.org/triibe/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-14 items-center justify-center rounded-md border border-white/50 px-8 py-4 text-base font-bold text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 Sign in
               </a>
             </div>
-            <p className="mt-4 text-sm text-white/65">
-              Searching is free.
-            </p>
+            <p className="mt-4 text-sm text-white/65">Searching is free.</p>
           </div>
 
           <div className="relative z-0 flex min-w-0 items-center justify-center overflow-hidden lg:justify-end">
@@ -143,11 +145,11 @@ export default function GrantsPage() {
         <div className="mx-auto max-w-[1200px]">
           <h2
             id="mission-fundable-heading"
-            className="max-w-[760px] text-4xl font-bold tracking-[-0.035em] md:text-6xl"
+            className="w-full text-center text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight whitespace-nowrap"
           >
             Make your mission fundable
           </h2>
-          <p className="mt-5 max-w-[980px] text-base leading-8 text-[#496157] md:text-lg">
+          <p className="mt-5 max-w-[980px] mx-auto text-center text-base leading-8 text-[#496157] md:text-lg">
             TRIIBE Grants is our free infrastructure supporting credible
             opportunities, clear eligibility, primary-source evidence, and the
             tools to move from search to submission.
@@ -173,7 +175,6 @@ export default function GrantsPage() {
       </section>
 
       <GrantsBanner />
-
 
       {/* <div className="bg-[#f4f6f5]">
         <GrantsPricing referralUrl={TRIIBE_GRANTS_PORTAL_URL} />
