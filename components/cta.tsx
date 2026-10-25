@@ -11,7 +11,7 @@ export default function CTASection() {
         </h2>
 
         <div className="flex flex-col gap-2 text-base sm:text-lg md:text-xl font-medium text-white/90 text-center max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed">
-          <p>Donations support the TRIIBE 100 in three ways:</p>
+          <p>Donations support the TRIIBE 100 via</p>
           <p>direct funding, operational support, and visibility.</p>
         </div>
 
