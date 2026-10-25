@@ -563,7 +563,7 @@ export const locations: LocationEntry[] = [
         title: "CEO, Deep Green Capital",
       },
       {
-        name: "Christine Amour-Levan",
+        name: "Christine Amour-Levar",
         imagePath: "/images/team/christine-amour-levan.jfif",
         linkedIn: "https://www.linkedin.com/in/christine-amour-levar007/",
         description: "Christine Amour-Levar is a Singapore-based social entrepreneur and climate advocate with experience in global marketing and communications, including roles at Nike and Temasek Trust. In 2023, she co-founded Investors for Climate to connect investors with solutions in climate technology, clean energy, agriculture, and biodiversity. She also founded Her Planet Earth, supporting conservation and women-led initiatives, and Women Beyond Limits, which promotes women's leadership and mentorship. Through her ventures and her book Wild Wisdom, Christine champions climate action, sustainability, and women's empowerment.",

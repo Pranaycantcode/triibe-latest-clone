@@ -149,11 +149,16 @@ export default function GrantsPage() {
           >
             Make your mission fundable
           </h2>
-          <p className="mt-5 max-w-[980px] mx-auto text-center text-base leading-8 text-[#496157] md:text-lg">
-            TRIIBE Grants is our free infrastructure supporting credible
-            opportunities, clear eligibility, primary-source evidence, and the
-            tools to move from search to submission.
-          </p>
+          <div className="mt-5 max-w-[980px] mx-auto text-center text-base leading-8 text-[#496157] md:text-lg flex flex-col gap-2">
+            <p>
+              TRIIBE Grants is our free infrastructure supporting credible
+              opportunities, clear eligibility,
+            </p>
+            <p>
+              primary-source evidence, and the tools to move from search to
+              submission.
+            </p>
+          </div>
 
           <ol className="mt-12 grid gap-5 md:grid-cols-3">
             {steps.map((step) => (

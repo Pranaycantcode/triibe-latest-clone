@@ -181,9 +181,10 @@ const EventsPage = () => {
                 className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
               />
 
-              <p className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Intergenerational talks featuring next-gen voices
-              </p>
+              <div className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal flex flex-col gap-1">
+                <p>Intergenerational conversations,</p>
+                <p>featuring next-gen voices</p>
+              </div>
 
               <div className="flex w-full items-center justify-start gap-4">
                 <a

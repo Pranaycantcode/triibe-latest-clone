@@ -6,17 +6,17 @@ export default function HowWePick() {
   ];
 
   return (
-    <section className="pt-8 pb-16 px-4 md:px-25 lg:px-[200px] bg-white">
-      <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
+    <section className="pt-8 pb-16 px-4 sm:px-6 md:px-12 lg:px-20 bg-white">
+      <div className="max-w-[1280px] mx-auto text-center text-[#002c19]">
         <h2 className="text-4xl md:text-6xl font-bold mb-12">
           How we pick the 100
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {criteria.map((item, index) => (
             <div
               key={index}
-              className="border border-[#002c19] p-8 md:p-10 flex items-center text-left rounded-2xl bg-white"
+              className="border border-[#002c19] px-6 py-8 md:px-7 md:py-10 flex items-center text-left rounded-2xl bg-white"
             >
               <p className="text-[#002c19] text-sm md:text-base leading-relaxed font-medium">
                 {item}

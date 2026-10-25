@@ -24,9 +24,9 @@ export default function ProgramOverviewTest() {
                 TRIIBE backs founders under 30 who are reshaping philanthropy
                 itself.
               </h3>
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-                With nothing yet to protect, they’re free to fail, and that
-                freedom is where new ideas take root.
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed flex flex-col gap-3">
+                <span>With nothing yet to protect, they’re free to fail,</span>
+                <span>and that freedom is where new ideas take root.</span>
               </h3>
             </div>
           </div>
@@ -71,26 +71,39 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        <section className="pt-16 pb-1 px-4 md:px-12 lg:px-24 bg-white w-full">
+        <section className="pt-16 pb-12 px-4 md:px-12 lg:px-24 bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col items-center">
             <div className="flex flex-col items-center justify-center gap-4 mb-4">
-              <Image
-                src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
-                alt="TRIIBE 100"
-                width={260}
-                height={48}
-                priority
-                className="h-9 sm:h-11 md:h-12 w-auto object-contain"
-              />
+              {/* <Image
+        src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
+        alt="TRIIBE 100"
+        width={260}
+        height={48}
+        priority
+        className="h-9 sm:h-11 md:h-12 w-auto object-contain"
+      /> */}
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold tracking-tight whitespace-nowrap">
                 The next generation is already here
               </h2>
             </div>
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-8 max-w-3xl mx-auto">
-              Our index of nonprofit founders under 30
+
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-6 max-w-3xl mx-auto">
+              The TRIIBE I00 is our index of nonprofit founders under 30
             </h3>
 
-            <div className="w-full my-6 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
+            {/* Repositioned statistics */}
+            <div className="flex flex-col gap-2 mb-8 text-center text-[#002c19]">
+              <p className="text-base md:text-lg font-medium">
+                Collectively, 653 years of nonprofit leadership and $15.5M
+                raised last year.
+              </p>
+              <p className="text-base md:text-lg font-medium">
+                Measured by Purposefy: $3.60 in social return for every $1
+                donated.
+              </p>
+            </div>
+
+            <div className="w-full my-4 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
               <WorldMapSection />
 
               <div className="w-full max-w-[600px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
@@ -111,20 +124,7 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        <section className="py-12 w-full px-4 md:px-25 lg:px-50 bg-white">
-          <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col gap-2">
-            <p className="text-base md:text-lg font-medium">
-              Collectively, 653 years of nonprofit leadership and $15.5M raised
-              last year.
-            </p>
-            <p className="text-base md:text-lg font-medium text-[#002c19]">
-              Measured by Purposefy: $3.60 in social return for every $1
-              donated.
-            </p>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
+        <section className="pt-4 md:pt-6 pb-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <h2 className="text-4xl md:text-6xl font-bold mb-12">
               Beyond the 100
@@ -170,10 +170,11 @@ export default function ProgramOverviewTest() {
                   />
                 </div>
 
-                <div className="flex-1 flex items-center justify-center text-center">
+                <div className="flex-1 flex flex-col items-center justify-center text-center gap-1">
                   <p className="text-lg leading-7">
-                    Intergenerational conversations, featuring next-gen voices
+                    Intergenerational conversations,
                   </p>
+                  <p className="text-lg leading-7">featuring next-gen voices</p>
                 </div>
 
                 <div className="w-full flex justify-center mt-8 shrink-0">
