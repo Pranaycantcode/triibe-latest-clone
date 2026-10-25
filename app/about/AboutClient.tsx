@@ -125,7 +125,9 @@ export default function AboutPage() {
   const [animated, setAnimated] = useState(false);
 
   // Central modal state
-  const [selectedMember, setSelectedMember] = useState<ModalMember | null>(null);
+  const [selectedMember, setSelectedMember] = useState<ModalMember | null>(
+    null,
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -137,7 +139,7 @@ export default function AboutPage() {
           setTimeout(() => start2(), 200);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
     if (statsRef.current) observer.observe(statsRef.current);
     return () => observer.disconnect();
@@ -392,9 +394,10 @@ export default function AboutPage() {
           </FadeUp>
 
           <FadeUp delay={100}>
-            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto">
+            {/* 2 columns on mobile/tablet, 4 columns on desktop (lg:grid-cols-4) with wider max-width */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {associateBoard[0] && (
-                <div className="col-span-2 flex justify-center mb-1 sm:mb-2">
+                <div className="col-span-2 lg:col-span-4 flex justify-center mb-1 sm:mb-2">
                   <div
                     className="w-full max-w-[160px] sm:max-w-[200px] md:max-w-xs lg:w-1/4 cursor-pointer transition-transform duration-200 hover:-translate-y-1"
                     onClick={() => setSelectedMember(associateBoard[0])}
@@ -492,23 +495,23 @@ export default function AboutPage() {
         </section>
 
         <section className="pt-2 pb-12 px-4 md:px-25 lg:px-0">
-  <div className="max-w-200 mx-auto">
-    <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
-      <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-        <p className="text-2xl md:text-2xl font-medium text-[#002c19]">
-          Start your own branch
-        </p>
+          <div className="max-w-200 mx-auto">
+            <div className="max-w-7xl mx-auto transition-all duration-300 hover:scale-105">
+              <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                <p className="text-2xl md:text-2xl font-medium text-[#002c19]">
+                  Start your own branch
+                </p>
 
-        <Link
-          href="/branch"
-          className="inline-flex items-center justify-center bg-[#002c19] text-white hover:bg-[#1C5945] px-10 rounded-xl min-w-[220px] h-[54px] font-semibold text-base transition-all duration-300 whitespace-nowrap"
-        >
-          Branch guide
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
+                <Link
+                  href="/branch"
+                  className="inline-flex items-center justify-center bg-[#002c19] text-white hover:bg-[#1C5945] px-10 rounded-xl min-w-[220px] h-[54px] font-semibold text-base transition-all duration-300 whitespace-nowrap"
+                >
+                  Branch guide
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Our Team */}
         <section

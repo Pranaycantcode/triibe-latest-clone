@@ -13,63 +13,34 @@ export default function ProgramOverviewTest() {
         <section className="pt-16 pb-16 px-4 md:px-12 lg:px-24 bg-white">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold tracking-tight mb-2 whitespace-nowrap">
-              Philanthropy has great leaders.
+              Philanthropy has great leaders,
             </h2>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold tracking-tight mb-10 whitespace-nowrap">
-              It has no pipeline for the next ones.
+              but no pipeline for the next gen.
             </h2>
 
             <div className="flex flex-col gap-3 max-w-4xl mx-auto">
               <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-                TRIIBE backs founders under 30 who are reshaping philanthropy
-                itself.
-              </h3>
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed flex flex-col gap-3">
-                <span>With nothing yet to protect, they’re free to fail,</span>
-                <span>and that freedom is where new ideas take root.</span>
+                We are that pipeline, backing nonprofit founders under 30.
               </h3>
             </div>
           </div>
         </section>
 
-        <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full pt-16">
-          <div className="max-w-[1200px] mx-auto flex flex-col">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 w-full max-w-5xl mx-auto">
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.2] text-center md:text-left max-w-2xl">
-                Channeling capital to the nonprofit startup ecosystem
-              </h3>
+        <div className="w-full max-w-[1000px] mx-auto px-4 md:px-8 py-4 transition-all duration-300 hover:scale-[1.02]">
+          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
+              Learn more about the nonprofit startup ecosystem
+            </p>
 
-              <div className="flex-shrink-0 flex justify-center w-48 md:w-64 -ml-8 overflow-visible">
-                <Image
-                  src="/images/home/heroLogo.png"
-                  alt="TRIIBE Tree Logo"
-                  width={300}
-                  height={300}
-                  className="w-full h-auto object-contain scale-125 md:scale-150"
-                />
-              </div>
-            </div>
-
-            <div className="w-full max-w-[1000px] mx-auto mt-10 transition-all duration-300 hover:scale-[1.02]">
-              <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
-                <p className="text-xl md:text-2xl font-medium text-[#002c19] text-center md:text-left">
-                  Learn about the missing nonprofit layer
-                </p>
-
-                <Link
-                  href="/the-missing-layer"
-                  className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
-                >
-                  Read our Report
-                </Link>
-              </div>
-            </div>
-
-            <div className="mt-8 md:mt-10 text-center">
-              <p className="text-white/90 text-sm md:text-base font-medium"></p>
-            </div>
+            <Link
+              href="/the-missing-layer"
+              className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
+            >
+              Read our Report
+            </Link>
           </div>
-        </section>
+        </div>
 
         <section className="pt-16 pb-12 px-4 md:px-12 lg:px-24 bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col items-center">
@@ -88,18 +59,14 @@ export default function ProgramOverviewTest() {
             </div>
 
             <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-6 max-w-3xl mx-auto">
-              The TRIIBE I00 is our index of nonprofit founders under 30
+              The TRIIBE 100 Index represents 23 countries, 653 years of
+              nonprofit leadership, and $15.5M raised last year.
             </h3>
 
-            {/* Repositioned statistics */}
             <div className="flex flex-col gap-2 mb-8 text-center text-[#002c19]">
               <p className="text-base md:text-lg font-medium">
-                Collectively, 653 years of nonprofit leadership and $15.5M
-                raised last year.
-              </p>
-              <p className="text-base md:text-lg font-medium">
-                Measured by Purposefy: $3.60 in social return for every $1
-                donated.
+                Measured by Purposefy, every dollar donated to these next-gen
+                philentrepreneurs yields $3.60 in social return.
               </p>
             </div>
 
@@ -109,7 +76,7 @@ export default function ProgramOverviewTest() {
               <div className="w-full max-w-[600px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
                 <div className="bg-white rounded-[24px] px-8 py-5 shadow-sm flex items-center justify-between gap-6">
                   <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
-                    See who they are
+                    Meet the founders
                   </p>
 
                   <Link

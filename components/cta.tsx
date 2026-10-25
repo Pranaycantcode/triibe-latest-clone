@@ -5,10 +5,15 @@ import Image from "next/image";
 export default function CTASection() {
   return (
     <section className="bg-[#002c19] text-white pt-16 pb-12 px-4 md:px-25 lg:px-[200px] w-full">
-      <div className="max-w-[1200px] mx-auto flex flex-col">
-        <h2 className="text-4xl md:text-6xl font-bold mb-10 md:mb-12 flex flex-wrap items-center justify-center gap-4">
-          Support the next-gen
+      <div className="max-w-[1200px] mx-auto flex flex-col items-center">
+        <h2 className="text-4xl md:text-6xl font-bold mb-4 flex flex-wrap items-center justify-center gap-4 text-center">
+          Support the founders
         </h2>
+
+        <div className="flex flex-col gap-2 text-base sm:text-lg md:text-xl font-medium text-white/90 text-center max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed">
+          <p>Donations support the TRIIBE 100 in three ways:</p>
+          <p>direct funding, operational support, and visibility.</p>
+        </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-4xl mx-auto">
           <div className="w-full max-w-[380px] flex justify-center md:justify-end">
