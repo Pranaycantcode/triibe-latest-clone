@@ -5,20 +5,20 @@ export default function MeetTheTribe100() {
     <section className="w-full bg-white pt-6 md:pt-10 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1000px] mx-auto flex flex-col items-center text-center">
         <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-8 md:mb-10">
-          <h2 className="font-['DM_Sans',Helvetica] font-bold text-[#002c19] text-2xl sm:text-3xl md:text-[34px] tracking-tight leading-none">
-            Meet the
-          </h2>
-          <div className="relative inline-flex items-center">
-            <Image
-              src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
-              alt="TRIIBE 100"
-              width={200}
-              height={34}
-              priority
-              className="h-6 sm:h-7 md:h-8 w-auto object-contain"
-            />
-          </div>
-        </div>
+  <h2 className="font-['DM_Sans',Helvetica] font-bold text-[#002c19] text-4xl sm:text-3xl md:text-[34px] tracking-tight leading-none">
+    Meet the
+  </h2>
+  <div className="relative inline-flex items-center">
+    <Image
+      src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
+      alt="TRIIBE 100"
+      width={200}
+      height={34}
+      priority
+      className="h-9 sm:h-7 md:h-8 w-auto object-contain"
+    />
+  </div>
+</div>
 
         <div className="flex flex-col gap-5 md:gap-6 font-['DM_Sans',Helvetica] text-[#002c19]/90 text-sm sm:text-base md:text-lg font-normal leading-relaxed max-w-[750px] mx-auto">
           <div className="flex flex-col gap-2">
