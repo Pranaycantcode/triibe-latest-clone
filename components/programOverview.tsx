@@ -12,16 +12,19 @@ export default function ProgramOverviewTest() {
       <main className="w-full flex flex-col">
         <section className="pt-16 pb-16 px-4 md:px-12 lg:px-24 bg-white">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-2 whitespace-nowrap">
-              Philanthropy has great leaders,
-            </h2>
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-10 whitespace-nowrap">
-              but no pipeline for the next gen.
-            </h2>
+            <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
+              <h2 className="text-3xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-2 whitespace-nowrap text-center">
+                The next gen will inherit the world's problems.
+              </h2>
+              <h2 className="text-3xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-10 whitespace-nowrap text-center">
+                We back the leaders already solving them.
+              </h2>
+            </div>
 
             <div className="flex flex-col gap-3 max-w-4xl mx-auto">
-              <h3 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed">
-                We are that pipeline, backing nonprofit founders under 30.
+              <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed">
+                TRIIBE is the pipeline philanthropy has been missing, backing
+                nonprofit founders under 30.
               </h3>
             </div>
           </div>
