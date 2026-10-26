@@ -13,10 +13,10 @@ export default function ProgramOverviewTest() {
         <section className="pt-16 pb-16 px-4 md:px-12 lg:px-24 bg-white">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
-              <h2 className="text-3xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-2 whitespace-nowrap text-center">
+              <h2 className="text-2xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-2 md:whitespace-nowrap text-center">
                 The next gen will inherit the world's problems.
               </h2>
-              <h2 className="text-3xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-10 whitespace-nowrap text-center">
+              <h2 className="text-2xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-10 md:whitespace-nowrap text-center">
                 We back the leaders already solving them.
               </h2>
             </div>
@@ -56,7 +56,7 @@ export default function ProgramOverviewTest() {
         priority
         className="h-9 sm:h-11 md:h-12 w-auto object-contain"
       /> */}
-              <h2 className="text-4xl md:text-6xl font-bold tracking-tight whitespace-nowrap">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight sm:whitespace-nowrap text-center">
                 The next generation is already here
               </h2>
             </div>
@@ -77,14 +77,14 @@ export default function ProgramOverviewTest() {
               <WorldMapSection />
 
               <div className="w-full max-w-[600px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
-                <div className="bg-white rounded-[24px] px-8 py-5 shadow-sm flex items-center justify-between gap-6">
-                  <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
+                <div className="bg-white rounded-[24px] px-6 py-5 sm:px-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+                  <p className="text-xl sm:text-2xl md:text-3xl font-medium text-[#002c19] text-center sm:text-left whitespace-nowrap">
                     Meet the founders
                   </p>
 
                   <Link
                     href="/100"
-                    className="inline-flex items-center justify-center h-[52px] px-6 rounded-xl font-semibold text-xl text-white bg-[#002c19] hover:bg-[#1C5945] whitespace-nowrap transition-colors shrink-0"
+                    className="inline-flex items-center justify-center h-[52px] w-full sm:w-auto px-6 rounded-xl font-semibold text-lg sm:text-xl text-white bg-[#002c19] hover:bg-[#1C5945] whitespace-nowrap transition-colors shrink-0"
                   >
                     TRIIBE 100
                   </Link>

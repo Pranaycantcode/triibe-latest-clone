@@ -145,7 +145,7 @@ export default function GrantsPage() {
         <div className="mx-auto max-w-[1200px]">
           <h2
             id="mission-fundable-heading"
-            className="w-full text-center text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight whitespace-nowrap"
+            className="w-full text-center text-[22px] xs:text-2xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight whitespace-nowrap"
           >
             Make your mission fundable
           </h2>
