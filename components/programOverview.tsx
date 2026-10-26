@@ -12,10 +12,10 @@ export default function ProgramOverviewTest() {
       <main className="w-full flex flex-col">
         <section className="pt-16 pb-16 px-4 md:px-12 lg:px-24 bg-white">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold tracking-tight mb-2 whitespace-nowrap">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-2 whitespace-nowrap">
               Philanthropy has great leaders,
             </h2>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold tracking-tight mb-10 whitespace-nowrap">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-10 whitespace-nowrap">
               but no pipeline for the next gen.
             </h2>
 
@@ -53,18 +53,18 @@ export default function ProgramOverviewTest() {
         priority
         className="h-9 sm:h-11 md:h-12 w-auto object-contain"
       /> */}
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold tracking-tight whitespace-nowrap">
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tight whitespace-nowrap">
                 The next generation is already here
               </h2>
             </div>
 
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-6 max-w-3xl mx-auto">
+            <h3 className="text-base sm:text-lg md:text-xl font-medium mb-6 max-w-3xl mx-auto">
               The TRIIBE 100 Index represents 23 countries, 653 years of
               nonprofit leadership, and $15.5M raised last year.
             </h3>
 
             <div className="flex flex-col gap-2 mb-8 text-center text-[#002c19]">
-              <p className="text-base md:text-lg font-medium">
+              <p className="text-base md:text-xl font-medium">
                 Measured by Purposefy, every dollar donated to these next-gen
                 philentrepreneurs yields $3.60 in social return.
               </p>
@@ -93,9 +93,9 @@ export default function ProgramOverviewTest() {
 
         <section className="pt-4 md:pt-6 pb-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-            <h2 className="text-4xl md:text-6xl font-bold mb-12">
+            {/* <h2 className="text-4xl md:text-6xl font-bold mb-12">
               Beyond the 100
-            </h2>
+            </h2> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col justify-between items-center h-full">
