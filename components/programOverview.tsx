@@ -47,26 +47,32 @@ export default function ProgramOverviewTest() {
 
         <section className="pt-16 pb-12 px-4 md:px-12 lg:px-24 bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col items-center">
-            <div className="flex flex-col items-center justify-center gap-4 mb-4">
-              {/* <Image
-        src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
-        alt="TRIIBE 100"
-        width={260}
-        height={48}
-        priority
-        className="h-9 sm:h-11 md:h-12 w-auto object-contain"
-      /> */}
+            <div className="flex flex-col items-center justify-center gap-4 mb-8">
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight sm:whitespace-nowrap text-center">
                 The next generation is already here
               </h2>
             </div>
 
-            <h3 className="text-base sm:text-lg md:text-xl font-medium mb-6 max-w-3xl mx-auto">
-              The TRIIBE I00 Index represents 23 countries, 653 years of
-              nonprofit leadership, and $15.5M raised last year.
-            </h3>
+            <div className="w-full max-w-[900px] mx-auto mb-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+              <div className="w-full max-w-[280px] sm:max-w-[320px] shrink-0 rounded-2xl overflow-hidden shadow-sm">
+                <Image
+                  src="/images/home/cohorts-triibe.jpeg"
+                  alt="TRIIBE Founders Group"
+                  width={400}
+                  height={260}
+                  className="w-full h-auto object-cover rounded-2xl"
+                />
+              </div>
 
-            <div className="text-base md:text-xl font-medium flex flex-col gap-2">
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-base sm:text-lg md:text-xl font-medium mb-6 max-w-3xl mx-auto md:mx-0">
+                  The TRIIBE 100 Index represents 23 countries, 653 years of
+                  nonprofit leadership, and $15.5M raised last year.
+                </h3>
+              </div>
+            </div>
+
+            <div className="text-base md:text-xl font-medium flex flex-col gap-2 mb-8 text-center">
               <p>Measured by Purposefy, every dollar donated to these</p>
               <p>next-gen philentrepreneurs yields $3.60 in social return.</p>
             </div>
