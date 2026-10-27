@@ -11,7 +11,6 @@ interface CountryLocation {
   founderNames: string[];
 }
 
-// Exactly classified based on the spreadsheet data (100 fellows across 23 countries)
 const COUNTRY_REGISTRY: CountryLocation[] = [
   {
     name: "United States",
@@ -212,7 +211,9 @@ interface LandPath {
 
 export default function WorldMapSection() {
   const [worldData, setWorldData] = useState<any>(null);
-  const [activeLocation, setActiveLocation] = useState<CountryLocation | null>(null);
+  const [activeLocation, setActiveLocation] = useState<CountryLocation | null>(
+    null,
+  );
   const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -220,6 +221,17 @@ export default function WorldMapSection() {
       setWorldData(data.default || data);
     });
   }, []);
+
+  useEffect(() => {
+    if (activeLocation && window.innerWidth < 640) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [activeLocation]);
 
   const width = 1000;
   const height = 520;
@@ -248,7 +260,6 @@ export default function WorldMapSection() {
     }));
   }, [worldData, pathGenerator]);
 
-  // Case-insensitive lookup map for clean, robust matching
   const foundersByName = useMemo(() => {
     const map = new Map<string, Founder>();
     founders.forEach((f) => {
@@ -272,6 +283,7 @@ export default function WorldMapSection() {
   };
 
   const handleScheduleClose = () => {
+    if (typeof window !== "undefined" && window.innerWidth < 640) return; // Keep modal open on mobile
     closeTimerRef.current = setTimeout(() => {
       setActiveLocation(null);
     }, 300);
@@ -282,9 +294,9 @@ export default function WorldMapSection() {
   };
 
   return (
-    <section className="w-full bg-[#002C19] py-5 sm:py-8 px-4 sm:px-6 relative select-none">
-      <div className="max-w-[850px] mx-auto relative min-h-[440px]">
-        <div className="relative bg-transparent p-2 sm:p-4">
+    <section className="w-full bg-[#002C19] py-4 sm:py-8 px-2 sm:px-6 relative select-none">
+      <div className="max-w-[850px] mx-auto relative">
+        <div className="relative bg-transparent p-1 sm:p-4">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="w-full h-auto drop-shadow-sm overflow-visible block"
@@ -326,7 +338,7 @@ export default function WorldMapSection() {
                   onMouseEnter={() => handleOpen(loc)}
                   onMouseLeave={handleScheduleClose}
                 >
-                  <circle cx={cx} cy={cy} r={radius + 10} fill="transparent" />
+                  <circle cx={cx} cy={cy} r={radius + 12} fill="transparent" />
                   <circle
                     cx={cx}
                     cy={cy}
@@ -342,132 +354,167 @@ export default function WorldMapSection() {
           </svg>
 
           {activeLocation && (
-            <aside
-              onMouseEnter={handleCancelClose}
-              onMouseLeave={handleScheduleClose}
-              className="absolute right-2 top-2 bottom-2 z-50 w-[300px] sm:w-[350px] max-h-[96%] bg-[#f4f0e8] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col border border-black/10 overflow-hidden"
-            >
-              {/* Header */}
-              <div className="flex items-center justify-between px-5 py-3.5 border-b border-black/10 bg-[#ebe5db] shrink-0">
-                <div>
-                  <h3 className="text-base font-bold text-[#002C19] tracking-tight">
-                    {activeLocation.name}
-                  </h3>
-                  <p className="text-xs font-medium text-[#002C19]/70">
-                    {activeFounders.length} {activeFounders.length === 1 ? "Fellow" : "Fellows"}
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setActiveLocation(null)}
-                  className="w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 text-[#002C19] flex items-center justify-center text-xl leading-none transition-colors"
-                >
-                  &times;
-                </button>
-              </div>
+            <>
+              <div
+                className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 sm:hidden"
+                onClick={() => setActiveLocation(null)}
+              />
 
-              {/* Scrollable vertical card list */}
-              <div className="flex-1 overflow-y-auto p-4 space-y-5">
-                {activeFounders.map((founder) => (
-                  <div
-                    key={founder.id}
-                    className="bg-white rounded-xl overflow-hidden border border-black/5 shadow-sm flex flex-col"
-                  >
-                    {/* Photo Top */}
-                    <div className="w-full aspect-[4/3] bg-black/5 relative overflow-hidden">
-                      {founder.image ? (
-                        <img
-                          src={founder.image}
-                          alt={founder.name}
-                          className="w-full h-full object-cover"
-                        />
-                      ) : (
-                        <div className="w-full h-full flex items-center justify-center text-[#002C19]/30">
-                          <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1"
-                            className="w-12 h-12"
-                          >
-                            <circle cx="12" cy="8" r="5" />
-                            <path d="M2 22c0-5.5 4.5-9 10-9s10 3.5 10 9" />
-                          </svg>
-                        </div>
-                      )}
-                    </div>
+              <aside
+                onMouseEnter={handleCancelClose}
+                onMouseLeave={handleScheduleClose}
+                className="fixed inset-x-0 bottom-0 z-50 max-h-[82vh] rounded-t-3xl sm:rounded-2xl sm:absolute sm:inset-auto sm:right-2 sm:top-2 sm:bottom-2 sm:w-[350px] sm:max-h-[96%] bg-[#f4f0e8] shadow-[0_-10px_40px_rgba(0,0,0,0.45)] sm:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col border border-black/10 overflow-hidden animate-in slide-in-from-bottom sm:slide-in-from-right duration-200"
+              >
+                <div className="w-12 h-1.5 bg-black/20 rounded-full mx-auto mt-2.5 mb-1 sm:hidden shrink-0" />
 
-                    {/* Text Details Below */}
-                    <div className="p-4 flex flex-col text-left">
-                      <h4 className="text-lg font-bold text-[#002C19] leading-tight">
-                        {founder.name}
-                      </h4>
-                      {founder.bio && (
-                        <p className="text-xs font-semibold text-[#002C19]/80 mt-1">
-                          {founder.bio}
-                        </p>
-                      )}
-
-                      <div className="w-8 h-[1.5px] bg-[#002C19]/15 my-3" />
-
-                      {founder.description && (
-                        <p className="text-xs text-[#002C19]/85 leading-relaxed line-clamp-6">
-                          {founder.description}
-                        </p>
-                      )}
-
-                      {(founder.linkedin || founder.instagram || founder.website) && (
-                        <div className="flex items-center gap-2 mt-4 pt-2 border-t border-black/5">
-                          {founder.linkedin && (
-                            <a
-                              href={founder.linkedin}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label="LinkedIn"
-                              className="w-7 h-7 rounded-full bg-[#f4f0e8] hover:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
-                            >
-                              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.25 3.9 3.25 5s.89 2 2 2 2-.9 2-2-.89-2-2-2ZM20.75 13.4c0-3.47-1.85-5.09-4.32-5.09-1.99 0-2.88 1.09-3.38 1.86V8.5H9.67V20h3.38v-6.39c0-1.68.32-3.31 2.4-3.31 2.05 0 2.08 1.93 2.08 3.42V20h3.38l-.16-6.6Z" />
-                              </svg>
-                            </a>
-                          )}
-                          {founder.instagram && (
-                            <a
-                              href={founder.instagram}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label="Instagram"
-                              className="w-7 h-7 rounded-full bg-[#f4f0e8] hover:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
-                            >
-                              <svg width="13" height="13" viewBox="0 0 50 50">
-                                <rect width="50" height="50" rx="10" fill="#002C19" />
-                                <circle cx="25" cy="25" r="10" fill="none" stroke="white" strokeWidth="6" />
-                                <circle cx="40" cy="13" r="3" fill="white" />
-                              </svg>
-                            </a>
-                          )}
-                          {founder.website && (
-                            <a
-                              href={founder.website}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label="Website"
-                              className="w-7 h-7 rounded-full bg-[#f4f0e8] hover:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
-                            >
-                              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <circle cx="12" cy="12" r="9" />
-                                <line x1="3" y1="12" x2="21" y2="12" />
-                                <path d="M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-6.6-3.3-9S9.8 5.4 12 3Z" />
-                              </svg>
-                            </a>
-                          )}
-                        </div>
-                      )}
-                    </div>
+                <div className="flex items-center justify-between px-5 py-3.5 border-b border-black/10 bg-[#ebe5db] shrink-0">
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-[#002C19] tracking-tight">
+                      {activeLocation.name}
+                    </h3>
+                    <p className="text-xs font-medium text-[#002C19]/70">
+                      {activeFounders.length}{" "}
+                      {activeFounders.length === 1 ? "Fellow" : "Fellows"}
+                    </p>
                   </div>
-                ))}
-              </div>
-            </aside>
+                  <button
+                    type="button"
+                    onClick={() => setActiveLocation(null)}
+                    aria-label="Close"
+                    className="w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 active:bg-black/15 text-[#002C19] flex items-center justify-center text-xl leading-none transition-colors"
+                  >
+                    &times;
+                  </button>
+                </div>
+
+                <div className="flex-1 overflow-y-auto overscroll-contain p-4 space-y-4">
+                  {activeFounders.map((founder) => (
+                    <div
+                      key={founder.id}
+                      className="bg-white rounded-xl overflow-hidden border border-black/10 shadow-sm flex flex-col"
+                    >
+                      <div className="w-full aspect-[16/9] sm:aspect-[4/3] bg-black/5 relative overflow-hidden">
+                        {founder.image ? (
+                          <img
+                            src={founder.image}
+                            alt={founder.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-[#002C19]/30">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="1"
+                              className="w-12 h-12"
+                            >
+                              <circle cx="12" cy="8" r="5" />
+                              <path d="M2 22c0-5.5 4.5-9 10-9s10 3.5 10 9" />
+                            </svg>
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="p-4 flex flex-col text-left">
+                        <h4 className="text-base sm:text-lg font-bold text-[#002C19] leading-tight">
+                          {founder.name}
+                        </h4>
+                        {founder.bio && (
+                          <p className="text-xs font-semibold text-[#002C19]/80 mt-1">
+                            {founder.bio}
+                          </p>
+                        )}
+
+                        <div className="w-8 h-[1.5px] bg-[#002C19]/15 my-2.5" />
+
+                        {founder.description && (
+                          <p className="text-xs text-[#002C19]/85 leading-relaxed line-clamp-5 sm:line-clamp-6">
+                            {founder.description}
+                          </p>
+                        )}
+
+                        {(founder.linkedin ||
+                          founder.instagram ||
+                          founder.website) && (
+                          <div className="flex items-center gap-2.5 mt-3 pt-2.5 border-t border-black/5">
+                            {founder.linkedin && (
+                              <a
+                                href={founder.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                className="w-8 h-8 rounded-full bg-[#f4f0e8] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
+                              >
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                >
+                                  <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3C4.14 3 3.25 3.9 3.25 5s.89 2 2 2 2-.9 2-2-.89-2-2-2ZM20.75 13.4c0-3.47-1.85-5.09-4.32-5.09-1.99 0-2.88 1.09-3.38 1.86V8.5H9.67V20h3.38v-6.39c0-1.68.32-3.31 2.4-3.31 2.05 0 2.08 1.93 2.08 3.42V20h3.38l-.16-6.6Z" />
+                                </svg>
+                              </a>
+                            )}
+                            {founder.instagram && (
+                              <a
+                                href={founder.instagram}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram"
+                                className="w-8 h-8 rounded-full bg-[#f4f0e8] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
+                              >
+                                <svg width="14" height="14" viewBox="0 0 50 50">
+                                  <rect
+                                    width="50"
+                                    height="50"
+                                    rx="10"
+                                    fill="#002C19"
+                                  />
+                                  <circle
+                                    cx="25"
+                                    cy="25"
+                                    r="10"
+                                    fill="none"
+                                    stroke="white"
+                                    strokeWidth="6"
+                                  />
+                                  <circle cx="40" cy="13" r="3" fill="white" />
+                                </svg>
+                              </a>
+                            )}
+                            {founder.website && (
+                              <a
+                                href={founder.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Website"
+                                className="w-8 h-8 rounded-full bg-[#f4f0e8] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
+                              >
+                                <svg
+                                  width="14"
+                                  height="14"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                >
+                                  <circle cx="12" cy="12" r="9" />
+                                  <line x1="3" y1="12" x2="21" y2="12" />
+                                  <path d="M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-6.6-3.3-9S9.8 5.4 12 3Z" />
+                                </svg>
+                              </a>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </aside>
+            </>
           )}
         </div>
       </div>
