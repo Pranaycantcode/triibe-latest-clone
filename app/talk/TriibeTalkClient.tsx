@@ -178,7 +178,7 @@ const EventsPage = () => {
                 width={600}
                 height={150}
                 priority
-                className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
+                className="w-full max-w-[400px] md:max-w-[500px] h-auto mx-auto md:mx-0 md:-ml-5 lg:-ml-6 object-contain object-center md:object-left"
               />
 
               <div className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal flex flex-col gap-1">
