@@ -214,7 +214,10 @@ export default function WorldMapSection() {
   const [activeLocation, setActiveLocation] = useState<CountryLocation | null>(
     null,
   );
+  const [isLocked, setIsLocked] = useState(false);
+
   const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const hoverDwellTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     import("world-atlas/countries-110m.json").then((data) => {
@@ -277,20 +280,63 @@ export default function WorldMapSection() {
       .filter((f): f is Founder => Boolean(f));
   }, [activeLocation, foundersByName]);
 
-  const handleOpen = (loc: CountryLocation) => {
+  const isRightSideDot = useMemo(() => {
+    if (!activeLocation) return false;
+    const coords = projection(activeLocation.coordinates);
+    if (!coords) return false;
+    return coords[0] >= width / 2;
+  }, [activeLocation, projection, width]);
+
+  // Click locks the panel: ignores all hovering over intermediate dots
+  const handleDotClick = (loc: CountryLocation) => {
+    if (hoverDwellTimerRef.current) clearTimeout(hoverDwellTimerRef.current);
     if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
-    setActiveLocation(loc);
+
+    if (activeLocation?.name === loc.name && isLocked) {
+      setIsLocked(false);
+      setActiveLocation(null);
+    } else {
+      setActiveLocation(loc);
+      setIsLocked(true);
+    }
   };
 
-  const handleScheduleClose = () => {
-    if (typeof window !== "undefined" && window.innerWidth < 640) return; // Keep modal open on mobile
+  const handleDotMouseEnter = (loc: CountryLocation) => {
+    if (isLocked) return;
+
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    if (hoverDwellTimerRef.current) clearTimeout(hoverDwellTimerRef.current);
+
+    hoverDwellTimerRef.current = setTimeout(() => {
+      setActiveLocation(loc);
+    }, 150);
+  };
+
+  const handleDotMouseLeave = () => {
+    if (hoverDwellTimerRef.current) clearTimeout(hoverDwellTimerRef.current);
+    if (isLocked) return;
+
     closeTimerRef.current = setTimeout(() => {
       setActiveLocation(null);
-    }, 300);
+    }, 280);
   };
 
-  const handleCancelClose = () => {
+  const handlePanelMouseEnter = () => {
     if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+  };
+
+  const handlePanelMouseLeave = () => {
+    if (isLocked) return;
+    closeTimerRef.current = setTimeout(() => {
+      setActiveLocation(null);
+    }, 280);
+  };
+
+  const handleClose = () => {
+    if (hoverDwellTimerRef.current) clearTimeout(hoverDwellTimerRef.current);
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    setIsLocked(false);
+    setActiveLocation(null);
   };
 
   return (
@@ -300,6 +346,14 @@ export default function WorldMapSection() {
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="w-full h-auto drop-shadow-sm overflow-visible block"
+            onClick={(e) => {
+              if (
+                (e.target as HTMLElement).tagName === "svg" ||
+                (e.target as HTMLElement).tagName === "path"
+              ) {
+                handleClose();
+              }
+            }}
           >
             {graticulePath && (
               <path
@@ -334,9 +388,12 @@ export default function WorldMapSection() {
                 <g
                   key={loc.name}
                   className="cursor-pointer"
-                  onClick={() => handleOpen(loc)}
-                  onMouseEnter={() => handleOpen(loc)}
-                  onMouseLeave={handleScheduleClose}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleDotClick(loc);
+                  }}
+                  onMouseEnter={() => handleDotMouseEnter(loc)}
+                  onMouseLeave={handleDotMouseLeave}
                 >
                   <circle cx={cx} cy={cy} r={radius + 12} fill="transparent" />
                   <circle
@@ -357,20 +414,29 @@ export default function WorldMapSection() {
             <>
               <div
                 className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 sm:hidden"
-                onClick={() => setActiveLocation(null)}
+                onClick={handleClose}
               />
 
               <aside
-                onMouseEnter={handleCancelClose}
-                onMouseLeave={handleScheduleClose}
-                className="fixed inset-x-0 bottom-0 z-50 max-h-[82vh] rounded-t-3xl sm:rounded-2xl sm:absolute sm:inset-auto sm:right-2 sm:top-2 sm:bottom-2 sm:w-[350px] sm:max-h-[96%] bg-[#f4f0e8] shadow-[0_-10px_40px_rgba(0,0,0,0.45)] sm:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col border border-black/10 overflow-hidden animate-in slide-in-from-bottom sm:slide-in-from-right duration-200"
+                onMouseEnter={handlePanelMouseEnter}
+                onMouseLeave={handlePanelMouseLeave}
+                className={`fixed inset-x-0 bottom-0 z-50 max-h-[82vh] rounded-t-3xl sm:rounded-2xl sm:absolute sm:inset-auto sm:top-2 sm:bottom-2 sm:w-[350px] sm:max-h-[96%] bg-[#f4f0e8] shadow-[0_-10px_40px_rgba(0,0,0,0.45)] sm:shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col border border-black/10 overflow-hidden animate-in duration-200 slide-in-from-bottom ${
+                  isRightSideDot
+                    ? "sm:left-2 sm:slide-in-from-left"
+                    : "sm:right-2 sm:slide-in-from-right"
+                }`}
               >
                 <div className="w-12 h-1.5 bg-black/20 rounded-full mx-auto mt-2.5 mb-1 sm:hidden shrink-0" />
 
                 <div className="flex items-center justify-between px-5 py-3.5 border-b border-black/10 bg-[#ebe5db] shrink-0">
                   <div>
-                    <h3 className="text-base sm:text-lg font-bold text-[#002C19] tracking-tight">
+                    <h3 className="text-base sm:text-lg font-bold text-[#002C19] tracking-tight flex items-center gap-2">
                       {activeLocation.name}
+                      {isLocked && (
+                        <span className="hidden sm:inline-block text-[10px] font-semibold text-[#002C19]/60 bg-black/5 px-2 py-0.5 rounded-full">
+                          Pinned
+                        </span>
+                      )}
                     </h3>
                     <p className="text-xs font-medium text-[#002C19]/70">
                       {activeFounders.length}{" "}
@@ -379,7 +445,7 @@ export default function WorldMapSection() {
                   </div>
                   <button
                     type="button"
-                    onClick={() => setActiveLocation(null)}
+                    onClick={handleClose}
                     aria-label="Close"
                     className="w-8 h-8 rounded-full bg-black/5 hover:bg-black/10 active:bg-black/15 text-[#002C19] flex items-center justify-center text-xl leading-none transition-colors"
                   >
@@ -429,7 +495,7 @@ export default function WorldMapSection() {
                         <div className="w-8 h-[1.5px] bg-[#002C19]/15 my-2.5" />
 
                         {founder.description && (
-                          <p className="text-xs text-[#002C19]/85 leading-relaxed line-clamp-5 sm:line-clamp-6">
+                          <p className="text-xs text-[#002C19]/85 leading-[1.8] tracking-wide whitespace-pre-line line-clamp-6">
                             {founder.description}
                           </p>
                         )}

@@ -40,7 +40,7 @@ export default function ProgramOverviewTest() {
               href="/the-missing-layer"
               className="inline-flex items-center justify-center h-[44px] px-10 rounded-sm font-semibold text-base bg-[#002c19] text-white hover:bg-[#1C5945] whitespace-nowrap transition-all duration-300 hover:text-white hover:scale-105"
             >
-              Read our Report
+              Read our report
             </Link>
           </div>
         </div>
@@ -62,15 +62,13 @@ export default function ProgramOverviewTest() {
             </div>
 
             <h3 className="text-base sm:text-lg md:text-xl font-medium mb-6 max-w-3xl mx-auto">
-              The TRIIBE 100 Index represents 23 countries, 653 years of
+              The TRIIBE I00 Index represents 23 countries, 653 years of
               nonprofit leadership, and $15.5M raised last year.
             </h3>
 
-            <div className="flex flex-col gap-2 mb-8 text-center text-[#002c19]">
-              <p className="text-base md:text-xl font-medium">
-                Measured by Purposefy, every dollar donated to these next-gen
-                philentrepreneurs yields $3.60 in social return.
-              </p>
+            <div className="text-base md:text-xl font-medium flex flex-col gap-2">
+              <p>Measured by Purposefy, every dollar donated to these</p>
+              <p>next-gen philentrepreneurs yields $3.60 in social return.</p>
             </div>
 
             <div className="w-full my-4 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
