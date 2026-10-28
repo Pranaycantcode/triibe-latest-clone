@@ -10,19 +10,20 @@ export default function ProgramOverviewTest() {
   return (
     <>
       <main className="w-full flex flex-col">
-        <section className="pt-16 pb-16 px-4 md:px-12 lg:px-24 bg-white">
+        {/* Hero Headline Section */}
+        <section className="pt-14 pb-12 px-4 md:px-12 lg:px-24 bg-white">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-            <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
-              <h2 className="text-2xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-2 md:whitespace-nowrap text-center">
+            <div className="w-full max-w-[1450px] mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
+              <h2 className="text-2xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-[0.015em] mb-0 md:whitespace-nowrap text-center leading-tight">
                 The next gen will inherit the world's problems.
               </h2>
-              <h2 className="text-2xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-tight mb-10 md:whitespace-nowrap text-center">
+              <h2 className="text-2xl sm:text-4xl md:text-[52px] lg:text-[54px] font-bold tracking-[0.015em] mb-6 md:whitespace-nowrap text-center leading-tight">
                 We back the leaders already solving them.
               </h2>
             </div>
 
             <div className="flex flex-col gap-3 max-w-4xl mx-auto">
-              <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed">
+              <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed tracking-[0.01em]">
                 TRIIBE is the pipeline philanthropy has been missing, backing
                 nonprofit founders under 30.
               </h3>
@@ -30,8 +31,9 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        <div className="w-full max-w-[1000px] mx-auto px-4 md:px-8 py-4 transition-all duration-300 hover:scale-[1.02]">
-          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Report Callout Banner */}
+        <div className="w-full max-w-[1000px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
+          <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
               Learn more about the nonprofit startup ecosystem
             </p>
@@ -45,45 +47,59 @@ export default function ProgramOverviewTest() {
           </div>
         </div>
 
-        <section className="pt-16 pb-12 px-4 md:px-12 lg:px-24 bg-white w-full">
+        {/* Next Generation / TRIIBE 100 Map Section */}
+        <section className="pt-12 pb-14 px-4 md:px-12 lg:px-24 bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col items-center">
-            <div className="flex flex-col items-center justify-center gap-4 mb-8">
-              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight sm:whitespace-nowrap text-center">
+            {/* Section Header */}
+            <div className="flex flex-col items-center justify-center gap-2 mb-8">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-[0.015em] sm:whitespace-nowrap text-center">
                 The next generation is already here
               </h2>
             </div>
 
-            <div className="w-full max-w-[900px] mx-auto mb-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
-              <div className="w-full max-w-[280px] sm:max-w-[320px] shrink-0 rounded-2xl overflow-hidden shadow-sm">
+            {/* Split Details: Cohort Photo + Index Stats */}
+            <div className="w-full max-w-[1050px] mx-auto mb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
+              <div className="w-full max-w-[420px] sm:max-w-[480px] shrink-0 rounded-2xl overflow-hidden shadow-sm">
                 <Image
                   src="/images/home/cohorts-triibe.jpeg"
                   alt="TRIIBE Founders Group"
-                  width={400}
-                  height={260}
+                  width={600}
+                  height={390}
                   className="w-full h-auto object-cover rounded-2xl"
                 />
               </div>
 
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-base sm:text-lg md:text-xl font-medium mb-6 max-w-3xl mx-auto md:mx-0">
-                  The TRIIBE I00 Index represents 23 countries, 653 years of
-                  nonprofit leadership, and $15.5M raised last year.
+              <div className="flex-1 text-center md:text-left flex flex-col justify-center">
+                <h3 className="text-base sm:text-[17px] md:text-lg font-medium mb-4 max-w-3xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
+                  The TRIIBE 100 Index represents 23 countries,{" "}
+                  <br className="hidden sm:inline" />
+                  653 years of nonprofit leadership, and $15.5M raised last
+                  year.
                 </h3>
+
+                <div className="text-base sm:text-[17px] md:text-lg font-medium flex flex-col gap-1 tracking-[0.01em]">
+                  <p className="whitespace-nowrap">
+                    Measured by Purposefy, every dollar donated to these
+                  </p>
+                  <p className="whitespace-nowrap">
+                    next-gen philentrepreneurs yields $3.60 in social return.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="text-base md:text-xl font-medium flex flex-col gap-2 mb-8 text-center">
-              <p>Measured by Purposefy, every dollar donated to these</p>
-              <p>next-gen philentrepreneurs yields $3.60 in social return.</p>
-            </div>
-
+            {/* Interactive World Map Block */}
             <div className="w-full my-4 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
+              <p className="text-xs sm:text-sm font-medium text-white/75 mb-3 text-center tracking-[0.015em]">
+                Click on a dot to meet the fellows in that region
+              </p>
+
               <WorldMapSection />
 
               <div className="w-full max-w-[600px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
                 <div className="bg-white rounded-[24px] px-6 py-5 sm:px-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
                   <p className="text-xl sm:text-2xl md:text-3xl font-medium text-[#002c19] text-center sm:text-left whitespace-nowrap">
-                    Meet the founders
+                    Learn more
                   </p>
 
                   <Link
@@ -98,12 +114,9 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        <section className="pt-4 md:pt-6 pb-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
+        {/* Beyond the 100 / Additional Resource Cards */}
+        <section className="pt-6 md:pt-8 pb-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
-            {/* <h2 className="text-4xl md:text-6xl font-bold mb-12">
-              Beyond the 100
-            </h2> */}
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               <div className="border border-[#002c19] rounded-2xl p-8 md:p-10 flex flex-col justify-between items-center h-full">
                 <div className="h-[90px] w-full flex items-center justify-center mb-4 shrink-0">
