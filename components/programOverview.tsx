@@ -22,11 +22,11 @@ export default function ProgramOverviewTest() {
               </h2>
             </div>
 
-            <div className="flex flex-col gap-3 max-w-4xl mx-auto">
-              <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed tracking-[0.01em]">
+            {/* <div className="flex flex-col gap-3 max-w-4xl mx-auto"> */}
+              {/* <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed tracking-[0.01em]">
                 TRIIBE is the pipeline philanthropy has been missing.
-              </h3>
-            </div>
+              </h3> */}
+            {/* </div> */}
           </div>
         </section>
 
@@ -34,7 +34,7 @@ export default function ProgramOverviewTest() {
         <div className="w-full max-w-[1000px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
-              Learn more about the nonprofit startup ecosystem
+              The pipeline philanthropy has been missing
             </p>
 
             <Link
@@ -94,10 +94,10 @@ export default function ProgramOverviewTest() {
 
               <WorldMapSection />
 
-              <div className="w-full max-w-[750px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
+              <div className="w-full max-w-[450px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
                 <div className="bg-white rounded-[24px] px-6 py-5 sm:px-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
-                  <p className="text-lg sm:text-lg md:text-xl font-medium text-[#002c19] text-center sm:text-left md:whitespace-nowrap">
-                    The pipeline philanthropy has been missing
+                  <p className="text-xl sm:text-xl md:text-2xl font-medium text-[#002c19] text-center sm:text-left md:whitespace-nowrap">
+                    Learn more
                   </p>
 
                   <Link
