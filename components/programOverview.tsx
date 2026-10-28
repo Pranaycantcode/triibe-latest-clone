@@ -24,8 +24,7 @@ export default function ProgramOverviewTest() {
 
             <div className="flex flex-col gap-3 max-w-4xl mx-auto">
               <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed tracking-[0.01em]">
-                TRIIBE is the pipeline philanthropy has been missing, backing
-                nonprofit founders under 30.
+                TRIIBE is the pipeline philanthropy has been missing.
               </h3>
             </div>
           </div>
@@ -71,10 +70,9 @@ export default function ProgramOverviewTest() {
 
               <div className="flex-1 text-center md:text-left flex flex-col justify-center">
                 <h3 className="text-base sm:text-[17px] md:text-lg font-medium mb-4 max-w-3xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
-                  The TRIIBE I00 Index represents 23 countries,{" "}
-                  <br className="hidden sm:inline" />
-                  653 years of nonprofit leadership, and $15.5M raised last
-                  year.
+                  <p>The TRIIBE I00 Index represents 23 countries, 653 years</p>
+
+                  <p>of nonprofit leadership, and $15.5M raised last year.</p>
                 </h3>
 
                 <div className="text-base sm:text-[17px] md:text-lg font-medium flex flex-col gap-1 tracking-[0.01em]">
@@ -96,10 +94,10 @@ export default function ProgramOverviewTest() {
 
               <WorldMapSection />
 
-              <div className="w-full max-w-[600px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
+              <div className="w-full max-w-[750px] mx-auto mt-6 transition-all duration-300 hover:scale-[1.01]">
                 <div className="bg-white rounded-[24px] px-6 py-5 sm:px-8 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
-                  <p className="text-xl sm:text-2xl md:text-3xl font-medium text-[#002c19] text-center sm:text-left whitespace-nowrap">
-                    Learn more
+                  <p className="text-lg sm:text-lg md:text-xl font-medium text-[#002c19] text-center sm:text-left md:whitespace-nowrap">
+                    The pipeline philanthropy has been missing
                   </p>
 
                   <Link
