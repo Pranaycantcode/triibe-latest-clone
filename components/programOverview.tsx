@@ -23,7 +23,7 @@ export default function ProgramOverviewTest() {
             </div>
 
             {/* <div className="flex flex-col gap-3 max-w-4xl mx-auto"> */}
-              {/* <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed tracking-[0.01em]">
+            {/* <h3 className="text-base sm:text-lg md:text-xl font-medium leading-relaxed tracking-[0.01em]">
                 TRIIBE is the pipeline philanthropy has been missing.
               </h3> */}
             {/* </div> */}
@@ -68,18 +68,19 @@ export default function ProgramOverviewTest() {
                 />
               </div>
 
-              <div className="flex-1 text-center md:text-left flex flex-col justify-center">
-                <h3 className="text-base sm:text-[17px] md:text-lg font-medium mb-4 max-w-3xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
-                  <p>The TRIIBE I00 Index represents 23 countries, 653 years</p>
-
-                  <p>of nonprofit leadership, and $15.5M raised last year.</p>
+              <div className="flex-1 text-center md:text-left flex flex-col justify-center w-full px-4 sm:px-0">
+                <h3 className="text-sm sm:text-[17px] md:text-lg font-medium mb-4 max-w-xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
+                  The TRIIBE 100 Index represents 23 countries,{" "}
+                  <br className="hidden sm:inline" />
+                  653 years of nonprofit leadership, and $15.5M raised last
+                  year.
                 </h3>
 
-                <div className="text-base sm:text-[17px] md:text-lg font-medium flex flex-col gap-1 tracking-[0.01em]">
-                  <p className="whitespace-nowrap">
+                <div className="text-sm sm:text-[17px] md:text-lg font-medium flex flex-col gap-1 tracking-[0.01em] max-w-xl mx-auto md:mx-0">
+                  <p className="sm:whitespace-nowrap">
                     Measured by Purposefy, every dollar donated to these
                   </p>
-                  <p className="whitespace-nowrap">
+                  <p className="sm:whitespace-nowrap">
                     next-gen philentrepreneurs yields $3.60 in social return.
                   </p>
                 </div>
