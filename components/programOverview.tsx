@@ -71,7 +71,7 @@ export default function ProgramOverviewTest() {
 
               <div className="flex-1 text-center md:text-left flex flex-col justify-center">
                 <h3 className="text-base sm:text-[17px] md:text-lg font-medium mb-4 max-w-3xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
-                  The TRIIBE 100 Index represents 23 countries,{" "}
+                  The TRIIBE I00 Index represents 23 countries,{" "}
                   <br className="hidden sm:inline" />
                   653 years of nonprofit leadership, and $15.5M raised last
                   year.
