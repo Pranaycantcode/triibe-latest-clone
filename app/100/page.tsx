@@ -24,7 +24,16 @@ export default function Triibe100Page() {
     <div style={{ background: "#002C19" }}>
       <Header />
       <Hero />
-      <WorldMapSection />
+
+      <section className="relative z-10 w-full">
+        <div className="w-full max-w-[850px] mx-auto px-4 pt-4 sm:pt-6 text-center">
+          <p className="text-xs sm:text-sm font-medium text-white/70 tracking-wide">
+            Click on a dot to meet the fellows in that region
+          </p>
+        </div>
+
+        <WorldMapSection />
+      </section>
       <HowWePick />
       {zones.map((zone, i) => {
         const zoneFounders = founders.slice(i * 10, i * 10 + 10);
@@ -40,7 +49,6 @@ export default function Triibe100Page() {
           />
         );
       })}
-      
 
       <TestimonialCarousel />
 
