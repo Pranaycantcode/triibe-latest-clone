@@ -47,14 +47,14 @@ export default function ProgramOverviewTest() {
         </div>
 
         {/* Next Generation / TRIIBE 100 Map Section */}
-        <section className="pt-12 pb-14 px-4 md:px-12 lg:px-24 bg-white w-full">
+        <section className="pt-24 pb-20 px-4 md:px-12 lg:px-24 bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col items-center">
             {/* Section Header */}
-            <div className="flex flex-col items-center justify-center gap-2 mb-8">
+            {/* <div className="flex flex-col items-center justify-center gap-2 mb-8">
               <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-[0.015em] sm:whitespace-nowrap text-center">
                 The next generation is already here
               </h2>
-            </div>
+            </div> */}
 
             {/* Split Details: Cohort Photo + Index Stats */}
             <div className="w-full max-w-[1050px] mx-auto mb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
