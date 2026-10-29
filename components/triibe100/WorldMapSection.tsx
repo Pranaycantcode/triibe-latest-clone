@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import { geoEqualEarth, geoPath, geoGraticule } from "d3-geo";
 import { feature } from "topojson-client";
 import { founders, type Founder } from "@/lib/triibe100/founders";
@@ -210,6 +211,7 @@ interface LandPath {
 }
 
 export default function WorldMapSection() {
+  const router = useRouter();
   const [worldData, setWorldData] = useState<any>(null);
   const [activeLocation, setActiveLocation] = useState<CountryLocation | null>(
     null,
@@ -287,7 +289,6 @@ export default function WorldMapSection() {
     return coords[0] >= width / 2;
   }, [activeLocation, projection, width]);
 
-  // Click locks the panel: ignores all hovering over intermediate dots
   const handleDotClick = (loc: CountryLocation) => {
     if (hoverDwellTimerRef.current) clearTimeout(hoverDwellTimerRef.current);
     if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
@@ -337,6 +338,18 @@ export default function WorldMapSection() {
     if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
     setIsLocked(false);
     setActiveLocation(null);
+  };
+
+  const handleCardClick = (id: number) => {
+    if (window.location.pathname === "/100") {
+      window.location.hash = `founder-${id}`;
+      const target = document.getElementById(`founder-${id}`);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    } else {
+      router.push(`/100#founder-${id}`);
+    }
   };
 
   return (
@@ -457,14 +470,15 @@ export default function WorldMapSection() {
                   {activeFounders.map((founder) => (
                     <div
                       key={founder.id}
-                      className="bg-white rounded-xl overflow-hidden border border-black/10 shadow-sm flex flex-col"
+                      onClick={() => handleCardClick(founder.id)}
+                      className="group bg-white rounded-xl overflow-hidden border border-black/10 shadow-sm flex flex-col transition-all duration-200 hover:shadow-md hover:border-black/20 cursor-pointer"
                     >
                       <div className="w-full aspect-[16/9] sm:aspect-[4/3] bg-black/5 relative overflow-hidden">
                         {founder.image ? (
                           <img
                             src={founder.image}
                             alt={founder.name}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                           />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center text-[#002C19]/30">
@@ -483,7 +497,7 @@ export default function WorldMapSection() {
                       </div>
 
                       <div className="p-4 flex flex-col text-left">
-                        <h4 className="text-base sm:text-lg font-bold text-[#002C19] leading-tight">
+                        <h4 className="text-base sm:text-lg font-bold text-[#002C19] leading-tight group-hover:text-[#004728] transition-colors">
                           {founder.name}
                         </h4>
                         {founder.bio && (
@@ -503,14 +517,17 @@ export default function WorldMapSection() {
                         {(founder.linkedin ||
                           founder.instagram ||
                           founder.website) && (
-                          <div className="flex items-center gap-2.5 mt-3 pt-2.5 border-t border-black/5">
+                          <div
+                            className="flex items-center gap-2.5 mt-3 pt-2.5 border-t border-black/5"
+                            onClick={(e) => e.stopPropagation()}
+                          >
                             {founder.linkedin && (
                               <a
                                 href={founder.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
-                                className="w-8 h-8 rounded-full bg-[#f4f0e8] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
+                                className="w-8 h-8 rounded-full bg-[#f4f0e8] hover:bg-[#ebe5db] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
                               >
                                 <svg
                                   width="14"
@@ -528,7 +545,7 @@ export default function WorldMapSection() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Instagram"
-                                className="w-8 h-8 rounded-full bg-[#f4f0e8] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
+                                className="w-8 h-8 rounded-full bg-[#f4f0e8] hover:bg-[#ebe5db] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
                               >
                                 <svg width="14" height="14" viewBox="0 0 50 50">
                                   <rect
@@ -555,7 +572,7 @@ export default function WorldMapSection() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Website"
-                                className="w-8 h-8 rounded-full bg-[#f4f0e8] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
+                                className="w-8 h-8 rounded-full bg-[#f4f0e8] hover:bg-[#ebe5db] active:bg-[#ebe5db] flex items-center justify-center text-[#002C19] transition-colors"
                               >
                                 <svg
                                   width="14"

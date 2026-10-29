@@ -14,6 +14,21 @@ export default function FounderCard({ founder }: { founder: Founder }) {
   const isPlaceholder = founder.name === "COMING_SOON_PLACEHOLDER";
 
   useEffect(() => {
+    const checkHash = () => {
+      if (typeof window !== "undefined" && window.location.hash === `#founder-${founder.id}`) {
+        setIsOpen(true);
+        setTimeout(() => {
+          ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 150);
+      }
+    };
+
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
+    return () => window.removeEventListener("hashchange", checkHash);
+  }, [founder.id]);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -202,6 +217,7 @@ export default function FounderCard({ founder }: { founder: Founder }) {
       `}</style>
 
       <div
+        id={`founder-${founder.id}`}
         ref={ref}
         style={{
           opacity: visible ? 1 : 0,
@@ -337,7 +353,12 @@ export default function FounderCard({ founder }: { founder: Founder }) {
         !isPlaceholder &&
         createPortal(
           <div
-            onMouseDown={() => setIsOpen(false)}
+            onMouseDown={() => {
+              setIsOpen(false);
+              if (window.location.hash.startsWith("#founder-")) {
+                window.history.replaceState(null, "", window.location.pathname);
+              }
+            }}
             style={{
               position: "fixed",
               inset: 0,
@@ -365,7 +386,12 @@ export default function FounderCard({ founder }: { founder: Founder }) {
             >
               <button
                 type="button"
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  if (window.location.hash.startsWith("#founder-")) {
+                    window.history.replaceState(null, "", window.location.pathname);
+                  }
+                }}
                 aria-label="Close"
                 style={{
                   position: "absolute",
