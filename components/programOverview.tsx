@@ -89,7 +89,7 @@ export default function ProgramOverviewTest() {
 
             {/* Interactive World Map Block */}
             <div className="w-full my-4 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
-              <p className="text-xs sm:text-sm font-medium text-white/75 mb-3 text-center tracking-[0.015em]">
+              <p className="text-xs sm:text-lg font-medium text-white/75 mb-3 text-center tracking-[0.015em]">
                 Click on a dot to meet the fellows in that region
               </p>
 
