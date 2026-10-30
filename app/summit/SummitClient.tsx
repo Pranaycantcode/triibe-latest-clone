@@ -316,10 +316,10 @@ const SummitPage = () => {
 
         
         <div className="max-w-6xl mx-auto px-4 md:px-12 lg:px-20 pt-16">
-          <p className="text-base sm:text-lg text-[#002c19] font-medium text-center max-w-3xl mx-auto leading-relaxed mb-12">
+          <p className="text-md sm:text-lg text-[#002c19] font-medium text-center max-w-3xl mx-auto leading-relaxed mb-12">
             The annual gathering of the TRIIBE I00
             <br />
-            <span className="text-[#002c19]/80 text-sm sm:text-base">
+            <span className="text-[#002c19]/80 text-md sm:text-md">
               The opening weekend to Climate Week NYC and the UN General
               Assembly
             </span>
