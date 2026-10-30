@@ -10,7 +10,6 @@ export default function ProgramOverviewTest() {
   return (
     <>
       <main className="w-full flex flex-col">
-        {/* Hero Headline Section */}
         <section className="pt-14 pb-12 px-4 md:px-12 lg:px-24 bg-white">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <div className="w-full max-w-[1450px] mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
@@ -30,8 +29,7 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        {/* Report Callout Banner */}
-        <div className="w-full max-w-[9Host your own TRIIBE Tal00px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
+        <div className="w-full max-w-[850px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
               The pipeline philanthropy has been missing
@@ -46,7 +44,6 @@ export default function ProgramOverviewTest() {
           </div>
         </div>
 
-        {/* Next Generation / TRIIBE 100 Map Section */}
         <section className="pt-24 pb-20 px-4 md:px-12 lg:px-24 bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19] flex flex-col items-center">
             {/* Section Header */}
@@ -56,7 +53,6 @@ export default function ProgramOverviewTest() {
               </h2>
             </div> */}
 
-            {/* Split Details: Cohort Photo + Index Stats */}
             <div className="w-full max-w-[1050px] mx-auto mb-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
               <div className="w-full max-w-[420px] sm:max-w-[480px] shrink-0 rounded-2xl overflow-hidden shadow-sm">
                 <Image
@@ -87,7 +83,6 @@ export default function ProgramOverviewTest() {
               </div>
             </div>
 
-            {/* Interactive World Map Block */}
             <div className="w-full my-4 bg-[#002C19] rounded-2xl p-6 sm:p-10 flex flex-col items-center">
               <p className="text-xs sm:text-lg font-medium text-white/75 mb-3 text-center tracking-[0.015em]">
                 Click on a dot to meet the fellows in that region
@@ -113,7 +108,6 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
-        {/* Beyond the 100 / Additional Resource Cards */}
         <section className="pt-6 md:pt-8 pb-16 px-4 md:px-25 lg:px-[200px] bg-white w-full">
           <div className="max-w-[1200px] mx-auto text-center text-[#002c19]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
