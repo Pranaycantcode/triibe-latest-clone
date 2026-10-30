@@ -149,17 +149,14 @@ export default function AboutPage() {
     <main className="bg-white min-h-screen">
       <Header />
 
-      {/* Member Popup Modal */}
       <MemberModal
         member={selectedMember}
         isOpen={Boolean(selectedMember)}
         onClose={() => setSelectedMember(null)}
       />
 
-      {/* ── Hero ─────────────────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6 pt-32 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left column */}
           <FadeUp delay={0}>
             <h1
               className="font-extrabold text-[#002c19]"
@@ -194,7 +191,6 @@ export default function AboutPage() {
             </h1>
           </FadeUp>
 
-          {/* Right column, asymmetric photo mosaic */}
           <FadeUp delay={150}>
             <div
               style={{
@@ -271,7 +267,6 @@ export default function AboutPage() {
           </FadeUp>
         </div>
 
-        {/* Stats bar */}
         <FadeUp delay={250}>
           <div
             ref={statsRef}
@@ -318,7 +313,6 @@ export default function AboutPage() {
           </div>
         </FadeUp>
 
-        {/* Social Links */}
         <section className="pt-12 pb-8 md:px-12 lg:px-50">
           <div className="max-w-4xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mx-auto">
@@ -348,14 +342,11 @@ export default function AboutPage() {
         </section>
       </div>
 
-      {/* ── Sticky Table of Contents ──────────────────────────────── */}
       <FadeUp delay={0}>
         <TableOfContents />
       </FadeUp>
 
-      {/* ── Sections ─────────────────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6">
-        {/* C-Suite & Board */}
         <section id="csuite" className="py-16 scroll-mt-28">
           <FadeUp delay={0}>
             <SectionHeader title="C-Suite & Board" />
@@ -381,7 +372,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Associate Board */}
         <section
           id="associate"
           className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
@@ -434,7 +424,6 @@ export default function AboutPage() {
           </FadeUp>
         </section>
 
-        {/* Legacy Board */}
         <section
           id="legacy"
           className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
@@ -484,7 +473,6 @@ export default function AboutPage() {
           </FadeUp>
         </section>
 
-        {/* Locations */}
         <section
           id="locations"
           className="py-16 border-t border-gray-100 scroll-mt-28"
@@ -513,7 +501,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Our Team */}
         <section
           id="team"
           className="py-16 border-t border-gray-100 scroll-mt-28 px-4"
@@ -547,7 +534,6 @@ export default function AboutPage() {
 
       <Footer />
 
-      {/* Newsletter Popup */}
       {showNewsletter && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40">
           <div className="bg-white rounded-lg shadow-2xl p-8 md:p-10 max-w-md w-full relative">

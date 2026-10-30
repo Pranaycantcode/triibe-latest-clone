@@ -31,7 +31,7 @@ export default function ProgramOverviewTest() {
         </section>
 
         {/* Report Callout Banner */}
-        <div className="w-full max-w-[1000px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
+        <div className="w-full max-w-[9Host your own TRIIBE Tal00px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
               The pipeline philanthropy has been missing
