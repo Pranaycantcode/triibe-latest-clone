@@ -1,9 +1,9 @@
 import GuideClient from "./GuideClient";
 
 export const metadata = {
-  title: "Nonprofit Storytelling & Talk Guide | TRIIBE",
+  title: "How to host your own TRIIBE Talk | TRIIBE",
   description:
-    "Learn how to share your nonprofit story, prepare for a TRIIBE Talk, and communicate your social impact effectively.",
+    "A step-by-step guide to hosting your own intergenerational TRIIBE Talk.",
   alternates: {
     canonical: "https://www.triibe.org/talk/guide",
   },

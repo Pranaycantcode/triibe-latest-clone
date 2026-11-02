@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import HostClient from "./HostClient";
 
 export const metadata: Metadata = {
-  title: "Nonprofit Interview & Host Guide | TRIIBE",
+  title: "Register your TRIIBE Talk | TRIIBE",
   description:
-    "Use the TRIIBE Talk host guide to prepare nonprofit interviews, ask better questions, and spotlight founder stories.",
+    "Bring next-gen voices to your community with your own TRIIBE Talk.",
   alternates: {
     canonical: "https://www.triibe.org/talk/host",
   },

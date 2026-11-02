@@ -46,14 +46,14 @@ function resolveReferralUrl() {
 const TRIIBE_GRANTS_PORTAL_URL = resolveReferralUrl();
 
 export const metadata: Metadata = {
-  title: "Largest Grant Database, For Free | TRIIBE Grants",
+  title: "The free grant database built for next-gen founders | TRIIBE Grants",
   description:
-    "The only grants platform built for next-gen founders. Find, qualify, and apply to grants across the globe for free, using our AI-powered grants engine.",
+    "Most grants are not publicly posted. TRIIBE Grants helps you find them anyway, enriched daily, matched to your mission, drafted in minutes.",
   alternates: { canonical: "https://www.triibe.org/grants" },
   openGraph: {
-    title: "Largest Grant Database, For Free | TRIIBE Grants",
+    title: "The free grant database built for next-gen founders | TRIIBE Grants",
     description:
-      "The only grants platform built for next-gen founders. Find, qualify, and apply to grants across the globe for free, using our AI-powered grants engine.",
+      "Most grants are not publicly posted. TRIIBE Grants helps you find them anyway, enriched daily, matched to your mission, drafted in minutes.",
     url: "https://www.triibe.org/grants",
   },
 };

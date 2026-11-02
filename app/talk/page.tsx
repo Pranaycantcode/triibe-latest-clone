@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import TriibeTalkClient from "./TriibeTalkClient";
 
 export const metadata: Metadata = {
-  title: "Nonprofit Stories, Events & Interviews | TRIIBE",
+  title: "Intergenerational talks featuring next-gen voices | TRIIBE",
   description:
-    "TRIIBE Talks are intergenerational conversations featuring next-gen voices, developed with the Founder of TEDx on TRIIBE's legacy board.",
+    "Developed with the founder of TEDx on TRIIBE’s Legacy Board, TRIIBE Talks highlight the next generation of philentrepreneurs.",
   alternates: {
     canonical: "https://www.triibe.org/talk",
   },

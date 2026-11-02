@@ -11,9 +11,9 @@ import MeetTheTribe100 from "@/components/triibe100/MeetTheTribe100";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export const metadata = {
-  title: "The 100 Nonprofit Founders Under 30 to Watch | TRIIBE 100",
+  title: "The annual index of founders under 30 to know | TRIIBE 100",
   description:
-    "The annual index of 100 leading nonprofit founders under 30, TRIIBE measuring their social return on investment with Purposefy.",
+    "Our fellows span 23 countries, raising $15.5M in total and representing 653 years of nonprofit leadership between them.",
   alternates: {
     canonical: "https://www.triibe.org/100",
   },
