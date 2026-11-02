@@ -11,7 +11,7 @@ import MeetTheTribe100 from "@/components/triibe100/MeetTheTribe100";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export const metadata = {
-  title: "The annual index of founders under 30 to know | TRIIBE 100",
+  title: "The annual index of nonprofit founders under 30 to know | TRIIBE 100",
   description:
     "Our fellows span 23 countries, raising $15.5M in total and representing 653 years of nonprofit leadership between them.",
   alternates: {
