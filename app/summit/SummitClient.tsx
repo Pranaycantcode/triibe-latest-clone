@@ -92,7 +92,7 @@ const SummitPage = () => {
         },
         {
           time: "7:30 PM",
-          title: "TRIIBE 100 dinner",
+          title: "TRIIBE I00 dinner",
         },
         /* {
           time: "9:00 PM",

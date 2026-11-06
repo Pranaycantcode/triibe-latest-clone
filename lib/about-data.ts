@@ -12,7 +12,7 @@ export const csuite: Person[] = [
     role: "Founder & CEO",
     imagePath: "/images/team/KyleMatthys.jpeg",
     description:
-      "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE 100, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
+      "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE I00, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
     linkedIn: "https://www.linkedin.com/in/kylematthys/",
   },
   {
@@ -28,7 +28,7 @@ export const csuite: Person[] = [
     role: "Board Chair",
     imagePath: "/images/team/james-hetherington.jpg",
     description:
-      "James Hetherington serves as Board Chair at TRIIBE, supporting its mission to help young nonprofit founders build sustainable, high-impact organizations. He contributes to the organization’s governance and strategic direction as it connects emerging changemakers with philanthropic funding, mentorship, and practical resources. Through initiatives such as the College Fellowship, TRIIBE Talks, and TRIIBE 100, James supports TRIIBE’s broader goal of strengthening the nonprofit startup ecosystem and helping young social entrepreneurs turn promising ideas into lasting impact.",
+      "James Hetherington serves as Board Chair at TRIIBE, supporting its mission to help young nonprofit founders build sustainable, high-impact organizations. He contributes to the organization’s governance and strategic direction as it connects emerging changemakers with philanthropic funding, mentorship, and practical resources. Through initiatives such as the College Fellowship, TRIIBE Talks, and TRIIBE I00, James supports TRIIBE’s broader goal of strengthening the nonprofit startup ecosystem and helping young social entrepreneurs turn promising ideas into lasting impact.",
     linkedIn: "https://www.linkedin.com/in/james-hetherington-590b981b8/",
   },
 ];
@@ -417,7 +417,7 @@ export const locations: LocationEntry[] = [
     mdName: "Kyle Matthys",
     mdImagePath: "/images/team/KyleMatthys.jpeg",
     mdLinkedIn: "https://www.linkedin.com/in/kylematthys/",
-    mdDescription: "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE 100, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
+    mdDescription: "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE I00, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
     advisoryBoard: [
       /* hidden:
       { name: "Helen Kramer", imagePath: "/images/team/helen-kramer.jpg", role: "Chair" },
@@ -680,7 +680,7 @@ export const ourTeam: TeamMember[] = [
     name: "Tanuja Bodas",
     role: "Head of Studio design",
     imagePath: "/images/team/tanuja-bodas.jpg",
-    description: "Tanuja Bodas leads Studio Design at TRIIBE, combining user experience, visual design, and digital development to strengthen the organization’s digital presence. With a Master of Science in User Experience and Interaction Design from Thomas Jefferson University, she brings expertise in product design, user research, and web experiences. At TRIIBE, she has shaped projects like the TRIIBE 100 website, creating cohesive designs that communicate the organization’s mission and empower its community.",
+    description: "Tanuja Bodas leads Studio Design at TRIIBE, combining user experience, visual design, and digital development to strengthen the organization’s digital presence. With a Master of Science in User Experience and Interaction Design from Thomas Jefferson University, she brings expertise in product design, user research, and web experiences. At TRIIBE, she has shaped projects like the TRIIBE I00 website, creating cohesive designs that communicate the organization’s mission and empower its community.",
     linkedIn: "https://www.linkedin.com/in/tanujabodas23/",
   },
   {

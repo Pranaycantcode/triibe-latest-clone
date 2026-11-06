@@ -11,7 +11,7 @@ export default function MeetTheTribe100() {
   <div className="relative inline-flex items-center">
     <Image
       src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
-      alt="TRIIBE 100"
+      alt="TRIIBE I00"
       width={200}
       height={34}
       priority

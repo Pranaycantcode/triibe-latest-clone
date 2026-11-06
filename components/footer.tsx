@@ -15,7 +15,7 @@ const footerColumns = [
     title: "About",
     links: [
       { label: "Team", href: "/about" },
-      { label: "Fellows", href: "/cohort" },
+      { label: "Fellows", href: "/100" },
       /* { label: "Privacy policy", href: "/index/privacy" }, */
     ],
   },

@@ -66,7 +66,7 @@ export default function ProgramOverviewTest() {
 
               <div className="flex-1 text-center md:text-left flex flex-col justify-center w-full px-4 sm:px-0">
                 <h3 className="text-sm sm:text-[17px] md:text-lg font-medium mb-4 max-w-xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
-                  The TRIIBE 100 Index represents 23 countries,{" "}
+                  The TRIIBE I00 Index represents 23 countries,{" "}
                   <br className="hidden sm:inline" />
                   653 years of nonprofit leadership, and $15.5M raised last
                   year.
@@ -100,7 +100,7 @@ export default function ProgramOverviewTest() {
                     href="/100"
                     className="inline-flex items-center justify-center h-[52px] w-full sm:w-auto px-6 rounded-xl font-semibold text-lg sm:text-xl text-white bg-[#002c19] hover:bg-[#1C5945] whitespace-nowrap transition-colors shrink-0"
                   >
-                    TRIIBE 100
+                    TRIIBE I00
                   </Link>
                 </div>
               </div>
