@@ -510,7 +510,7 @@ export default function AboutPage() {
           </FadeUp>
 
           <FadeUp delay={100}>
-            <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {ourTeam.map((person) => (
                 <div
                   key={person.name}

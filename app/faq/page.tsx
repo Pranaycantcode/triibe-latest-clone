@@ -333,7 +333,7 @@ const faqs = [
   {
     question: "Who runs TRIIBE?",
     answer:
-      "TRIIBE is led by Kyle Matthys (Founder and CEO) and Nawaf Alshaikhmubarak (Chief Operating Officer), with James Hetherington serving as Board Chair. Laya Pothunuri (Singapore) and Satyam Pandey (India) serve as Managing Directors. The Associate Board, chaired by Jovan Nguyen-Tran, serves as the next-gen pipeline to the Board of Directors. Part-time team members work across four departments, including Pranay Mishra (Head of Website Development), Riya Bose (Head of Google Ad Grants), Tanuja Bodas (Head of Studio Design), and Nancy Thadhani (Head of Research). Meet everyone at triibe.org/about.",
+      "TRIIBE is led by Kyle Matthys (Founder and CEO) and Nawaf Alshaikhmubarak (Chief Operating Officer), with James Hetherington serving as Board Chair. Laya Pothunuri (Singapore) and Satyam Pandey (India) serve as Managing Directors. The Associate Board, chaired by Jovan Nguyen-Tran, serves as the next-gen pipeline to the Board of Directors. Part-time team members work across four departments, including Pranay Mishra (Director of Technology), Riya Bose (Director of Google Ad Grants), Tanuja Bodas (Director of Studio Design), and Nancy Thadhani (Director of Research). Meet everyone at triibe.org/about.",
   },
   {
     question: "Who are TRIIBE's advisors?",

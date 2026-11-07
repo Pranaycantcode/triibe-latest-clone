@@ -159,6 +159,14 @@ export const associateBoard: Person[] = [
       "Tahnoon Murtza is an entrepreneur, venture capitalist, and independent punk artist working at the intersection of investment, entertainment, and consumer brands. As Founding Partner of Grey Sheep Ventures, he invests in early-stage, celebrity-founded, and viral-first consumer businesses, drawing on his network across entertainment, sports, and digital media. A three-time founder and Babson College graduate, he previously worked with Brock Capital Group and NZVC and founded ReComune, a technology initiative addressing senior loneliness. Alongside investing, Tahnoon has built a music audience of over three million, combining creative entrepreneurship with strategic brand-building.",
     linkedIn: "https://www.linkedin.com/in/tahnoon-m-b4071419a/",
   },
+  {
+    name: "Mahir Laul",
+    role: "Member",
+    imagePath: "/images/team/mahirlaul.png",
+    description:
+      "Mahir Laul is an entrepreneur and early-stage investor based in New York, working at the intersection of technology, venture capital, and the future of work. He is the Founder and CEO of Velric, an AI-powered hiring platform that uses skills-based assessments and proof of work to help companies identify talent beyond traditional résumés. As Partner at Laul Global Ventures, he makes strategic investments, advises businesses, and supports emerging technology founders through the firm's venture initiatives. He also leads LaulX, Laul Global's early-stage technology venture studio, bringing a founder's perspective to investing, company building, and innovation.",
+    linkedIn: "https://www.linkedin.com/in/mahirlaul/",
+  },
 ];
 
 export const legacyBoard: Person[] = [
@@ -663,29 +671,36 @@ export interface TeamMember {
 
 export const ourTeam: TeamMember[] = [
   {
+    name: "Ben Torry",
+    role: "Director of Social Media",
+    imagePath: "/images/team/bentorry.png",
+    description: "Ben Torry is an entrepreneur and social commerce strategist specializing in digital growth, content distribution, and creator-led marketing. He co-founded Wrap The World, generating over 1 billion views across social media, and has built a substantial presence as a TikTok Shop affiliate, reportedly reaching 1.4 billion views. He has also advised eBay Live on social strategy. As Founder of Meadow, he is building AI-powered growth technology that helps direct-to-consumer brands identify high-performing content, automate creative distribution, and scale social commerce. His work focuses on combining content, consumer behaviour, and AI to transform how brands reach and convert audiences.",
+    linkedIn: "https://www.linkedin.com/in/bentorry/",
+  },
+  {
     name: "Pranay Mishra",
-    role: "Head of Website development",
+    role: "Director of Technology",
     imagePath: "/images/team/pranay-mishra.jpeg",
     description: "Pranay Mishra leads website development at TRIIBE, managing its production website and infrastructure for nonprofit founders. A Mechanical Engineering undergraduate at BIT Mesra, he works across the full stack to keep applications fast, reliable, and maintainable. Since joining in February 2026, he has built and shipped features for the Fellowship, Grants, event ticketing, and the TRIIBE Index. Most recently, he launched the Summit 2027 page and built the blog page that houses The TRIIBUNE, TRIIBE's official newsletter.",
     linkedIn: "https://www.linkedin.com/in/pranay--mishra/",
   },
   {
     name: "Riya Bose",
-    role: "Head of Google Ad Grants",
+    role: "Director of Google Ad Grants",
     imagePath: "/images/team/riya-bose.jfif",
     description: "Riya Bose leads Google Ad Grants and SEO/GEO at TRIIBE, helping expand the organization’s digital visibility and strengthen the nonprofit startup ecosystem. A Computer Science and Technology undergraduate at RVS College of Engineering and Technology, she focuses on search advertising, audience reach, and digital growth strategies that connect nonprofit founders with potential donors, volunteers, and supporters.",
     linkedIn: "https://www.linkedin.com/in/riya-bose-781699273/",
   },
   {
     name: "Tanuja Bodas",
-    role: "Head of Studio design",
+    role: "Director of Studio Design",
     imagePath: "/images/team/tanuja-bodas.jpg",
     description: "Tanuja Bodas leads Studio Design at TRIIBE, combining user experience, visual design, and digital development to strengthen the organization’s digital presence. With a Master of Science in User Experience and Interaction Design from Thomas Jefferson University, she brings expertise in product design, user research, and web experiences. At TRIIBE, she has shaped projects like the TRIIBE I00 website, creating cohesive designs that communicate the organization’s mission and empower its community.",
     linkedIn: "https://www.linkedin.com/in/tanujabodas23/",
   },
   {
     name: "Nancy Thadhani",
-    role: "Head of Research",
+    role: "Director of Research",
     imagePath: "/images/team/nancy-thadhani.jpg",
     description: "Nancy Thadhani leads research at TRIIBE, supporting initiatives that strengthen the nonprofit startup ecosystem. A student at Vellore Institute of Technology, she focuses on understanding the challenges early-stage nonprofits face in accessing funding, mentorship, and community. Through her research, Nancy contributes to TRIIBE’s mission of empowering young changemakers with the resources and support needed to sustain and grow their impact.",
     linkedIn: "https://www.linkedin.com/in/nancy-thadhani-48501730a/",
