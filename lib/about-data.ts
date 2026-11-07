@@ -672,7 +672,7 @@ export const ourTeam: TeamMember[] = [
   {
     name: "Benjamin Hotaling",
     role: "Director of Partnerships",
-    imagePath: "/images/team/BenjaminHotaling.jpg",
+    imagePath: "/images/team/BenHotaling.jpeg",
     description: "Benjamin Hotaling is an emerging nonprofit development professional based in the Washington, D.C. area, focused on helping smaller nonprofits strengthen their fundraising campaigns, partnerships, and operations. Through his involvement with the DC Tutoring & Mentoring Initiative and The Civic Leadership Initiative, he contributes to initiatives supporting community engagement, mentorship, and youth development. He is pursuing a degree in Psychology at Virginia Tech, alongside professional certifications in personal training and nutrition coaching from NASM. His interests span human behaviour, community development, and building stronger support systems for individuals and mission-driven organisations.",
     linkedIn: "https://www.linkedin.com/in/benjamin-hotaling-023508256/",
   },
