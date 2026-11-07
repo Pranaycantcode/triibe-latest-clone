@@ -390,7 +390,7 @@ export default function TheMissingLayerPage() {
               <p className="mt-4">
                 From the outside, it looks like the money followed. Young
                 founders win awards, land press, and share impact reports that
-                read like success. Yet for TRIIBE 100, our global index of the
+                read like success. Yet for TRIIBE I00, our global index of the
                 100 leading nonprofit founders under 30, measuring what each
                 organization discloses publicly, they raised $15.5 million, or
                 an average of $155,000 each. This, while carrying 653 years of
@@ -441,7 +441,7 @@ export default function TheMissingLayerPage() {
 
               <p className="my-8 leading-relaxed">
                 So we built TRIIBE, maximizing return on impact and investment for
-                philentrepreneurs. We back the TRIIBE 100 with funding,
+                philentrepreneurs. We back the TRIIBE I00 with funding,
                 mentorship, and measurement of their social return on
                 investment. TRIIBE Talks give visibility: Intergenerational
                 conversations featuring next-gen voices. TRIIBE Grants gives the

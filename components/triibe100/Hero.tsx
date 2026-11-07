@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative flex flex-col items-center justify-center text-center"
+      className="relative flex flex-col items-center justify-center text-center pointer-events-none"
       style={{ backgroundColor: "#ffffff", padding: "144px 0 64px" }}
     >
       <div
@@ -13,7 +13,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-2xl mx-auto px-6">
+      <div className="relative z-10 max-w-2xl mx-auto px-6 pointer-events-auto">
         <img
           src="/images/TRIIBELOGOS/TRIIBE I00 LOGO.png"
           alt="TRIIBE I00"
@@ -29,7 +29,7 @@ export default function Hero() {
 
         <p
           style={{
-            fontSize: "14px",
+            fontSize: "18px",
             color: "#002c19",
             opacity: 0.65,
             fontWeight: 300,
@@ -39,7 +39,7 @@ export default function Hero() {
             lineHeight: 1.6,
           }}
         >
-          The annual index of leading nonprofit founders under 30 to know.
+          Our index of nonprofit founders under 30 to know.
         </p>
       </div>
     </section>

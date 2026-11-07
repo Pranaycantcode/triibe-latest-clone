@@ -123,15 +123,15 @@ const mediaCards = [
     id: "newsletter",
     title: "TRIIBUNE Newsletter",
     image: "/images/triibetalk/cohort.avif",
-    badge: "October 2026",
-    heading: "Monthly Update | October 2026",
+    badge: "November 2026",
+    heading: "Monthly Update | November 2026",
     description:
-      "Check out the latest updates, stories, and community news in our October 2026 edition.",
+      "Check out the latest updates, stories, and community news in our November 2026 edition.",
     buttons: [
       {
         type: "link",
         text: "Read",
-        href: "https://blog.triibe.org/p/the-triibune-october-2026",
+        href: "/blog/the-triibune-nov26",
       },
     ],
   },
@@ -178,12 +178,13 @@ const EventsPage = () => {
                 width={600}
                 height={150}
                 priority
-                className="w-full max-w-[400px] md:max-w-[500px] h-auto -ml-3 md:-ml-5 lg:-ml-6 object-contain object-left"
+                className="w-full max-w-[400px] md:max-w-[500px] h-auto mx-auto md:mx-0 md:-ml-5 lg:-ml-6 object-contain object-center md:object-left"
               />
 
-              <p className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal">
-                Intergenerational talks featuring next-gen voices
-              </p>
+              <div className="text-[#002c19]/80 text-lg mb-8 leading-relaxed mt-4 font-normal flex flex-col gap-1">
+                <p>Intergenerational conversations,</p>
+                <p>featuring next-gen voices</p>
+              </div>
 
               <div className="flex w-full items-center justify-start gap-4">
                 <a
@@ -275,7 +276,7 @@ const EventsPage = () => {
       </section>
 
       <section className="py-12 w-full px-4 md:px-25 lg:px-50">
-        <div className="w-full max-w-[1200px] mx-auto transition-all duration-300 hover:scale-[1.02]">
+        <div className="w-full max-w-[800px] mx-auto transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-8 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-2xl md:text-3xl font-medium text-[#002c19]">
               Host your own TRIIBE Talk

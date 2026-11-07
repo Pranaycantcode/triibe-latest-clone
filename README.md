@@ -7,7 +7,7 @@ The digital infrastructure powering [TRIIBE](https://www.triibe.org/), a global 
 ### Core Architecture
 
 - **Next-Gen Summit Hub:** Dynamic schedules, speaker directories, multi-tier ticketing, and VIP gala programming.
-- **TRIIBE 100 Index:** Public data-backed directory profiling top early-stage impact entrepreneurs globally.
+- **TRIIBE I00 Index:** Public data-backed directory profiling top early-stage impact entrepreneurs globally.
 - **Global Chapters:** Regional leadership hubs across New York, London, Ranchi, Singapore, and West Africa.
 - **Ecosystem Portals:** Fellowship onboarding, TRIIBE Talks event series, and philanthropic partner activations.
 

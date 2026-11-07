@@ -4,52 +4,36 @@ import Image from "next/image";
 
 export default function CTASection() {
   return (
-    <section className="bg-[#002c19] text-white py-24 px-4 md:px-25 lg:px-[200px] w-full pt-16">
-      <div className="max-w-[1200px] mx-auto flex flex-col">
-        <h2 className="text-4xl md:text-6xl font-bold mb-8 md:mb-12 flex flex-wrap items-center justify-center gap-4">
-          Fund our work
-          {/* <Image
-            src="/images/home/TRIIBEHeroWhite.svg"
-            alt="TRIIBE"
-            width={180}
-            height={60}
-            className="inline-block object-contain"
-          /> */}
+    <section className="bg-[#002c19] text-white pt-16 pb-12 px-4 md:px-25 lg:px-[200px] w-full">
+      <div className="max-w-[1200px] mx-auto flex flex-col items-center">
+        <h2 className="text-4xl md:text-6xl font-bold mb-4 flex flex-wrap items-center justify-center gap-4 text-center">
+          Support the founders
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full max-w-6xl mx-auto">
-
-  <h3 className="flex-1 text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] text-center md:text-left">
-    <span className="block whitespace-nowrap">Channeling capital to</span>
-    <span className="block whitespace-nowrap">the nonprofit startup</span>
-    <span className="block whitespace-nowrap">ecosystem</span>
-  </h3>
-
-  <div className="flex-shrink-0 flex justify-center w-40 md:w-56 lg:w-64">
-    <Image
-      src="/images/home/heroLogo.png"
-      alt="TRIIBE Tree Logo"
-      width={300}
-      height={300}
-      className="w-full h-auto object-contain scale-125 md:scale-150"
-    />
-  </div>
-
-</div>
-
-        <div className="flex justify-center mt-10">
-          <a
-            href="/donate"
-            className="w-full max-w-[550px] rounded-xl bg-white py-5 text-center text-[#002c19] text-2xl font-semibold hover:bg-gray-100 transition"
-          >
-            Donate
-          </a>
+        <div className="flex flex-col gap-2 text-base sm:text-lg md:text-xl font-medium text-white/90 text-center max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed">
+          <p>Donations support the TRIIBE I00 via</p>
+          <p>direct funding, operational support, and visibility.</p>
         </div>
 
-        <div className="mt-8 md:mt-10 text-center">
-          <p className="text-white/90 text-sm md:text-base font-medium">
-            {/* Bringing startup dynamics to the nonprofit sector */}
-          </p>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-4xl mx-auto">
+          <div className="w-full max-w-[380px] flex justify-center md:justify-end">
+            <a
+              href="/donate"
+              className="w-full rounded-2xl bg-white py-8 px-9 text-center text-[#002c19] text-xl md:text-2xl font-bold shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center"
+            >
+              Donate here
+            </a>
+          </div>
+
+          <div className="flex-shrink-0 flex justify-center md:justify-start w-40 md:w-56 lg:w-64">
+            <Image
+              src="/images/home/heroLogo.png"
+              alt="TRIIBE Tree Logo"
+              width={300}
+              height={300}
+              className="w-full h-auto object-contain scale-125 md:scale-150"
+            />
+          </div>
         </div>
       </div>
     </section>

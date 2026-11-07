@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import GrantsHeroGlobeWrapper from "@/components/grants/grants-hero-globe-wrapper";
 import LiveGrantMetrics from "@/components/grants/live-grant-metrics";
 import GrantsPricing from "@/components/grants/grants-pricing";
+import GrantsBanner from "@/components/grants/GrantsBanner";
 import Footer from "@/components/footer";
 
 // TRIIBE owns this landing page. GrantAuthority receives only the outbound
@@ -45,14 +46,14 @@ function resolveReferralUrl() {
 const TRIIBE_GRANTS_PORTAL_URL = resolveReferralUrl();
 
 export const metadata: Metadata = {
-  title: "Largest Grant Database, For Free | TRIIBE Grants",
+  title: "The free grant database built for next-gen founders | TRIIBE Grants",
   description:
-    "The only grants platform built for next-gen founders. Find, qualify, and apply to grants across the globe for free, using our AI-powered grants engine.",
+    "Most grants are not publicly posted. TRIIBE Grants helps you find them anyway, enriched daily, matched to your mission, drafted in minutes.",
   alternates: { canonical: "https://www.triibe.org/grants" },
   openGraph: {
-    title: "Largest Grant Database, For Free | TRIIBE Grants",
+    title: "The free grant database built for next-gen founders | TRIIBE Grants",
     description:
-      "The only grants platform built for next-gen founders. Find, qualify, and apply to grants across the globe for free, using our AI-powered grants engine.",
+      "Most grants are not publicly posted. TRIIBE Grants helps you find them anyway, enriched daily, matched to your mission, drafted in minutes.",
     url: "https://www.triibe.org/grants",
   },
 };
@@ -96,31 +97,33 @@ export default function GrantsPage() {
               className="h-auto w-full max-w-[390px] brightness-0 invert"
             />
             <h1 className="mt-9 max-w-[640px] text-5xl font-bold leading-[1.05] tracking-[-0.045em] sm:text-6xl lg:text-[68px]">
-              The only grants platform built for next-gen founders.
+              The grant platform built for next-gen founders
             </h1>
             <p className="mt-7 max-w-[650px] text-lg leading-8 text-white/80 md:text-xl">
-              Most grants are never publicly posted. TRIIBE Grants finds them
-              anyway, enriched daily, matched to your mission, drafted in
+              Most grants are not publicly posted. TRIIBE Grants helps you find
+              them anyway, enriched daily, matched to your mission, drafted in
               minutes.
             </p>
             <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <a
-                href={TRIIBE_GRANTS_PORTAL_URL}
+                href="https://www.grantauthority.org/triibe/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-14 items-center justify-center gap-2 rounded-md bg-white px-8 py-4 text-base font-bold text-[#002c19] transition-colors hover:bg-[#edf4f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 Find your grants
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
-                href={TRIIBE_GRANTS_SIGN_IN_URL}
+                href="https://www.grantauthority.org/triibe/signup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-14 items-center justify-center rounded-md border border-white/50 px-8 py-4 text-base font-bold text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
               >
                 Sign in
               </a>
             </div>
-            <p className="mt-4 text-sm text-white/65">
-              Searching is free. No card to browse.
-            </p>
+            <p className="mt-4 text-sm text-white/65">Searching is free.</p>
           </div>
 
           <div className="relative z-0 flex min-w-0 items-center justify-center overflow-hidden lg:justify-end">
@@ -136,21 +139,26 @@ export default function GrantsPage() {
       <LiveGrantMetrics />
 
       <section
-        className="px-4 py-20 md:py-28"
+        className="px-4 pt-20 md:pt-28 pb-4 md:pb-6"
         aria-labelledby="mission-fundable-heading"
       >
         <div className="mx-auto max-w-[1200px]">
           <h2
             id="mission-fundable-heading"
-            className="max-w-[760px] text-4xl font-bold tracking-[-0.035em] md:text-6xl"
+            className="w-full text-center text-[22px] xs:text-2xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold tracking-tight whitespace-nowrap"
           >
             Make your mission fundable
           </h2>
-          <p className="mt-5 max-w-[980px] text-base leading-8 text-[#496157] md:text-lg">
-            TRIIBE Grants is our free infrastructure supporting credible
-            opportunities, clear eligibility, primary-source evidence, and the
-            tools to move from search to submission.
-          </p>
+          <div className="mt-5 max-w-[980px] mx-auto text-center text-base leading-8 text-[#496157] md:text-lg flex flex-col gap-2">
+            <p>
+              TRIIBE Grants is our free infrastructure supporting credible
+              opportunities, clear eligibility,
+            </p>
+            <p>
+              primary-source evidence, and the tools to move from search to
+              submission.
+            </p>
+          </div>
 
           <ol className="mt-12 grid gap-5 md:grid-cols-3">
             {steps.map((step) => (
@@ -171,9 +179,11 @@ export default function GrantsPage() {
         </div>
       </section>
 
-      <div className="bg-[#f4f6f5]">
+      <GrantsBanner />
+
+      {/* <div className="bg-[#f4f6f5]">
         <GrantsPricing referralUrl={TRIIBE_GRANTS_PORTAL_URL} />
-      </div>
+      </div> */}
 
       <Footer />
     </main>

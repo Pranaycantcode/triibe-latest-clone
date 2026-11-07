@@ -1,13 +1,13 @@
 import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Fund The Nonprofit Startup Sector | TRIIBE",
+  title: "Back nonprofit founders under 30 | TRIIBE",
   description:
-    "Channel capital to the nonprofit startup sector through TRIIBE, equitably allocating to the leading young nonprofit founders around the world.",
+    "Measured by Purposefy, every dollar donated yields $3.60 in social return.",
   openGraph: {
-    title: "Fund The Nonprofit Startup Sector | TRIIBE",
+    title: "Back nonprofit founders under 30 | TRIIBE",
     description:
-      "Your donation helps TRIIBE provide mentorship and resources to young change makers creating positive social impact.",
+      "Measured by Purposefy, every dollar donated yields $3.60 in social return.",
     url: "https://www.triibe.org/donate",
   },
   alternates: {

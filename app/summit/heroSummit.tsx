@@ -39,7 +39,7 @@ export default function HeroSummit() {
       <section className="relative w-full min-h-150 md:min-h-175 lg:min-h-200 bg-[#101828] flex items-center justify-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/images/summit/HeroSummit-new.png"
+            src="/images/summit/summit-hero.jpeg"
             alt="Next-Gen Changemaker Summit"
             fill
             priority

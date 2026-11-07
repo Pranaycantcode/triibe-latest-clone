@@ -1,15 +1,28 @@
 import { MetadataRoute } from "next";
+import { getAllBlogPosts } from "@/lib/triibune";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://www.triibe.org";
   const currentDate = new Date().toISOString();
 
-  return [
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 1,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/grants`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/about`,
@@ -83,7 +96,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-
     {
       url: `${baseUrl}/branch`,
       lastModified: currentDate,
@@ -115,4 +127,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
   ];
+
+  let blogRoutes: MetadataRoute.Sitemap = [];
+  try {
+    const posts = await getAllBlogPosts();
+    blogRoutes = posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: post.pubDate
+        ? new Date(post.pubDate).toISOString()
+        : currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
+  } catch (err) {
+    console.error("Failed to generate blog post sitemap entries:", err);
+  }
+
+  return [...staticRoutes, ...blogRoutes];
 }

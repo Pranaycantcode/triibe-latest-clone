@@ -134,9 +134,9 @@ export default function SpeakerBriefClient({
               <div className="bg-[#002c19]/5 p-8 rounded-2xl border border-[#002c19]/10">
                 <h3 className="font-bold text-xl mb-3">Embrace the audience</h3>
                 <p className="opacity-90 leading-relaxed">
-                  The last 10 minutes are dedicated to Audience Q&A. Be
-                  prepared for direct engagement and off-the-cuff questions from
-                  the local community.
+                  The last 10 minutes are dedicated to Audience Q&A. Be prepared
+                  for direct engagement and off-the-cuff questions from the
+                  local community.
                 </p>
               </div>
             </div>
@@ -240,9 +240,9 @@ export default function SpeakerBriefClient({
               href="https://app.signnow.com/webapp/document/c9483a4cd4a348aba2ed89029d2efd8f3e79d5c5?dispatched=true&mobileweb=app_or_mobileweb_choice&redirect_uri=https%253A%252F%252Fapp.signnow.com%252Fhtml%252Fthanks-for-signing%253Fdocument_id%253Dc9483a4cd4a348aba2ed89029d2efd8f3e79d5c5%2526access_token%253D3da38e8d274800443d59711b908e70b34d75a95e5ff191719b07d7477b9c2a73&sign=1&source=link"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center h-[44px] px-8 rounded-sm font-semibold text-sm bg-white text-[#002c19] hover:bg-gray-100 transition-all duration-300 mt-4"
+              className="inline-flex items-center justify-center min-h-[44px] sm:h-[44px] py-2 sm:py-0 px-6 sm:px-8 rounded-sm font-semibold text-sm bg-white text-[#002c19] hover:bg-gray-100 transition-all duration-300 mt-4 text-center leading-snug"
             >
-              Review & sign the alignment form
+              Review & sign the alignment <br className="sm:hidden" /> form
             </a>
           </div>
         </div>

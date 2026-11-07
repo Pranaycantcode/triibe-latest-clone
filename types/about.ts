@@ -6,6 +6,8 @@ export interface Person {
   title?: string;
   imagePath: string;
   linkedIn?: string;
+  bio?: string;        
+  description?: string;
 }
 
 export interface DepartmentMember {
@@ -27,6 +29,8 @@ export interface LocationAdvisoryMember {
   linkedIn?: string;
   role?: string;
   title?: string;
+  bio?: string;          
+  description?: string;  
 }
 
 export interface LocationEntry {
@@ -35,6 +39,9 @@ export interface LocationEntry {
   mdName?: string;
   mdImagePath?: string;
   mdLinkedIn?: string;
+  mdTitle?: string;       
+  mdBio?: string;         
+  mdDescription?: string; 
   advisoryBoard: LocationAdvisoryMember[];
   advisoryBoardForming: boolean;
   locationPath?: string;

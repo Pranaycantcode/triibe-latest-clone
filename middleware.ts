@@ -23,5 +23,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/index", "/index/:path*", "/mytriibe/:path*"],
+  matcher: ["/index", "/index/:path*", "/cohort", "/cohort/:path*"],
 };

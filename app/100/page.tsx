@@ -7,12 +7,13 @@ import { zones } from "@/lib/triibe100/zones";
 import { founders } from "@/lib/triibe100/founders";
 import HowWePick from "@/components/triibe100/HowWePick";
 import FellowshipBenefits from "@/components/fellowshipBenefits";
+import MeetTheTribe100 from "@/components/triibe100/MeetTheTribe100";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export const metadata = {
-  title: "The 100 Nonprofit Founders Under 30 to Watch | TRIIBE 100",
+  title: "The annual index of nonprofit founders under 30 to know | TRIIBE I00",
   description:
-    "The annual index of 100 leading nonprofit founders under 30, TRIIBE measuring their social return on investment with Purposefy.",
+    "Our fellows span 23 countries, raising $15.5M in total and representing 653 years of nonprofit leadership between them.",
   alternates: {
     canonical: "https://www.triibe.org/100",
   },
@@ -23,7 +24,16 @@ export default function Triibe100Page() {
     <div style={{ background: "#002C19" }}>
       <Header />
       <Hero />
-      <WorldMapSection />
+
+      <section className="relative z-10 w-full">
+        <div className="w-full max-w-[850px] mx-auto px-4 pt-4 sm:pt-6 text-center">
+          <p className="text-xs sm:text-lg font-medium text-white/70 tracking-wide">
+            Click on a dot to meet the fellows in that region
+          </p>
+        </div>
+
+        <WorldMapSection />
+      </section>
       <HowWePick />
       {zones.map((zone, i) => {
         const zoneFounders = founders.slice(i * 10, i * 10 + 10);
@@ -39,11 +49,14 @@ export default function Triibe100Page() {
           />
         );
       })}
-      <FellowshipBenefits />
 
       <TestimonialCarousel />
 
-      <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
+      <FellowshipBenefits />
+
+      <MeetTheTribe100 />
+
+      {/* <section className="py-20 px-4 md:px-25 lg:px-50 bg-gray-50">
         <div className="max-w-260 mx-auto">
           <div className="bg-white border-2 border-black rounded-lg p-8 md:p-10">
             <blockquote className="text-[#002c19] text-xl font-normal leading-relaxed italic">
@@ -78,7 +91,7 @@ export default function Triibe100Page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

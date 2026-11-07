@@ -59,7 +59,11 @@
     "react-hook-form": "^7.60.0",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.4",
+<<<<<<< HEAD
     "resend": "^6.34.1",
+=======
+    "rss-parser": "^3.13.0",
+>>>>>>> c1a9776be46e7cebd58b92055feff7e0e78d9809
     "sonner": "^1.7.4",
     "tailwind-merge": "^3.3.1",
     "three": "^0.184.0",
@@ -70,6 +74,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.9",
     "@types/bcryptjs": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.20",
     "@types/d3-geo": "^3.1.1",
     "@types/node": "^22",
     "@types/react": "^19",
