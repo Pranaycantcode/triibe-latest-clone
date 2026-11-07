@@ -29,6 +29,28 @@ export default function ProgramOverviewTest() {
           </div>
         </section>
 
+        <section className="flex flex-col items-center px-4 sm:px-6 md:px-12 lg:px-20 pt-10 pb-20 w-full max-w-[1300px] mx-auto bg-white">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 w-full items-stretch">
+            <div className="border border-[#002c19] px-6 py-8 md:px-7 md:py-10 flex items-center justify-center rounded-2xl bg-[#002c19] shadow-sm transition-all duration-300 hover:shadow-md">
+              <h4 className="text-2xl font-bold text-center text-white">
+                Funding
+              </h4>
+            </div>
+
+            <div className="border border-[#002c19] px-6 py-8 md:px-7 md:py-10 flex items-center justify-center rounded-2xl bg-[#002c19] shadow-sm transition-all duration-300 hover:shadow-md">
+              <h4 className="text-2xl font-bold text-center text-white">
+                Operational support
+              </h4>
+            </div>
+
+            <div className="border border-[#002c19] px-6 py-8 md:px-7 md:py-10 flex items-center justify-center rounded-2xl bg-[#002c19] shadow-sm transition-all duration-300 hover:shadow-md">
+              <h4 className="text-2xl font-bold text-center text-white">
+                Visibility
+              </h4>
+            </div>
+          </div>
+        </section>
+
         <div className="w-full max-w-[900px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
