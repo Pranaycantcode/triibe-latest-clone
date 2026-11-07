@@ -73,6 +73,16 @@ const nextConfig = {
         destination: "/100/:path*",
         permanent: true,
       },
+      {
+        source: "/cohort",
+        destination: "/100",
+        permanent: true,
+      },
+      {
+        source: "/cohort/:path*",
+        destination: "/100",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {
