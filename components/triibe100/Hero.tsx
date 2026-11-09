@@ -27,20 +27,25 @@ export default function Hero() {
           }}
         />
 
-        <p
-          style={{
-            fontSize: "18px",
-            color: "#002c19",
-            opacity: 0.65,
-            fontWeight: 300,
-            maxWidth: "max-content",
-            margin: "0 auto",
-            textAlign: "center",
-            lineHeight: 1.6,
-          }}
-        >
-          Our index of nonprofit founders under 30 to know.
-        </p>
+        <div
+  style={{
+    fontSize: "18px",
+    color: "#002c19",
+    opacity: 0.65,
+    fontWeight: 300,
+    maxWidth: "max-content",
+    margin: "0 auto",
+    textAlign: "center",
+    lineHeight: 1.6,
+  }}
+>
+  <p style={{ margin: 0 }}>
+    Our index of nonprofit founders under 30 to know.
+  </p>
+  <p style={{ margin: "12px 0 0" }}>
+    Measured by Purposefy, every dollar donated to these next-gen philentrepreneurs yields $3.60 in social return.
+  </p>
+</div>
       </div>
     </section>
   );

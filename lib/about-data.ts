@@ -12,7 +12,7 @@ export const csuite: Person[] = [
     role: "Founder & CEO",
     imagePath: "/images/team/KyleMatthys.jpeg",
     description:
-      "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE I00, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
+      "Kyle Matthys is the founder and CEO of TRIIBE, the pipeline philanthropy has been missing. TRIIBE backs nonprofit founders under 30 with direct funding, operational support, and visibility, through the TRIIBE I00, TRIIBE Talks, and TRIIBE Grants. Kyle had the honor of serving as MC for the UN’s Digital Cooperation Day during UNGA and as a speaker for the Nelson Mandela Foundation’s forum with UNSSC. He serves as a Global Ambassador for THE REAL Mental Health Foundation and on the Associate Board of Read Alliance. His work has been featured by Google News, The New York Times, and other international outlets.",
     linkedIn: "https://www.linkedin.com/in/kylematthys/",
   },
   {
@@ -28,7 +28,7 @@ export const csuite: Person[] = [
     role: "Board Chair",
     imagePath: "/images/team/james-hetherington.jpg",
     description:
-      "James Hetherington serves as Board Chair at TRIIBE, supporting its mission to help young nonprofit founders build sustainable, high-impact organizations. He contributes to the organization’s governance and strategic direction as it connects emerging changemakers with philanthropic funding, mentorship, and practical resources. Through initiatives such as the College Fellowship, TRIIBE Talks, and TRIIBE I00, James supports TRIIBE’s broader goal of strengthening the nonprofit startup ecosystem and helping young social entrepreneurs turn promising ideas into lasting impact.",
+      "James Hetherington is the Board Chair of TRIIBE, guiding its governance and strategy as it backs nonprofit founders under 30. His background is in agentic data security with Natoma, and then with Snowflake through Natoma’s acquisition.",
     linkedIn: "https://www.linkedin.com/in/james-hetherington-590b981b8/",
   },
 ];
@@ -396,7 +396,7 @@ export const legacyBoard: Person[] = [
   },
   {
     name: "Christina Habib",
-    title: "Chief Insights Officer, Beauty & Wellbeing - Unilever",
+    title: "Former Chief Insight Officer, Unilever; previously P&G, MSD and Booz Allen",
     imagePath: "/images/summit/ChristinaHabib.png",
     description: "Christina Habib is a senior business and insights leader with extensive experience in consumer strategy, innovation, and corporate governance. As Chief Insights Officer for Unilever’s Beauty & Wellbeing business, she leads consumer insights that inform brand strategy, innovation, and business growth. She also serves as a Non-Executive Director and Supervisory Board Member at MSD, contributing to governance, risk oversight, financial diligence, portfolio transformation, and executive succession decisions. Her work spans strategic leadership, organisational transformation, and stakeholder engagement across global businesses.",
     linkedIn: "https://www.linkedin.com/in/christina-habib/",
@@ -425,7 +425,7 @@ export const locations: LocationEntry[] = [
     mdName: "Kyle Matthys",
     mdImagePath: "/images/team/KyleMatthys.jpeg",
     mdLinkedIn: "https://www.linkedin.com/in/kylematthys/",
-    mdDescription: "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE I00, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
+    mdDescription: "Kyle Matthys is the founder and CEO of TRIIBE, the pipeline philanthropy has been missing. TRIIBE backs nonprofit founders under 30 with direct funding, operational support, and visibility, through the TRIIBE I00, TRIIBE Talks, and TRIIBE Grants. Kyle had the honor of serving as MC for the UN’s Digital Cooperation Day during UNGA and as a speaker for the Nelson Mandela Foundation’s forum with UNSSC. He serves as a Global Ambassador for THE REAL Mental Health Foundation and on the Associate Board of Read Alliance. His work has been featured by Google News, The New York Times, and other international outlets.",
     advisoryBoard: [
       /* hidden:
       { name: "Helen Kramer", imagePath: "/images/team/helen-kramer.jpg", role: "Chair" },
@@ -671,7 +671,7 @@ export interface TeamMember {
 export const ourTeam: TeamMember[] = [
   {
     name: "Benjamin Hotaling",
-    role: "Director of Partnerships",
+    role: "Director of Fellow Success",
     imagePath: "/images/team/BenHotaling.jpeg",
     description: "Benjamin Hotaling is an emerging nonprofit development professional based in the Washington, D.C. area, focused on helping smaller nonprofits strengthen their fundraising campaigns, partnerships, and operations. Through his involvement with the DC Tutoring & Mentoring Initiative and The Civic Leadership Initiative, he contributes to initiatives supporting community engagement, mentorship, and youth development. He is pursuing a degree in Psychology at Virginia Tech, alongside professional certifications in personal training and nutrition coaching from NASM. His interests span human behaviour, community development, and building stronger support systems for individuals and mission-driven organisations.",
     linkedIn: "https://www.linkedin.com/in/benjamin-hotaling-023508256/",
