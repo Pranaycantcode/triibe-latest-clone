@@ -12,7 +12,7 @@ export const csuite: Person[] = [
     role: "Founder & CEO",
     imagePath: "/images/team/KyleMatthys.jpeg",
     description:
-      "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE I00, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
+      "Kyle Matthys is the founder and CEO of TRIIBE, the pipeline philanthropy has been missing. TRIIBE backs nonprofit founders under 30 with direct funding, operational support, and visibility, through the TRIIBE I00, TRIIBE Talks, and TRIIBE Grants. Kyle had the honor of serving as MC for the UN’s Digital Cooperation Day during UNGA and as a speaker for the Nelson Mandela Foundation’s forum with UNSSC. He serves as a Global Ambassador for THE REAL Mental Health Foundation and on the Associate Board of Read Alliance. His work has been featured by Google News, The New York Times, and other international outlets.",
     linkedIn: "https://www.linkedin.com/in/kylematthys/",
   },
   {
@@ -28,7 +28,7 @@ export const csuite: Person[] = [
     role: "Board Chair",
     imagePath: "/images/team/james-hetherington.jpg",
     description:
-      "James Hetherington serves as Board Chair at TRIIBE, supporting its mission to help young nonprofit founders build sustainable, high-impact organizations. He contributes to the organization’s governance and strategic direction as it connects emerging changemakers with philanthropic funding, mentorship, and practical resources. Through initiatives such as the College Fellowship, TRIIBE Talks, and TRIIBE I00, James supports TRIIBE’s broader goal of strengthening the nonprofit startup ecosystem and helping young social entrepreneurs turn promising ideas into lasting impact.",
+      "James Hetherington is the Board Chair of TRIIBE, guiding its governance and strategy as it backs nonprofit founders under 30. His background is in agentic data security with Natoma, and then with Snowflake through Natoma’s acquisition.",
     linkedIn: "https://www.linkedin.com/in/james-hetherington-590b981b8/",
   },
 ];
@@ -425,7 +425,7 @@ export const locations: LocationEntry[] = [
     mdName: "Kyle Matthys",
     mdImagePath: "/images/team/KyleMatthys.jpeg",
     mdLinkedIn: "https://www.linkedin.com/in/kylematthys/",
-    mdDescription: "Kyle Matthys is an entrepreneur and social impact leader focused on helping the next generation of nonprofit founders build sustainable organizations. After working in sustainability at Turtle, a fifth-generation, women-owned electrical distributor, he founded TRIIBE to address gaps in early-stage nonprofit funding, mentorship, and operational support. Under his leadership, TRIIBE has developed initiatives including TRIIBE I00, its three-year fellowship, TRIIBE Grants, and TRIIBE Talk, connecting emerging changemakers with resources and experienced leaders. In September 2026, Kyle published TRIIBE and the Missing Philanthropic Layer, outlining his vision for making philanthropy more accessible.",
+    mdDescription: "Kyle Matthys is the founder and CEO of TRIIBE, the pipeline philanthropy has been missing. TRIIBE backs nonprofit founders under 30 with direct funding, operational support, and visibility, through the TRIIBE I00, TRIIBE Talks, and TRIIBE Grants. Kyle had the honor of serving as MC for the UN’s Digital Cooperation Day during UNGA and as a speaker for the Nelson Mandela Foundation’s forum with UNSSC. He serves as a Global Ambassador for THE REAL Mental Health Foundation and on the Associate Board of Read Alliance. His work has been featured by Google News, The New York Times, and other international outlets.",
     advisoryBoard: [
       /* hidden:
       { name: "Helen Kramer", imagePath: "/images/team/helen-kramer.jpg", role: "Chair" },
