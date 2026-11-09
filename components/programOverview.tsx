@@ -33,7 +33,7 @@ export default function ProgramOverviewTest() {
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8 w-full items-stretch">
             <div className="border border-[#002c19] px-6 py-8 md:px-7 md:py-10 flex items-center justify-center rounded-2xl bg-[#002c19] shadow-sm transition-all duration-300 hover:shadow-md">
               <h4 className="text-2xl font-bold text-center text-white">
-                Funding
+                Direct funding
               </h4>
             </div>
 
@@ -45,7 +45,7 @@ export default function ProgramOverviewTest() {
 
             <div className="border border-[#002c19] px-6 py-8 md:px-7 md:py-10 flex items-center justify-center rounded-2xl bg-[#002c19] shadow-sm transition-all duration-300 hover:shadow-md">
               <h4 className="text-2xl font-bold text-center text-white">
-                Visibility
+                Peer visibility
               </h4>
             </div>
           </div>

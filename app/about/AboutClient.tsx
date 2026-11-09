@@ -108,7 +108,7 @@ function SectionHeader({
     <div className="mb-8">
       <h2 className="text-2xl font-bold text-[#002c19]">{title}</h2>
       {description && (
-        <p className="text-[#002c19]/80 text-sm mt-2 max-w-2xl leading-relaxed">
+        <p className="text-[#002c19]/80 text-sm mt-2 max-w-3xl leading-relaxed">
           {description}
         </p>
       )}

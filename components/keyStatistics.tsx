@@ -66,43 +66,42 @@ const partneredWithLogos = [
     url: "https://illuminem.com/",
     className: "h-8 md:h-10 max-w-full object-contain",
   },
-  {
+  /* {
     src: "/images/home/unitedPlanet.png",
     alt: "United Planet",
     url: "https://www.up.game/",
     className: "h-8 md:h-10 max-w-full object-contain",
-  },
+  }, */
   {
     src: "/images/home/inspireYouthJournal.png",
     alt: "Inspire Youth Journal",
     url: "http://inspireyouthjournal.org/",
-    // Shorter height so the solid cyan background block doesn't dominate
     className: "h-7 md:h-8 max-w-full object-contain",
   },
-  {
+  /* {
     src: "/images/home/learningplanet.png",
     alt: "Learning Planet Institute",
     url: "https://www.learningplanetinstitute.org/en/",
     className: "h-9 md:h-11 max-w-full object-contain",
-  },
+  }, */
   /* {
     src: "/images/home/climatecafe.png",
     alt: "Climate Cafe",
     url: "https://www.climatecafe.eco/",
     className: "h-9 md:h-11 max-w-full object-contain",
   }, */
-  {
+  /* {
     src: "/images/home/we.png",
     alt: "WE7",
     url: "https://we7.ai/",
     className: "h-8 md:h-10 max-w-full object-contain",
-  },
-  {
+  }, */
+  /* {
     src: "/images/home/touchalife1.png",
     alt: "Touch-A-Life",
     url: "https://touchalife.org/",
     className: "h-8 md:h-10 max-w-full object-contain",
-  },
+  }, */
   /* {
     src: "/images/home/Kids-Rights2.png",
     alt: "Kids Rights",
@@ -203,12 +202,12 @@ const partneredWithLogos = [
     url: "https://www.bronsterllp.com/",
     className: "h-8 md:h-10 max-w-full object-contain",
   }, */
-  {
+  /* {
     src: "/images/home/axiom_pathways.png",
     alt: "Axiom Pathways",
     url: "https://www.axiompathways.org/",
     className: "h-9 md:h-11 max-w-full object-contain",
-  },
+  }, */
   {
     src: "/images/home/360onefirm.png",
     alt: "361 Firm",
