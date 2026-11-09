@@ -396,7 +396,7 @@ export const legacyBoard: Person[] = [
   },
   {
     name: "Christina Habib",
-    title: "Chief Insights Officer, Beauty & Wellbeing - Unilever",
+    title: "Former Chief Insight Officer, Unilever; previously P&G, MSD and Booz Allen",
     imagePath: "/images/summit/ChristinaHabib.png",
     description: "Christina Habib is a senior business and insights leader with extensive experience in consumer strategy, innovation, and corporate governance. As Chief Insights Officer for Unilever’s Beauty & Wellbeing business, she leads consumer insights that inform brand strategy, innovation, and business growth. She also serves as a Non-Executive Director and Supervisory Board Member at MSD, contributing to governance, risk oversight, financial diligence, portfolio transformation, and executive succession decisions. Her work spans strategic leadership, organisational transformation, and stakeholder engagement across global businesses.",
     linkedIn: "https://www.linkedin.com/in/christina-habib/",
