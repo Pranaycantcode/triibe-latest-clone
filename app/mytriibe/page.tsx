@@ -42,14 +42,17 @@ export default async function MyTriibePage() {
               </span>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-[#002c19] tracking-tight">
-              Welcome back{session.name ? `, ${session.name}` : ""}
+              Welcome back{session.name ? "," : ""}
+              {session.name && <span className="block">{session.name}</span>}
             </h1>
+            {/*
             <p className="text-[#002c19]/80 text-base md:text-lg mt-2 font-normal">
               Signed in as{" "}
               <span className="font-semibold text-[#002c19]">
                 {session.email}
               </span>
             </p>
+            */}
           </div>
 
           <div className="flex items-center gap-3">
