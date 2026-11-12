@@ -132,7 +132,7 @@ export const associateBoard: Person[] = [
     role: "Member",
     imagePath: "/images/team/aveneel-waadhwa.jpg",
     description:
-      "Aveneel Waadhwa is an AI and product leader with a background in data science, economics, and technology innovation. As Head of AI at Luminor, a next-generation managing general agency backed by D. E. Shaw, he works at the intersection of artificial intelligence and specialty insurance. Previously, he was a Product Manager at Kalepa, an AI-driven commercial insurance technology company, and at Microsoft, where he led the development of a custom GPT and FinOps plugin for Microsoft Copilot, helping users access Azure financial data and streamline workflows. A UC Berkeley graduate in Data Science and Economics, Aveneel has also contributed to AI product thought leadership, won Microsoft's 2021 Global Hackathon in the Hack for Good category, and co-founded Aspiring Product Manager, a community supporting students entering the product management field.",
+      "Aveneel Waadhwa is an AI and product leader with a background in data science and economics. As Head of AI at Luminor, he works on applying artificial intelligence to the specialty insurance industry. Previously, he held product roles at Kalepa and Microsoft, where he worked on AI-powered insurance tools and Microsoft Copilot integrations. A UC Berkeley graduate, Aveneel also won Microsoft's 2021 Global Hackathon in the Hack for Good category. Outside work, he is a World Economic Forum Global Shaper in New York, where he leads OneRise, an initiative supporting immigrant founders.",
     linkedIn: "https://www.linkedin.com/in/aveneel/",
   },
   {
