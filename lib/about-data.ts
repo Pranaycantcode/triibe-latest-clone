@@ -132,7 +132,7 @@ export const associateBoard: Person[] = [
     role: "Member",
     imagePath: "/images/team/aveneel-waadhwa.jpg",
     description:
-      "Aveneel Waadhwa is a technology and product management professional with experience developing AI-powered solutions at Kalepa and Microsoft, including LLM pipelines for insurance underwriting and generative AI features for Azure Copilot. A UC Berkeley graduate with degrees in Data Science and Economics, he won the Microsoft Global Hackathon in 2021. As a Global Shaper with the World Economic Forum’s New York Hub, he also leads OneRise, an initiative supporting immigrant founders in building businesses in the United States.",
+      "Aveneel Waadhwa is an AI and product leader with a background in data science and economics. As Head of AI at Luminor, he works on applying artificial intelligence to the specialty insurance industry. Previously, he held product roles at Kalepa and Microsoft, where he worked on AI-powered insurance tools and Microsoft Copilot integrations. A UC Berkeley graduate, Aveneel also won Microsoft's 2021 Global Hackathon in the Hack for Good category. Outside work, he is a World Economic Forum Global Shaper in New York, where he leads OneRise, an initiative supporting immigrant founders.",
     linkedIn: "https://www.linkedin.com/in/aveneel/",
   },
   {
@@ -174,7 +174,7 @@ export const legacyBoard: Person[] = [
     name: "Stefan Avivson",
     role: "Chair",
     title: "CEO Advisor & Entrepreneur",
-    imagePath: "/images/team/stefan-avivson.jpg",
+    imagePath: "/images/team/stefanavivson.jpeg",
     description:
       "Stefan Avivson is the CEO and Co-Founder of VOKT, a serial entrepreneur with nearly 30 years of experience, having built 15 companies and exited five. He specializes in business operations, automation, and strategic growth, helping companies connect systems and streamline processes. Beyond VOKT, he advises founders on commercial strategy and customer communication through his Raw Series of books and fosters meaningful professional connections through REASON.",
     linkedIn: "https://www.linkedin.com/in/avivson/",
