@@ -114,11 +114,12 @@ export default async function MyTriibePage() {
           <section className="space-y-6">
             <div className="border-b border-gray-200 pb-4">
               <h2 className="text-2xl md:text-3xl font-bold text-[#002c19]">
-                Partner Ecosystem & Resources
+                AI &amp; Partner Ecosystem Opportunities
               </h2>
               <p className="text-[#002c19]/80 text-sm md:text-base mt-1">
-                Vetted platforms, hiring networks, and fellowship access curated
-                for the TRIIBE community.
+                Nonprofit AI programs, climate fellowships, open-source
+                initiatives, and software discounts curated for the TRIIBE
+                community.
               </p>
             </div>
 
