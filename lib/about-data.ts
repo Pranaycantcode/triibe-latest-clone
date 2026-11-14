@@ -202,14 +202,14 @@ export const legacyBoard: Person[] = [
       "Japneet Kaur is a cybersecurity and risk management leader serving as Cyber Security Services Portfolio Director and Associate Vice President at Mphasis. With over 14 years of experience, she specializes in enterprise security, data protection, risk management, and digital resilience. She also chairs The Digital Economist’s Cyber Studio and contributes to ISACA leadership and mentorship initiatives supporting women in technology. Beyond cybersecurity, she is an artist, illustrator, and author who connects technology, sustainability, and inclusion through storytelling, promoting digital trust and a more secure, accessible technological future.",
     linkedIn: "https://www.linkedin.com/in/japneet-k-34816426/",
   },
-  {
+  /* {
     name: "Geoffrey Sargeant",
     title: "Managing Director & Head of Capital Markets, The REAL",
     imagePath: "/images/team/geoffrey-sargeant.jpg",
     description:
       "Geoffrey Sargeant is a financial-services professional with over two decades of experience across institutional finance, wealth management, and capital markets, including roles at Lazard Asset Management, Calamos Wealth Management, and Neuberger Berman. A Certified Financial Planner (CFP®), he combines financial expertise with a strong commitment to mental-health advocacy. As Executive Ambassador of THE REAL Mental Health Foundation, he promotes open conversations about mental health, builds supportive communities, and expands the foundation’s global ambassador network. Through corporate partnerships and international initiatives, he advocates for vulnerability and meaningful connections.",
     linkedIn: "https://www.linkedin.com/in/geoffsargeant/",
-  },
+  }, */
   {
     name: "Flaviu Simihaian",
     title: "Founder, 1PB.org & Co-host, Founder Secrets Podcast",
@@ -407,6 +407,13 @@ export const legacyBoard: Person[] = [
     imagePath: "/images/summit/IslaMoon.jpg",
     description: "Isla Moon is an entrepreneur, artist, and cultural strategist working at the intersection of technology, ecology, and the arts. She founded Beauty Will Save the World, a donor-advised fund supporting initiatives that advance human dignity, ecological harmony, and cultural renewal through strategic philanthropy and creative collaboration. She also leads the Library of Alexandria, focused on preserving human knowledge through long-term archival technology, and works on biodiversity and regenerative design initiatives through BioDiversity Arc. Her work brings together artists, technologists, and changemakers to connect innovation with cultural preservation and environmental stewardship.",
     linkedIn: "https://www.linkedin.com/in/kelsey-candra-moon-9a7021212/",
+  },
+  {
+    name: "Jay Rosenzweig",
+    title: "CEO, Rosenzweig & Company Inc.",
+    imagePath: "/images/summit/JayRosenzweig.jpg",
+    description: "Jay Rosenzweig is an entrepreneur, leadership strategist, investor, and trained lawyer with over two decades of experience advising businesses on executive search, leadership development, and organisational growth. He founded Rosenzweig & Company in 2004, building an international executive search and leadership advisory firm serving global corporations, private equity firms, and emerging businesses. He is also a Senior Fellow at the University of Toronto's Munk School of Global Affairs & Public Policy and Honorary Chair of the Raoul Wallenberg Centre for Human Rights. A longtime advocate for gender equality, Jay created the annual Rosenzweig Report on Women in Leadership, tracking women's representation in senior corporate roles. He was awarded the King Charles III Coronation Medal in 2025 for his contributions to public life.",
+    linkedIn: "https://www.linkedin.com/in/jarosenzweig/",
   },
   /* hidden:
   { name: "Laurence Kalinsky", title: "CEO, PVBLIC.org", imagePath: "/images/team/laurence-kalinsky.jpg" },
