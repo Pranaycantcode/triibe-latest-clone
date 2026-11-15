@@ -40,7 +40,7 @@ export default function Hero() {
   }}
 >
   <p style={{ margin: 0 }}>
-    Our index of nonprofit founders under 30 to know.
+    Our annual index of nonprofit founders under 30 to know.
   </p>
   <p style={{ margin: "12px 0 0" }}>
     Measured by Purposefy, every dollar donated to these next-gen philentrepreneurs yields $3.60 in social return.

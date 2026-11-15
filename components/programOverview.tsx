@@ -54,7 +54,7 @@ export default function ProgramOverviewTest() {
         <div className="w-full max-w-[900px] mx-auto px-4 md:px-8 py-5 transition-all duration-300 hover:scale-[1.02]">
           <div className="bg-white border border-gray-200 rounded-3xl px-8 md:px-12 py-7 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-xl md:text-xl font-medium text-[#002c19] text-center md:text-left">
-              The pipeline philanthropy has been missing
+              The pipeline that philanthropy has been missing
             </p>
 
             <Link
@@ -88,10 +88,10 @@ export default function ProgramOverviewTest() {
 
               <div className="flex-1 text-center md:text-left flex flex-col justify-center w-full px-4 sm:px-0">
                 <h3 className="text-sm sm:text-[17px] md:text-lg font-medium mb-4 max-w-xl mx-auto md:mx-0 leading-relaxed tracking-[0.01em]">
-                  The TRIIBE I00 Index represents 23 countries,{" "}
+                  Our annual index features 100 fellows spanning 23{" "}
                   <br className="hidden sm:inline" />
-                  653 years of nonprofit leadership, and $15.5M raised last
-                  year.
+                  countries, who have led their nonprofits for an average of 6.5
+                  years and together raised $15.5M in 2025.
                 </h3>
 
                 <div className="text-sm sm:text-[17px] md:text-lg font-medium flex flex-col gap-1 tracking-[0.01em] max-w-xl mx-auto md:mx-0">
